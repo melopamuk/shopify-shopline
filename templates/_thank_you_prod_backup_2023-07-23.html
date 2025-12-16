@@ -1,0 +1,138 @@
+{{#if first_time_accessed}}
+<script src="https://cdn.withpersona.com/dist/persona-v4.7.1.js"></script>
+<script>
+  let preventUnload = false;
+  
+  function getOrderData() {
+    return {
+      orderId: '{{ checkout.order_id }}',
+      orderName: '{{ checkout.order_name }}',
+    };
+  }
+
+  function getCustomerMeta() {
+    const meta = JSON.parse('{{ json checkout.attributes }}');
+
+    return {
+      isGuest: meta['Guest User'] === 'true',
+      orderCount: meta['Previous Order Count'] ? Number(meta['Previous Order Count']) : 0,
+      allOrdersCancelled: meta['All Orders Cancelled'] === 'true',
+    };
+  }
+
+  async function sendVerificationEvent(status, inquiryId) {
+    if (!status) return;
+
+    const { orderId, orderName } = getOrderData();
+    if (!orderId) return;
+
+    await fetch('https://id.juicefly.io/listeners', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+          status,
+          orderId,
+          orderName,
+          ...(inquiryId && { inquiryId }),
+        }),
+    });
+  }
+
+  function initializeClient() {
+    const { isGuest, orderCount, allOrdersCancelled } = getCustomerMeta();
+    if (isGuest === false && orderCount > 0 && allOrdersCancelled === false) {
+      sendVerificationEvent('trusted');
+
+      preventUnload = false;
+
+      return;
+    }
+
+    preventUnload = true;
+    
+    sendVerificationEvent('start');
+
+    const client = new Persona.Client({
+      templateId: 'itmpl_XmU8Uq5S5sUKAXLAS8pjDqBb',
+      environment: 'production',
+      onReady: () => client.open(),
+      onComplete: async ({ inquiryId, status }) => {
+        // status: completed | failed
+        await sendVerificationEvent(status, inquiryId);
+
+        preventUnload = false;
+      },
+      onError: async (error) => {
+        console.error(error);
+        
+        await sendVerificationEvent('error');
+
+        preventUnload = false;
+      },
+      onCancel: async ({ inquiryId }) => {
+        await sendVerificationEvent('cancel', inquiryId);
+
+        preventUnload = false;
+      },
+    });
+  }
+
+  initializeClient();
+
+  window.addEventListener('beforeunload', async function (e) {
+    if (preventUnload === false) return;
+
+    const message = 'Please validate your id before closing this window.';
+    (e || window.event).returnValue = message;
+
+    await sendVerificationEvent('window-closed');
+
+    return message;
+  });
+</script>
+{{/if}}
+
+{{#if first_time_accessed}}
+<!-- Event snippet for Website sale conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-428982081/kBz7CLPL-PQBEMH-xswB',
+      'value': {{ divided_by checkout.subtotal_price 100.0 }},
+      'currency': {{ currency }},
+      'transaction_id': {{ order_number }}
+  });
+</script>
+{{/if}}
+
+<span
+    class="clerk"
+    data-api="log/sale"
+    data-sale="{{ order_name }}"
+    data-customer="{{ customer.id }}"
+    data-email="{{ customer.email }}"
+    data-products='[{{#for line_items as |line_item|}}{{#if forloop.index0 > 0}}, {{/if}} {"id": {{ line_item.product.id }},"quantity": {{ line_item.quantity }},"price": {{ divided_by line_item.price 100.00 }} }{{/for}}]'>
+</span>
+
+<!-- Start of Clerk.io E-commerce Personalisation tool - www.clerk.io -->
+<script type="text/javascript">
+  (function(w,d){
+    var e=d.createElement('script');e.type='text/javascript';e.async=true;
+    e.src=(d.location.protocol=='https:'?'https':'http')+'://cdn.clerk.io/clerk.js';
+    var s=d.getElementsByTagName('script')[0];s.parentNode.insertBefore(e,s);
+    w.__clerk_q=w.__clerk_q||[];w.Clerk=w.Clerk||function(){w.__clerk_q.push(arguments)};
+  })(window,document);
+
+  Clerk('config', {
+    key: 'qHGooRWgt3ziUI8mfSoVTztAMBgFnQPV',
+    formatters: {
+      currency_converter: function(price) {
+      var currency_symbol = Shopify.currency.active;
+      var converted_price = Math.ceil(price*Shopify.currency.rate);
+      return (converted_price).toString() + " " + currency_symbol;
+      }
+    }
+  });
+</script>
+<!-- End of Clerk.io E-commerce Personalisation tool - www.clerk.io -->

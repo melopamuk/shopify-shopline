@@ -1,0 +1,258 @@
+{{#if first_time_accessed}}
+<div
+  id="id-verify-overlay"
+  style="
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  "
+>
+  <h3 style="color: inherit; font-size: 1.25rem; font-weight: 500; margin-bottom: 0.25rem;">Validating Purchase</h3>
+  <p>Please do not close this window!</p>
+</div>
+
+<script src="https://cdn.withpersona.com/dist/persona-v4.13.0.js"></script>
+<script>
+const functionUrl = 'https://gg2w3vplpvvigfheadsuor5gey0rsnjw.lambda-url.us-west-1.on.aws';
+  let preventUnload = false;
+  let globalInquiryId = '';
+  let successEventSent = false;
+
+  function hideOverlay() {
+    const overlay = document.getElementById('id-verify-overlay');
+    if (!overlay) return;
+
+    overlay.style.display = 'none';
+  }
+  
+  function getOrderData() {
+    return {
+      orderId: '{{ checkout.order_id }}',
+      orderName: '{{ checkout.order_name }}',
+      customerId: '{{ checkout.customer.id }}',
+    };
+  }
+
+  async function fetchPreviousCustomerOrderCount() {
+    const customerId = '{{ checkout.customer.id }}';
+    if (!customerId) return 0;
+
+    const response = await fetch(functionUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+          action: 'count',
+          customerId,
+        }),
+    });
+    const data = await response.json();
+
+    return data.count || 0;
+  }
+
+  async function sendVerificationEvent(status, inquiryId, error) {
+    if (!status) return;
+
+    const { orderId, orderName } = getOrderData();
+    if (!orderId) return;
+
+    await fetch(functionUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+          action: 'listen',
+          status,
+          orderId,
+          orderName,
+          ...(inquiryId && { inquiryId }),
+          ...(error && { error: error.message || 'Unkown error' }),
+        }),
+    });
+  }
+
+  async function initializeClient() {
+    try {
+      sendVerificationEvent('start');
+      
+      const previousOrderCount = await fetchPreviousCustomerOrderCount();
+      if (previousOrderCount > 1) {
+        sendVerificationEvent('trusted');
+
+        preventUnload = false;
+
+        hideOverlay();
+
+        return;
+      }
+
+      preventUnload = true;
+
+      const client = new Persona.Client({
+        templateId: 'itmpl_kWrn7ZKihxD9Fqt67MTAtrqp',
+        environmentId: 'env_E4cwSZNByRaS9tgKve4phuWr',
+        onReady: () => {
+          client.open();
+
+          hideOverlay();
+        },
+        onEvent: async (name, metadata) => {
+          if (name === 'start') {
+            globalInquiryId = metadata.inquiryId;
+          } else if (name === 'page-change' && metadata.name.startsWith('success')) {
+            await sendVerificationEvent('completed', globalInquiryId);
+
+            successEventSent = true;
+
+            preventUnload = false;
+
+            hideOverlay();
+          }
+        },
+        onComplete: async ({ inquiryId, status }) => {
+          if (successEventSent === true) return;
+          
+          // status: completed | failed
+          await sendVerificationEvent(status, inquiryId);
+
+          preventUnload = false;
+
+          hideOverlay();
+        },
+        onError: async (error) => {
+          console.error(error);
+          
+          await sendVerificationEvent('error', null, error);
+
+          preventUnload = false;
+
+          hideOverlay();
+        },
+        onCancel: async ({ inquiryId }) => {
+          await sendVerificationEvent('cancel', inquiryId);
+
+          preventUnload = false;
+
+          hideOverlay();
+        },
+      });
+    } catch (error) {
+      console.error(error);
+
+      await sendVerificationEvent('error', null, error);
+
+      hideOverlay();
+    }
+  }
+
+  initializeClient();
+
+  window.addEventListener('beforeunload', async function (e) {
+    if (preventUnload === false) return;
+
+    const message = 'Please validate your id before closing this window.';
+    (e || window.event).returnValue = message;
+
+    await sendVerificationEvent('window-closed');
+
+    return message;
+  });
+</script>
+{{/if}}
+
+{{#if first_time_accessed}}
+<!-- Event snippet for Website sale conversion page -->
+<script>
+if (typeof gtag !== 'undefined') {
+  gtag('event', 'conversion', {
+      'send_to': 'AW-428982081/kBz7CLPL-PQBEMH-xswB',
+      'value': {{ divided_by checkout.subtotal_price 100.0 }},
+      'currency': {{ currency }},
+      'transaction_id': {{ order_number }}
+  });
+}
+</script>
+{{/if}}
+
+<!-- Google Tag Manager -->
+<script>
+window.dataLayer = window.dataLayer || [];
+{{#if first_time_accessed}}
+  {{#if shipping_methods.size > 0}}
+    {{ assign 'shippingMethod' first shipping_methods }}
+    
+    dataLayer.push({ ecommerce: null });
+    dataLayer.push({
+      event: "add_shipping_info",
+      ecommerce: {
+        value: {{ times total_price 0.01 }},
+        currency: "{{ order.currency }}",
+        shipping_tier: "{{ shippingMethod.title }}",
+        items: [
+          {{#for line_items as |line_item|}}
+          {
+            item_id: "{{ line_item.product_id }}",
+            item_name: "{{ remove (remove line_item.title "'") '"' }}",
+            currency: "{{ order.currency }}",
+            price: {{ times line_item.final_price 0.01 }},
+            quantity: {{ line_item.quantity }}
+          },
+          {{/for}}
+        ]
+      }
+    });
+  {{/if}}
+
+  dataLayer.push({ ecommerce: null });
+  dataLayer.push({
+    event: "purchase",
+    ecommerce: {
+      transaction_id: "{{ checkout.order_name }}",
+      value: {{ times total_price 0.01 }},
+      tax: {{ times tax_price 0.01 }},
+      shipping: {{ times shipping_price 0.01 }},
+      currency: "{{ order.currency }}",
+      items: [
+        {{#for line_items as |line_item|}}{
+          item_id: "{{ line_item.product_id }}",
+          item_name: "{{ remove (remove line_item.title "'") '"' }}",
+          currency: "{{ order.currency }}",
+          price: {{ times line_item.final_price 0.01 }},
+          quantity: {{ line_item.quantity }}
+        },{{/for}}
+      ]
+    }
+  });
+{{/if}}
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MC83JTF');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Hotjar Tracking Code  -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2314962,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<!-- Hotjar Tracking Code  End -->

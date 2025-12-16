@@ -1,0 +1,538 @@
+{
+  "sections": {
+    "main": {
+      "type": "index_top_template",
+      "settings": {}
+    },
+    "home_collection_list_mobile_8JYBEA": {
+      "type": "home-collection-list-mobile",
+      "blocks": {
+        "image_nkDmea": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CATEGORY-ICONS-MOBILE-08-COCKTAILS.svg",
+            "text_color": "",
+            "title": "Cocktails",
+            "link": "shopify://collections/ready-to-drink"
+          }
+        },
+        "image_JJ6VJr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/beers_mobile.png",
+            "text_color": "#f9a649",
+            "title": "Beer",
+            "link": "https://juicefly.com/collections/beers"
+          }
+        },
+        "image_qxKYb4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/liquor_mobile.png",
+            "text_color": "#2abc9f",
+            "title": "Liquor",
+            "link": "https://juicefly.com/collections/liqueur"
+          }
+        },
+        "image_qBU3NB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/vodka_mobile.png",
+            "text_color": "#50c6dc",
+            "title": "Vodka",
+            "link": "https://juicefly.com/collections/vodka"
+          }
+        },
+        "image_7ChzYQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wine_mobile.png",
+            "text_color": "#8c69ae",
+            "title": "Wine",
+            "link": "shopify://collections/wines"
+          }
+        },
+        "image_4fiFG6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/whiskey_mobile.png",
+            "text_color": "#be6446",
+            "title": "Whiskey",
+            "link": "shopify://collections/whiskey"
+          }
+        },
+        "image_Qy3Gf8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/tequila_mobile.png",
+            "text_color": "#faca97",
+            "title": "Tequila",
+            "link": "shopify://collections/tequila"
+          }
+        },
+        "image_jrcFBB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/gin_mobile.png",
+            "text_color": "#9ec258",
+            "title": "Gin",
+            "link": "shopify://collections/gin"
+          }
+        },
+        "image_MgVdJH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/champagne_mobile.png",
+            "text_color": "#f27591",
+            "title": "Champagne",
+            "link": "https://juicefly.com/collections/champagne"
+          }
+        }
+      },
+      "block_order": [
+        "image_nkDmea",
+        "image_JJ6VJr",
+        "image_qxKYb4",
+        "image_qBU3NB",
+        "image_7ChzYQ",
+        "image_4fiFG6",
+        "image_Qy3Gf8",
+        "image_jrcFBB",
+        "image_MgVdJH"
+      ],
+      "settings": {}
+    },
+    "home_slideshow_99WdkW": {
+      "type": "home-slideshow",
+      "blocks": {
+        "image_kwNbwe": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Kushfly-NEW-JUICEFLY-1920x400-blank_e273f005-4e08-404a-b1a2-6789f75a0cda.jpg",
+            "image_mobile": "shopify://shop_images/Kushfly-NEW-JUICEFLY-900X900-blank.jpg",
+            "image_alignment": "center",
+            "alignment": "left",
+            "text_color": "default",
+            "title": "You got the",
+            "title_2": "Party?",
+            "title_3": "We got the",
+            "title_4": "Juice!",
+            "subtitle": "LA's best alcohol",
+            "subtitle_2": "delivery service!",
+            "subtitle_color": "#464494",
+            "text": "",
+            "link_title": "",
+            "link": ""
+          }
+        },
+        "image_QGmdQ8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/juicefly-APP-PROMOTION-02-1920x400.jpg",
+            "image_mobile": "shopify://shop_images/juicefly-APP-PROMOTION-02-900x900.jpg",
+            "image_alignment": "center",
+            "alignment": "left",
+            "text_color": "default",
+            "title": "",
+            "title_2": "",
+            "title_3": "",
+            "title_4": "",
+            "subtitle": "",
+            "subtitle_2": "",
+            "subtitle_color": "#464494",
+            "text": "",
+            "link_title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_kwNbwe",
+        "image_QGmdQ8"
+      ],
+      "settings": {
+        "slideshow_style": "default",
+        "title_size": 3,
+        "autoplay": true,
+        "autoplay_speed": 8,
+        "slideshow_height": "medium",
+        "slideshow_width": "full",
+        "overlay_strength": 10
+      }
+    },
+    "home_collection_list_desktop_9k8rfq": {
+      "type": "home-collection-list-desktop",
+      "blocks": {
+        "image_cPmnHf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CATEGORY-ICONS-WEB-08-COCKTAILS.svg",
+            "link": "shopify://collections/ready-to-drink"
+          }
+        },
+        "image_PefNmt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/beers_desktop_52969248-8f9b-4d5e-b6d7-f189d2463f41.png",
+            "link": "shopify://collections/beers"
+          }
+        },
+        "image_QanpHW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/liquor_desktop.png",
+            "link": "https://juicefly.com/collections/liqueur"
+          }
+        },
+        "image_9kzRHq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/vodka_desktop.png",
+            "link": "shopify://collections/vodka"
+          }
+        },
+        "image_kTmd87": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/wine_desktop.png",
+            "link": "shopify://collections/wines"
+          }
+        },
+        "image_xtehnD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CATEGORY-ICONS-WEB-07-TEQUILA-B.svg",
+            "link": "shopify://collections/tequila"
+          }
+        },
+        "image_j9bCha": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CATEGORY-ICONS-WEB-06-WHISKEY.svg",
+            "link": "shopify://collections/whiskey"
+          }
+        }
+      },
+      "block_order": [
+        "image_cPmnHf",
+        "image_PefNmt",
+        "image_QanpHW",
+        "image_9kzRHq",
+        "image_kTmd87",
+        "image_xtehnD",
+        "image_j9bCha"
+      ],
+      "settings": {}
+    },
+    "home_product_list_paqbPJ": {
+      "type": "home-product-list",
+      "settings": {
+        "collection": "clearance-sale"
+      }
+    },
+    "home_product_list_VyzaiC": {
+      "type": "home-product-list",
+      "settings": {
+        "collection": "spirits"
+      }
+    },
+    "home_product_list_Q3Fb3B": {
+      "type": "home-product-list",
+      "name": "Home Collection Products",
+      "settings": {
+        "collection": "ready-to-drink"
+      }
+    },
+    "home_product_list_bEHJkQ": {
+      "type": "home-product-list",
+      "settings": {
+        "collection": "deals"
+      }
+    },
+    "home_product_list_xpQjgi": {
+      "type": "home-product-list",
+      "settings": {
+        "collection": "beers"
+      }
+    },
+    "home_product_list_cHRUPF": {
+      "type": "home-product-list",
+      "settings": {
+        "collection": "tequila-day"
+      }
+    },
+    "home_product_list_7Kp33j": {
+      "type": "home-product-list",
+      "settings": {
+        "collection": "wines"
+      }
+    },
+    "home_product_list_ekzkgm": {
+      "type": "home-product-list",
+      "settings": {
+        "collection": "spirits"
+      }
+    },
+    "home_product_list_pJrGQx": {
+      "type": "home-product-list",
+      "settings": {
+        "collection": "gift-for-celebrations"
+      }
+    },
+    "home_html_ExwWjB": {
+      "type": "home-html",
+      "settings": {
+        "code": "<br>"
+      }
+    },
+    "home_reviews_TG74GE": {
+      "type": "home-reviews",
+      "blocks": {
+        "text_RzLkD4": {
+          "type": "text",
+          "settings": {
+            "reviewer": "Raashema A.",
+            "content": "Such a quick and easy delivery process. The delivery girl was awesome! I'll def be using them again..thanks for saving my night!!",
+            "provider": "yelp"
+          }
+        },
+        "text_zDyKGT": {
+          "type": "text",
+          "settings": {
+            "reviewer": "M. D.",
+            "content": "This liquor store is unlike any other! Step inside, and you'll find gorgeous displays of unique alcohol. The owner was really knowledgeable in helping me find the right wines and you can tell he curated only the best but at great prices!",
+            "provider": "yelp"
+          }
+        },
+        "text_q4iFj8": {
+          "type": "text",
+          "settings": {
+            "reviewer": "Chazsity D.",
+            "content": "This place is lovely! A new wine and liquor with such a unique selection. It's hard to pass up its vibrancy; this just popped up out of nowhere literally; from the looks of it, it's here to stay, and I'm excited to see more progress. The managers are lovely, and the vibes are just right!",
+            "provider": "yelp"
+          }
+        },
+        "text_Lc7ktB": {
+          "type": "text",
+          "settings": {
+            "reviewer": "Melissa Anne",
+            "content": "I would never order wine for delivery from any other business besides Juicefly. There have never been any issues at all, just perfect service. I was very lucky to find them. Everyone is always super nice, and professional, making the delivery process easy and quick.",
+            "provider": "google"
+          }
+        },
+        "text_zFrhan": {
+          "type": "text",
+          "settings": {
+            "reviewer": "Laura Ann Klinedinst",
+            "content": "By far the best delivery experience I have ever had. The ordering process was super easy, I was kept up-to-date on my order status, and my delivery driver was so friendly. Delivery time was also much faster than others who deliver the same types of products — major plus. Will definitely be my go-to moving forward.",
+            "provider": "google"
+          }
+        },
+        "text_bBy6x7": {
+          "type": "text",
+          "settings": {
+            "reviewer": "Charmaine Ivory",
+            "content": "I've been to the establishment one time and ordered from them a few times. Each experience has always been a memorable one. The staff is polite, and the delivery personnel is extremely courteous. I will continue to get my products from Juicefly.",
+            "provider": "google"
+          }
+        },
+        "text_rUxAxX": {
+          "type": "text",
+          "settings": {
+            "reviewer": "Donna Vanneman",
+            "content": "I have ordered from many vape companies and have always gone back to Juicefly. The people there are very helpful and always respond to any inquiry I make. I am a loyal customer and highly recommend Juicefly to any other vape delivery service out there.",
+            "provider": "trustpilot"
+          }
+        },
+        "text_377bzt": {
+          "type": "text",
+          "settings": {
+            "reviewer": "Charmaine Ivory",
+            "content": "Always accommodating. Whenever I call or place an order, the rep or delivery person is always so kind. Would highly recommend to others.",
+            "provider": "trustpilot"
+          }
+        },
+        "text_xnGP4N": {
+          "type": "text",
+          "settings": {
+            "reviewer": "Karen Wall",
+            "content": "Good product, fast shipping, and great customer service.",
+            "provider": "trustpilot"
+          }
+        }
+      },
+      "block_order": [
+        "text_RzLkD4",
+        "text_zDyKGT",
+        "text_q4iFj8",
+        "text_Lc7ktB",
+        "text_zFrhan",
+        "text_bBy6x7",
+        "text_rUxAxX",
+        "text_377bzt",
+        "text_xnGP4N"
+      ],
+      "settings": {
+        "header": "Our Customers Say"
+      }
+    },
+    "delivery_calculator_q93tqa": {
+      "type": "delivery-calculator",
+      "settings": {}
+    },
+    "juice_map_xrBNbL": {
+      "type": "juice-map",
+      "settings": {}
+    },
+    "home_faq_BKBdQ6": {
+      "type": "home-faq",
+      "blocks": {
+        "faq_item_gRcwDX": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How can I order alcohol online?",
+            "answer": "AnswerIf you are over the age of 21 and in Los Angeles, then you can order alcohol online from Juciefly! After shopping on our website, choose a delivery time and date, pay, and in no time you’ll see one of our friendly drivers at your door."
+          }
+        },
+        "faq_item_HDJVVK": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Does Juicefly offer beer delivery?",
+            "answer": "Juicefly offers beer delivery, wine delivery, and liquor delivery! That’s why we’re your best option when you’re searching for alcohol delivery near me."
+          }
+        },
+        "faq_item_NGjRcP": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How to get alcohol delivered to me?",
+            "answer": "Getting alcohol delivered to you is easy. Don’t hesitate to browse our site and find the alcohol you’ve been looking for, add it to your cart, and checkout! One of our drivers will be at your door in under an hour."
+          }
+        },
+        "faq_item_NLqwi3": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Where can I order alcohol delivery in Los Angeles?",
+            "answer": "Juicefly is the best place to order alcohol delivery in Los Angeles. Thanks to our vast selection of alcohol and fast delivery, we are LA’s number one choice for alcohol delivery."
+          }
+        },
+        "faq_item_q4K7Lm": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Does Juciefly offer same-day wine delivery in Los Angeles?",
+            "answer": "Juicefly offers same-day wine, beer, and liquor delivery in Los Angeles. After adding items to your cart, you’ll be able to enter your zip code to see your delivery options."
+          }
+        },
+        "faq_item_dq33R8": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I get alcohol delivered now?",
+            "answer": "If you’re in LA and want to order alcohol delivery, you’re in luck! Juicefly is open 7 days a week from 8am-11pm.  Who delivers alcohol online fast? Juicefly does!"
+          }
+        },
+        "faq_item_rymifW": {
+          "type": "faq_item",
+          "disabled": true,
+          "settings": {
+            "question": "Can I Order Vape Delivery Online?",
+            "answer": "Yes, you can order nicotine <a href=\"https://juicefly.com/collections/vapes-1\">vape delivery</a> in Los Angeles from Juicefly if you’re 21 or older. Juicefly has a vast selection of the best quality nicotine vapes, juul products, e-vape pens, and accessories with an unrivaled delivery service. Your favorite brands and flavors are ready to be delivered to your doorstep every day of the week from 9am to 10pm in Los Angeles and Culver City."
+          }
+        },
+        "faq_item_qtzA6X": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I order alcohol/tobacco from an app?",
+            "answer": "Yes! You can and Juicefly App is meant for that. You won't be able to live without the Juicefly App once you've discovered it. We are LA's premier alcoholic beverage, and tobacco products store and delivery service."
+          }
+        },
+        "faq_item_8pQzGV": {
+          "type": "faq_item",
+          "disabled": true,
+          "settings": {
+            "question": "Where does Juicefly offer vape shipping services?",
+            "answer": "Juicefly ships <a href=\"https://juicefly.com/collections/vapes-1\">vape products</a> to almost anywhere in the US. However, we do not ship to Arkansas, Maine, Oregon, Utah, and Vermont."
+          }
+        },
+        "faq_item_8YiFwg": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How long does Juicefly take to process shipping orders?",
+            "answer": "Orders placed before 4 pm on business days may be processed the same day. Order preparation may take up to 72 hours during high demand. Shipping carriers do not process orders on weekends and U.S. Federal Holidays. Orders placed on weekends or Fridays after 4 p.m. are sent out on Mondays."
+          }
+        },
+        "faq_item_KCDMGf": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How can I track my order from Juicefly?",
+            "answer": "A tracking email will be automatically generated as soon as your order completes processing at Juicefly."
+          }
+        },
+        "faq_item_yjRUD4": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What are the estimated transit times for different regions of the US?",
+            "answer": "The Western Half of the US typically takes 1-3 business days in transit, while the Eastern Half of the US takes 6-10 business days in transit."
+          }
+        },
+        "faq_item_HVaJiX": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How are shipping costs calculated for orders?",
+            "answer": "Shipping costs are calculated based on your address or location."
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_gRcwDX",
+        "faq_item_HDJVVK",
+        "faq_item_NGjRcP",
+        "faq_item_NLqwi3",
+        "faq_item_q4K7Lm",
+        "faq_item_dq33R8",
+        "faq_item_rymifW",
+        "faq_item_qtzA6X",
+        "faq_item_8pQzGV",
+        "faq_item_8YiFwg",
+        "faq_item_KCDMGf",
+        "faq_item_yjRUD4",
+        "faq_item_HVaJiX"
+      ],
+      "settings": {}
+    },
+    "home_newsletter_TceRFN": {
+      "type": "home-newsletter",
+      "settings": {}
+    },
+    "home_blogs_qE4hMr": {
+      "type": "home-blogs",
+      "disabled": true,
+      "settings": {}
+    },
+    "index_bottom_template_AR9q6w": {
+      "type": "index_bottom_template",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "home_collection_list_mobile_8JYBEA",
+    "home_slideshow_99WdkW",
+    "home_collection_list_desktop_9k8rfq",
+    "home_product_list_paqbPJ",
+    "home_product_list_VyzaiC",
+    "home_product_list_Q3Fb3B",
+    "home_product_list_bEHJkQ",
+    "home_product_list_xpQjgi",
+    "home_product_list_cHRUPF",
+    "home_product_list_7Kp33j",
+    "home_product_list_ekzkgm",
+    "home_product_list_pJrGQx",
+    "home_html_ExwWjB",
+    "home_reviews_TG74GE",
+    "delivery_calculator_q93tqa",
+    "juice_map_xrBNbL",
+    "home_faq_BKBdQ6",
+    "home_newsletter_TceRFN",
+    "home_blogs_qE4hMr",
+    "index_bottom_template_AR9q6w"
+  ]
+}

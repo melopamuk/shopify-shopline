@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": {
+      "type": "search-top",
+      "settings": {}
+    },
+    "search-template": {
+      "type": "search-template",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "search-template"
+  ]
+}

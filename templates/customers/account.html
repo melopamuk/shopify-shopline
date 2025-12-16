@@ -1,0 +1,74 @@
+<section class="section section--account account account--main">
+    <div class="container container--tiny">
+        <div class="section__title section__title--center section__title--desc">
+            <h1 class="section__title-text h2">{{ t 'customer.account.title' }}</h1>
+            <p class="section__title-desc"><a href="{{ routes.account_logout_url }}" class="link">{{ t 'layout.customer.log_out' }}</a></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="o-layout">
+            <div class="o-layout__item u-1/1 u-2/3@tab">
+
+                <h2 class="h3">{{ t 'customer.orders.title' }}</h2>
+
+                {{#paginate customer.orders 20}}
+                    {{#if customer.orders.size != 0}}
+                        <table class="responsive-table">
+                            <thead>
+                                <tr>
+                                    <th>{{ t 'customer.orders.order_number' }}</th>
+                                    <th>{{ t 'customer.orders.date' }}</th>
+                                    <th>{{ t 'customer.orders.payment_status' }}</th>
+                                    <th>{{ t 'customer.orders.fulfillment_status' }}</th>
+                                    <th>{{ t 'customer.orders.total' }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{#for customer.orders as |order|}}
+                                    <tr class="responsive-table__row">
+                                        <td data-label="{{ t 'customer.orders.order_number' }}">
+                                            <a href="{{ order.customer_url }}" class="link link--arrow">{{ order.name }}</a>
+                                        </td>
+                                        <td data-label="{{ t 'customer.orders.date' }}">{{ date order.created_at format='month_day_year' }}</td>
+                                        <td data-label="{{ t 'customer.orders.payment_status' }}">{{ order.financial_status_label }}</td>
+                                        <td data-label="{{ t 'customer.orders.fulfillment_status' }}">{{ order.fulfillment_status_label }}</td>
+                                        <td data-label="{{ t 'customer.orders.total' }}">{{ money order.total_price }}</td>
+                                    </tr>
+                                {{/for}}
+                            </tbody>
+                        </table>
+                    {{else}}
+                        <p>{{ t 'customer.orders.none' }}</p>
+                    {{/if}}
+                    {{#if paginate.pages > 1}}
+                        <div class="account__pagination">
+                            <div class="container">
+                                <div class="pagination">
+                                    <div class="pagination__items">
+                                        {{ default_pagination paginate next='<i class="icon icon--right-t"></i>' previous='<i class="icon icon--left-t"></i>' }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {{/if}}
+                {{/paginate}}
+            </div>
+            <div class="o-layout__item u-1/1 u-1/3@tab">
+
+                <h2 class="h3">{{ t 'customer.account.details' }}</h2>
+
+                {{ format_address customer.default_address }}
+
+                <p>
+                    <a href="{{ routes.account_addresses_url }}" class="c-btn c-btn--light">{{ t 'customer.account.view_addresses' }} ({{ customer.addresses_count }})</a>
+                </p>
+
+              <p>
+                <a href="/a/subscriptions/manage/">Subscriptions</a>
+              </p>
+
+            </div>
+        </div>
+    </div>
+</section>

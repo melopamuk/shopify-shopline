@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "judgeme_all_reviews_template_RnpHrX": {
+      "type": "judgeme_all_reviews_template",
+      "settings": {}
+    }
+  },
+  "order": [
+    "judgeme_all_reviews_template_RnpHrX"
+  ]
+}

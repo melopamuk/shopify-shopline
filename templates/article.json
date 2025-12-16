@@ -1,0 +1,41 @@
+{
+  "sections": {
+    "main": {
+      "type": "article-template",
+      "settings": {
+        "show_img": true,
+        "show_date": true,
+        "show_author": true,
+        "show_tags": true,
+        "show_sharing": true,
+        "coll": "",
+        "coll_title": "Featured collection",
+        "coll_mobile_layout": "carousel",
+        "coll_grid": 3,
+        "coll_grid_mobile": "1",
+        "coll_rows": 1,
+        "coll_link_title": "View all",
+        "coll_link": ""
+      }
+    },
+    "1713892071744fcc7c": {
+      "type": "apps",
+      "blocks": {
+        "author_profiles_ruffruff_author_profiles_3idTnp": {
+          "type": "shopify://apps/author-profiles/blocks/ruffruff-author-profiles/9f6ec6de-dd1a-4a83-aa08-519e82caa0f0",
+          "settings": {
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "author_profiles_ruffruff_author_profiles_3idTnp"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "1713892071744fcc7c"
+  ]
+}

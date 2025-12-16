@@ -1,0 +1,166 @@
+<section class="section section--account account account--order">
+    <div class="container container--tiny">
+        <div class="section__title section__title--center section__title--desc">
+            <h1 class="section__title-text h2">{{ t 'customer.account.title' }}</h1>
+            <p class="section__title-desc"><a href="{{ routes.account_url }}" class="link link--arrow-left">{{ t 'customer.account.return' }}</a></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="o-layout">
+            <div class="o-layout__item u-1/1 u-2/3@tab">
+
+                <h2 class="h3">{{ t 'customer.order.title' name=order.name }}</h2>
+
+                {{ assign 'order_date' date order.created_at "%B %d, %Y %I=%M%p" }}
+                <p>{{ t 'customer.order.date' date=order_date }}</p>
+
+                {{#if order.cancelled}}
+                    <div class="order--cancelled">
+                        {{ assign 'cancelled_at' date order.cancelled_at "%B %d, %Y %I=%M%p" }}
+                        <p>{{ t 'customer.order.cancelled' date=cancelled_at }}</p>
+                        <p>{{ t 'customer.order.cancelled_reason' reason=order.cancel_reason }}</p>
+                    </div>
+                {{/if}}
+
+                <table class="order-table responsive-table">
+                    <thead>
+                        <tr>
+                            <th>{{ t 'customer.order.product' }}</th>
+                            <th>{{ t 'customer.order.sku' }}</th>
+                            <th>{{ t 'customer.order.price' }}</th>
+                            <th>{{ t 'customer.order.quantity' }}</th>
+                            <th>{{ t 'customer.order.total' }}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#for order.line_items as |line_item|}}
+                            <tr id="{{ line_item.key }}" class="responsive-table__row" >
+                                <td data-label="{{ t 'customer.order.product' }}">
+                                    {{ link_to line_item.title line_item.product.url }}
+
+                                    {{#unless line_item.selling_plan_allocation == null}}
+                                        <div class="note">
+                                            {{ line_item.selling_plan_allocation.selling_plan.name }}
+                                        </div>
+                                    {{/unless}}
+
+                                    {{#if line_item.line_level_discount_allocations}}
+                                        <div class="order-discount--title">
+                                          {{#for line_item.line_level_discount_allocations as |discount_allocation|}}
+                                            <p class="order-discount__item">
+                                                <i class="icon icon--label" style="font-size: 0.9em;"></i>
+                                                {{ discount_allocation.discount_application.title }} (-{{ money discount_allocation.amount }})
+                                            </p>
+                                          {{/for}}
+                                        </div>
+                                    {{/if}}
+
+                                    {{#if line_item.fulfillment}}
+                                        <div class="note">
+                                            {{ assign 'created_at' date line_item.fulfillment.created_at format='date' }}
+                                            {{ t 'customer.order.fulfilled_at' date=created_at }}
+                                            {{#if line_item.fulfillment.tracking_number}}
+                                                <a href="{{ line_item.fulfillment.tracking_url }}">{{ line_item.fulfillment.tracking_company }} #{{ line_item.fulfillment.tracking_number }}</a>
+                                            {{/if}}
+                                        </div>
+                                    {{/if}}
+                                </td>
+                                <td data-label="{{ t 'customer.order.sku' }}">{{ line_item.sku }}</td>
+                                <td data-label="{{ t 'customer.order.price' }}">
+                                    {{#if line_item.original_price != line_item.final_price}}
+                                        <s>{{ money line_item.original_price }}</s>
+                                        <br/>
+                                        <span class="order-discount">{{ money line_item.final_price }}</span>
+                                    {{else}}
+                                        {{ money line_item.original_price }}
+                                    {{/if}}
+
+                                    {{#if line_item.unit_price_measurement}}
+                                        <span class="u-hidden-visually">{{ t 'products.general.unit_price_label' }}</span>
+                                        <span class="price-unit-price" style="display: block;font-size: 0.9rem;">
+                                            {{#capture "unit_price_separator"}}
+                                                <span aria-hidden="true">/</span>
+                                                <span class="u-hidden-visually">{{ t 'products.general.unit_price_separator' }}&nbsp;</span>
+                                            {{/capture}}
+                                            {{#capture "unit_price_base_unit"}}
+                                                {{#if line_item.unit_price_measurement.reference_value != 1}}
+                                                    {{ line_item.unit_price_measurement.reference_value }}
+                                                {{/if}}
+                                                {{ line_item.unit_price_measurement.reference_unit }}
+                                            {{/capture}}
+                                            <span data-unit-price>{{ money line_item.unit_price }}</span>{{ unit_price_separator }}{{ unit_price_base_unit }}
+                                        </span>
+                                    {{/if}}
+
+                                </td>
+                                <td data-label="{{ t 'customer.order.quantity' }}">{{ line_item.quantity }}</td>
+                                <td data-label="{{ t 'customer.order.total' }}">
+                                    {{#if line_item.original_line_price != line_item.final_line_price}}
+                                        <s>{{ money line_item.original_line_price }}</s>
+                                        <br/>
+                                        <span class="order-discount">{{ money line_item.final_line_price }}</span>
+                                    {{else}}
+                                        {{ money line_item.original_line_price }}
+                                    {{/if}}
+                                </td>
+                            </tr>
+                        {{/for}}
+                    </tbody>
+                    <tfoot>
+                        <tr class="responsive-table__row">
+                            <td colspan="4" class="u-hidden@tab-down">{{ t 'customer.order.subtotal' }}</td>
+                            <td data-label="{{ t 'customer.order.subtotal' }}">{{ money order.line_items_subtotal_price }}</td>
+                        </tr>
+
+                        {{#if order.cart_level_discount_applications}}
+                            {{#for order.cart_level_discount_applications as |discount_application|}}
+                                <tr class="order_summary discount">
+                                    <td colspan="4" class="u-hidden@tab-down">{{ t 'customer.order.discount' }}</td>
+                                    <td data-label="{{ t 'customer.order.discount' }}">
+                                        <i class="icon icon--label" style="font-size: 0.9em;"></i> {{ discount_application.title }} (-{{ money discount_application.total_allocated_amount }})
+                                    </td>
+                                </tr>
+                            {{/for}}
+                        {{/if}}
+
+                        {{#for order.shipping_methods as |shipping_method|}}
+                            <tr>
+                                <td colspan="4" class="u-hidden@tab-down">{{ t 'customer.order.shipping' }} ({{ shipping_method.title }})</td>
+                                <td data-label="{{ t 'customer.order.shipping' }} ({{ shipping_method.title }})">{{ money shipping_method.price }}</td>
+                            </tr>
+                        {{/for}}
+
+                        {{#for order.tax_lines as |tax_line|}}
+                            <tr>
+                                <td colspan="4" class="u-hidden@tab-down">{{ t 'customer.order.tax' }} ({{ tax_line.title }} {{ times tax_line.rate 100 }}%)</td>
+                                <td data-label="{{ t 'customer.order.tax' }} ({{ tax_line.title }} {{ times tax_line.rate 100 }}%)">{{ money tax_line.price }}</td>
+                            </tr>
+                        {{/for}}
+
+                        <tr>
+                            <td colspan="4" class="u-hidden@tab-down"><strong>{{ t 'customer.order.total' }}</strong></td>
+                            <td data-label="{{ t 'customer.order.total' }}"><strong>{{ money order.total_price }} {{ order.currency }}</strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="o-layout__item u-1/1 u-1/3@tab">
+
+                <h3>{{ t 'customer.order.billing_address' }}</h3>
+
+                <p><strong>{{ t 'customer.order.payment_status' }}:</strong> {{ order.financial_status_label }}</p>
+
+                {{ format_address order.billing_address }}
+
+                <h3>{{ t 'customer.order.shipping_address' }}</h3>
+
+                <p><strong>{{ t 'customer.order.fulfillment_status' }}:</strong> {{ order.fulfillment_status_label }}</p>
+
+                {{ format_address order.shipping_address }}
+
+            </div>
+        </div>
+    </div>
+</section>

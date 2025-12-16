@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "collection_product_feed_template",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

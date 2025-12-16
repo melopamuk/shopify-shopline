@@ -1,0 +1,3395 @@
+{
+  "current": {
+    "global_discount_enabled": false,
+    "color_headings": "#212121",
+    "color_text": "#212121",
+    "color_alt_text": "#666666",
+    "color_brand": "#fad018",
+    "color_accent": "#f0f0f0",
+    "color_button": "#111111",
+    "product_grid_sale_color": "#c00000",
+    "product_grid_bg": "#f0f0f0",
+    "color_drawer_bg": "#fef7d7",
+    "color_drawer_style": "dark",
+    "type_base_font": "muli_n4",
+    "type_base_size": "15",
+    "type_header_font": "oswald_n4",
+    "type_header_size": "0.85",
+    "type_header_letterspace": 1,
+    "type_header_capitalize": true,
+    "type_header_underline": true,
+    "type_header_underline_size": 3,
+    "type_nav_font": "oswald_n4",
+    "type_nav_size": "13",
+    "type_nav_letterspace": 1,
+    "type_nav_capitalize": true,
+    "type_button_font": "oswald_n4",
+    "type_button_size": "13",
+    "type_button_letterspace": 1,
+    "type_button_capitalize": true,
+    "product_grid_vendor": false,
+    "product_grid_second_hover": true,
+    "product_grid_quick_buy": "hover",
+    "product_grid_align": "center",
+    "product_grid_image_size": "natural",
+    "product_grid_masonry": false,
+    "product_grid_label": false,
+    "product_grid_label_sale_style": "text",
+    "product_grid_label_new": true,
+    "product_grid_label_new_days": 14,
+    "product_grid_label_title": "Hot",
+    "product_grid_label_collection": "",
+    "product_grid_detail_style": "default",
+    "product_grid_price": true,
+    "product_grid_swatch": false,
+    "product_grid_swatch_image": false,
+    "product_grid_reviews": false,
+    "product_reviews": false,
+    "anim_load": false,
+    "anim_load_style": "interval",
+    "anim_interval_style": "fade_down",
+    "anim_fade": true,
+    "anim_zoom": false,
+    "cart_type": "modal",
+    "cart_notes_enable": true,
+    "cart_vendor_enable": true,
+    "cart_continue": true,
+    "cart_terms": false,
+    "search_enable": false,
+    "search_limit": "product,article,page",
+    "search_linklist": "",
+    "share_facebook": true,
+    "share_twitter": false,
+    "share_pinterest": false,
+    "share_fancy": false,
+    "share_mail": false,
+    "social_facebook_link": "https://www.facebook.com/juiceflystore",
+    "social_twitter_link": "",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https://www.instagram.com/juiceflyvapes/",
+    "social_tiktok_link": "https://www.tiktok.com/@juicefly_store",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "social_fancy_link": "",
+    "social_untappd_link": "",
+    "favicon": "shopify://shop_images/juicefly_cercle_logo.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#197bbd",
+    "checkout_button_color": "#197bbd",
+    "checkout_error_color": "#e32c2b",
+    "sections": {
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "1494343961341": {
+            "type": "linklist",
+            "settings": {
+              "title": "",
+              "linklist": "footer-column-one"
+            }
+          },
+          "35c200de-04e5-4428-ba1b-b7f0d495ed7e": {
+            "type": "linklist",
+            "settings": {
+              "title": "",
+              "linklist": "footer-column-two"
+            }
+          },
+          "4bf072d1-ea00-4e7e-b71c-ab1af8f76b97": {
+            "type": "linklist",
+            "settings": {
+              "title": "",
+              "linklist": "footer-column-three"
+            }
+          },
+          "1494343958665": {
+            "type": "contact",
+            "settings": {
+              "title": "Contact",
+              "show_email": true,
+              "show_number": true,
+              "show_address": true,
+              "show_social": true
+            }
+          }
+        },
+        "block_order": [
+          "1494343961341",
+          "35c200de-04e5-4428-ba1b-b7f0d495ed7e",
+          "4bf072d1-ea00-4e7e-b71c-ab1af8f76b97",
+          "1494343958665"
+        ],
+        "settings": {
+          "footer_newsletter_enable": true,
+          "footer_newsletter_home": false,
+          "newsletter_bg": "rgba(0,0,0,0)",
+          "newsletter_style": "default",
+          "footer_newsletter_title": "Newsletter",
+          "footer_newsletter_desc": "<p>Sign up to stay in the loop. Receive updates, access to exclusive deals, and more.</p>",
+          "footer_bg": "#000000",
+          "footer_style": "light",
+          "show_payment_icons": true,
+          "show_locale_selector": false,
+          "show_currency_selector": false
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "announcement_bar_text": "Free Shipping or Local Delivery on most orders over $100",
+          "show_border": false,
+          "header_bg": "#ffffff",
+          "header_style": "dark",
+          "logo_size": 3,
+          "logo_size_mobile": 5,
+          "logo_spacing": 1,
+          "main_linklist": "main-menu",
+          "layout": "left",
+          "style": "scroll",
+          "parent_links": true,
+          "mega_nav": true,
+          "mega_image_link": "",
+          "mega_title": "",
+          "mega_text": "",
+          "mega_link_title": "Learn more",
+          "mega_link": "",
+          "show_locale_selector": false,
+          "show_currency_selector": false
+        }
+      },
+      "mobile-drawer": {
+        "type": "mobile-drawer",
+        "settings": {
+          "main_linklist": "main-menu",
+          "contact_title": "Contact",
+          "show_contact_number": true,
+          "show_contact_email": true,
+          "show_locale_selector": false,
+          "show_currency_selector": false,
+          "show_social": true,
+          "cta_image_link": "",
+          "cta_title": "",
+          "cta_text": "",
+          "cta_link_title": "Learn more",
+          "cta_link": ""
+        }
+      },
+      "promo-pop": {
+        "type": "promo-pop",
+        "settings": {
+          "enable": false,
+          "mobile": false,
+          "title": "Popup",
+          "text": "<p>Use this popup to embed a mailing list sign up form. Alternatively use it as a simple call to action with a link to a product or a page.</p>",
+          "link_title": "More info",
+          "delay": 10,
+          "expiry": 30,
+          "enable_newsletter": true
+        }
+      },
+      "age-checker": {
+        "type": "age-checker",
+        "settings": {
+          "enable": false,
+          "title": "Age verification",
+          "text": "<p>Please verify your age. You must be 21+ to enter. Click below to confirm you're of legal age.</p>",
+          "enter_btn_label": "Enter",
+          "leave_btn_label": "Leave",
+          "leave_link": ""
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {}
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "layout": "classic",
+          "container": "small",
+          "show_breadcrumbs": true,
+          "show_vendor": false,
+          "product_variant_style": "dropdowns",
+          "use_swatch_images": false,
+          "show_quantity_selector": true,
+          "show_tax_notice": false,
+          "show_inventory": true,
+          "inventory_limit": 3,
+          "enable_payment_button": false,
+          "show_share_buttons": true,
+          "enable_zoom": false,
+          "enable_video_looping": false,
+          "image_size": "large",
+          "bg_color": "rgba(0,0,0,0)",
+          "text_color": "dark",
+          "bg_height": "full"
+        }
+      },
+      "password-header": {
+        "type": "password-header",
+        "settings": {
+          "logo": "shopify://shop_images/juicefly_logo.png",
+          "logo_size": 4,
+          "logo_spacing": 3,
+          "show_border": true
+        }
+      },
+      "password-content": {
+        "type": "password-content",
+        "settings": {
+          "show_newsletter": true,
+          "newsletter_text": "",
+          "newsletter_button_text": "Sign up",
+          "show_social": true
+        }
+      },
+      "page-faq": {
+        "type": "page-faq",
+        "blocks": {
+          "1563305378357": {
+            "type": "category",
+            "settings": {
+              "title": "Category"
+            }
+          },
+          "1563305326608": {
+            "type": "article",
+            "settings": {
+              "title": "Article heading",
+              "text": "<p>Use these articles to answer questions that customers have about your products and services. You can use text, links and images and also group articles into categories.</p>",
+              "image": ""
+            }
+          },
+          "1563305341300": {
+            "type": "article",
+            "settings": {
+              "title": "Article heading",
+              "text": "<p>Use these articles to answer questions that customers have about your products and services. You can use text, links and images and also group articles into categories.</p>",
+              "image": ""
+            }
+          },
+          "1563305384180": {
+            "type": "category",
+            "settings": {
+              "title": "Category"
+            }
+          },
+          "1563305386011": {
+            "type": "article",
+            "settings": {
+              "title": "Article heading",
+              "text": "<p>Use these articles to answer questions that customers have about your products and services. You can use text, links and images and also group articles into categories.</p>",
+              "image": ""
+            }
+          }
+        },
+        "block_order": [
+          "1563305378357",
+          "1563305326608",
+          "1563305341300",
+          "1563305384180",
+          "1563305386011"
+        ],
+        "settings": {
+          "enable_search": true,
+          "enable_sidebar": true,
+          "cta_link_title": "Contact us",
+          "cta_link": ""
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "show_tags": true,
+          "show_rss": false,
+          "grid": 2,
+          "crop": true,
+          "show_blog_date": true,
+          "show_blog_author": false,
+          "show_blog_comments": false,
+          "show_blog_tags": false,
+          "coll": "",
+          "coll_title": "Featured collection",
+          "coll_mobile_layout": "carousel",
+          "coll_grid": 3,
+          "coll_grid_mobile": "2",
+          "coll_rows": 1,
+          "coll_link_title": "View all",
+          "coll_link": ""
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_related_products": true,
+          "related_title": "You may also like",
+          "related_mobile_layout": "carousel",
+          "related_grid_num": 3,
+          "grid_mobile": "1",
+          "related_grid_row": 2
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "show_img": true,
+          "show_date": true,
+          "show_author": true,
+          "show_tags": true,
+          "show_sharing": true,
+          "coll": "",
+          "coll_title": "Featured collection",
+          "coll_mobile_layout": "carousel",
+          "coll_grid": 3,
+          "coll_grid_mobile": "1",
+          "coll_rows": 1,
+          "coll_link_title": "View all",
+          "coll_link": ""
+        }
+      },
+      "product-testimonials": {
+        "type": "product-testimonials",
+        "settings": {
+          "title": "Testimonials",
+          "style_desktop": "carousel",
+          "style_mobile": "carousel",
+          "link_title": "Shop now",
+          "link": ""
+        }
+      },
+      "product-sections": {
+        "type": "product-sections",
+        "blocks": {
+          "be1ab9df-cf7e-4d84-9323-1ad1f2f3320e": {
+            "type": "break",
+            "settings": {
+              "height": "56"
+            }
+          }
+        },
+        "block_order": [
+          "be1ab9df-cf7e-4d84-9323-1ad1f2f3320e"
+        ],
+        "settings": {
+          "container": "medium"
+        }
+      },
+      "1566456250311": {
+        "type": "home-slideshow",
+        "blocks": {
+          "22b69b3d-a2c9-491d-963d-b7a2bb2e92d7": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/Kushfly-NEW-JUICEFLY-1920x400-blank_e273f005-4e08-404a-b1a2-6789f75a0cda.jpg",
+              "image_mobile": "shopify://shop_images/Kushfly-NEW-JUICEFLY-900X900-blank.jpg",
+              "image_alignment": "center",
+              "alignment": "left",
+              "text_color": "default",
+              "title": "You got the",
+              "title_2": "Party?",
+              "title_3": "We got the",
+              "title_4": "Juice!",
+              "subtitle": "LA's best alcohol &",
+              "subtitle_2": "vape delivery service!",
+              "subtitle_color": "#464494",
+              "text": "",
+              "link_title": "",
+              "link": ""
+            }
+          },
+          "ff14e12b-ae23-487d-9710-48e6baabbedc": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify://shop_images/Kushfly-NEW-JUICEFLY-1920x400.jpg",
+              "image_mobile": "shopify://shop_images/Kushfly-NEW-JUICEFLY-900X900.jpg",
+              "image_alignment": "center",
+              "alignment": "left",
+              "text_color": "default",
+              "title": "",
+              "title_2": "Party?",
+              "title_3": "We got the",
+              "title_4": "Juice!",
+              "subtitle": "",
+              "subtitle_2": "vape delivery service!",
+              "subtitle_color": "#464494",
+              "text": "<p></p>",
+              "link_title": "",
+              "link": ""
+            }
+          },
+          "e6a0eeed-5c60-4c05-a515-79e3c0c763c4": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/juicefly-APP-PROMOTION-02-1920x400.jpg",
+              "image_mobile": "shopify://shop_images/juicefly-APP-PROMOTION-02-900x900.jpg",
+              "image_alignment": "center",
+              "alignment": "left",
+              "text_color": "default",
+              "title": "",
+              "title_2": "Party?",
+              "title_3": "We got the",
+              "title_4": "Juice!",
+              "subtitle": "",
+              "subtitle_2": "vape delivery service!",
+              "subtitle_color": "#464494",
+              "text": "",
+              "link_title": "",
+              "link": "https://share.shopney.co/ax9hq4K71G"
+            }
+          }
+        },
+        "block_order": [
+          "22b69b3d-a2c9-491d-963d-b7a2bb2e92d7",
+          "ff14e12b-ae23-487d-9710-48e6baabbedc",
+          "e6a0eeed-5c60-4c05-a515-79e3c0c763c4"
+        ],
+        "settings": {
+          "slideshow_style": "default",
+          "title_size": 3,
+          "autoplay": true,
+          "autoplay_speed": 8,
+          "slideshow_height": "small",
+          "slideshow_width": "full",
+          "overlay_strength": 0
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "display_type": "all",
+          "sort": "alphabetical",
+          "grid": 2,
+          "overlay_strength": 30
+        }
+      },
+      "page-contact": {
+        "type": "page-contact",
+        "settings": {
+          "show_form": true,
+          "form_title": "Send us an email",
+          "show_map": false,
+          "show_directions_btn": false,
+          "google_api_key": "",
+          "map_style": "light"
+        }
+      },
+      "home-collection-list": {
+        "type": "home-collection-list",
+        "blocks": {
+          "c720035c-f33f-45dc-b4f0-3f5b0a0e27ff": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "wines"
+            }
+          },
+          "ba7465d1-f951-42fd-b16d-c03c9d1075f1": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "beers"
+            }
+          },
+          "21163f91-4093-4af9-bc55-dc57c416a43c": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "spirits"
+            }
+          }
+        },
+        "block_order": [
+          "c720035c-f33f-45dc-b4f0-3f5b0a0e27ff",
+          "ba7465d1-f951-42fd-b16d-c03c9d1075f1",
+          "21163f91-4093-4af9-bc55-dc57c416a43c"
+        ],
+        "settings": {
+          "title": "",
+          "grid": 3,
+          "mobile_layout": "carousel",
+          "link_title": "View all",
+          "overlay_strength": 30,
+          "bg_color": "rgba(0,0,0,0)"
+        }
+      },
+      "home-testimonials": {
+        "type": "home-testimonials",
+        "blocks": {
+          "62b20ed7-613f-4513-b431-c55ea1c5a57c": {
+            "type": "text",
+            "settings": {
+              "media": "stars-brand",
+              "image_round": true,
+              "text": "JuiceFly is the easiest way to get best wines in LA.",
+              "name": "John Susman",
+              "source": ""
+            }
+          },
+          "cf8d5cc0-aefb-4831-b3b7-39e4ebecca52": {
+            "type": "text",
+            "settings": {
+              "media": "facebook",
+              "image_round": true,
+              "text": "Customer service was excellent.",
+              "name": "Christina",
+              "source": "Facebook"
+            }
+          }
+        },
+        "block_order": [
+          "62b20ed7-613f-4513-b431-c55ea1c5a57c",
+          "cf8d5cc0-aefb-4831-b3b7-39e4ebecca52"
+        ],
+        "settings": {
+          "title": "Our Customers Say",
+          "style_desktop": "carousel",
+          "style_mobile": "carousel",
+          "link_title": "Shop now"
+        }
+      },
+      "search-drawer": {
+        "type": "search-drawer",
+        "settings": {}
+      },
+      "166114771388a288be": {
+        "type": "home-collection-list-mobile",
+        "blocks": {
+          "20f0b1a4-cdc9-4b2e-af8b-fa63ca00ef1c": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/beers_mobile.png",
+              "text_color": "#f9a649",
+              "title": "Beer",
+              "link": "shopify://collections/beers"
+            }
+          },
+          "cefe78fd-e26a-4680-a32e-3be10d887a1d": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/liquor_mobile.png",
+              "text_color": "#2abc9f",
+              "title": "Liquor",
+              "link": "shopify://collections/liqueur"
+            }
+          },
+          "99d52435-9b61-4445-954e-ea8807124495": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/vodka_mobile.png",
+              "text_color": "#50c6dc",
+              "title": "Vodka",
+              "link": "shopify://collections/vodka"
+            }
+          },
+          "a427ee41-3417-45ad-a727-7902919447c6": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/wine_mobile.png",
+              "text_color": "#8c69ae",
+              "title": "Wine",
+              "link": "shopify://collections/wines"
+            }
+          },
+          "5de77827-9cbd-46aa-9d21-f0803787d6c7": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/whiskey_mobile.png",
+              "text_color": "#be6446",
+              "title": "Whiskey",
+              "link": "shopify://collections/whiskey"
+            }
+          },
+          "82165067-6ce7-4143-a5f5-c13e1ef5b799": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/tequila_mobile.png",
+              "text_color": "#faca97",
+              "title": "Tequila",
+              "link": "shopify://collections/tequila"
+            }
+          },
+          "6553b85a-8bbe-492f-9742-28322371c836": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/snacks_mobile.png",
+              "text_color": "#fdd64d",
+              "title": "Snack",
+              "link": "shopify://collections/snacks-food"
+            }
+          },
+          "af05ebbe-b8d5-4549-8b3d-93038a48f083": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/gin_mobile.png",
+              "text_color": "#9ec258",
+              "title": "Gin",
+              "link": "shopify://collections/gin"
+            }
+          },
+          "6699f089-b55f-4d6d-83e5-4bab7247bca1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/cocktails_mobile.png",
+              "text_color": "#ed4649",
+              "title": "Cocktail",
+              "link": "shopify://collections/cocktails"
+            }
+          },
+          "be079609-7ef3-45af-b01a-5cd6693ceb0a": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/champagne_mobile.png",
+              "text_color": "#f27591",
+              "title": "Champagne",
+              "link": "shopify://collections/champagne"
+            }
+          },
+          "17fc1aa4-57cc-49f2-b314-73337c9a9f2b": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/smokes_mobile.png",
+              "text_color": "#bc6444",
+              "title": "Smokes",
+              "link": "shopify://collections/smoke-shop-delivery-los-angeles"
+            }
+          },
+          "6c8bdb05-65ad-40f7-83be-0da63f6d39a8": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/grocery_mobile.png",
+              "text_color": "#fdd74c",
+              "title": "Grocery",
+              "link": "shopify://collections/extras"
+            }
+          }
+        },
+        "block_order": [
+          "20f0b1a4-cdc9-4b2e-af8b-fa63ca00ef1c",
+          "cefe78fd-e26a-4680-a32e-3be10d887a1d",
+          "99d52435-9b61-4445-954e-ea8807124495",
+          "a427ee41-3417-45ad-a727-7902919447c6",
+          "5de77827-9cbd-46aa-9d21-f0803787d6c7",
+          "82165067-6ce7-4143-a5f5-c13e1ef5b799",
+          "6553b85a-8bbe-492f-9742-28322371c836",
+          "af05ebbe-b8d5-4549-8b3d-93038a48f083",
+          "6699f089-b55f-4d6d-83e5-4bab7247bca1",
+          "be079609-7ef3-45af-b01a-5cd6693ceb0a",
+          "17fc1aa4-57cc-49f2-b314-73337c9a9f2b",
+          "6c8bdb05-65ad-40f7-83be-0da63f6d39a8"
+        ],
+        "settings": {}
+      },
+      "1661153712cca8c3d5": {
+        "type": "home-collection-list-desktop",
+        "blocks": {
+          "1e35b773-8976-414e-8482-4c83ca1f592a": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/beers_desktop_52969248-8f9b-4d5e-b6d7-f189d2463f41.png",
+              "link": "shopify://collections/beers"
+            }
+          },
+          "c86a38a8-d01f-4d94-95b0-22af16649df6": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/liquor_desktop.png",
+              "link": "shopify://collections/liqueur"
+            }
+          },
+          "34eb44db-09e7-4933-abf4-f48b5bf1f764": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/vodka_desktop.png",
+              "link": "shopify://collections/vodka"
+            }
+          },
+          "8dcfcb97-f028-4716-a6ea-6dea2d0a1ff5": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/wine_desktop.png",
+              "link": "shopify://collections/wines"
+            }
+          },
+          "f1859876-9137-4fab-a0e2-ebdbe20a4286": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/smokes_desktop.png",
+              "link": "shopify://collections/smoke-shop-delivery-los-angeles"
+            }
+          },
+          "db043449-7847-4abb-9b15-3ce28f23298f": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/champagne_desktop.png",
+              "link": "shopify://collections/champagne"
+            }
+          },
+          "15782ca0-8054-4331-aa98-9d03698921d3": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/grocery_desktop.png",
+              "link": "shopify://collections/extras"
+            }
+          }
+        },
+        "block_order": [
+          "1e35b773-8976-414e-8482-4c83ca1f592a",
+          "c86a38a8-d01f-4d94-95b0-22af16649df6",
+          "34eb44db-09e7-4933-abf4-f48b5bf1f764",
+          "8dcfcb97-f028-4716-a6ea-6dea2d0a1ff5",
+          "f1859876-9137-4fab-a0e2-ebdbe20a4286",
+          "db043449-7847-4abb-9b15-3ce28f23298f",
+          "15782ca0-8054-4331-aa98-9d03698921d3"
+        ],
+        "settings": {}
+      },
+      "16611548064b99e79e": {
+        "type": "home-product-list",
+        "settings": {
+          "collection": "beers"
+        }
+      },
+      "1661154826358fab40": {
+        "type": "home-product-list",
+        "settings": {
+          "collection": "wines"
+        }
+      },
+      "1661154851b73e6c74": {
+        "type": "home-product-list",
+        "settings": {
+          "collection": "spirits"
+        }
+      },
+      "1661154874fe48f89b": {
+        "type": "home-product-list",
+        "settings": {
+          "collection": "smoke-shop-delivery-los-angeles"
+        }
+      },
+      "1661154891d64afe99": {
+        "type": "home-product-list",
+        "settings": {
+          "collection": "best-wine-under-16"
+        }
+      },
+      "166115493462a9d655": {
+        "type": "home-product-list",
+        "settings": {
+          "collection": "gift-for-celebrations"
+        }
+      },
+      "166115534547c571d7": {
+        "type": "home-html",
+        "settings": {
+          "code": "<br>"
+        }
+      },
+      "04dfa905-8ce4-40bc-8077-252bf251ee36": {
+        "type": "home-single-banner",
+        "settings": {
+          "image": "shopify://shop_images/VAPE-BUY-MORE-SAVE-MORE-1050x255.webp",
+          "image_mobile": "shopify://shop_images/VAPE-BUY-MORE-SAVE-MORE-600X600.webp",
+          "link": "https://juicefly.com/collections/vapes-1"
+        }
+      },
+      "page-sections-3": {
+        "type": "page-sections-3",
+        "settings": {
+          "container": "medium"
+        }
+      },
+      "home-reviews": {
+        "type": "home-reviews",
+        "blocks": {
+          "05beec60-8122-4c4b-809c-39eb668be312": {
+            "type": "text",
+            "settings": {
+              "reviewer": "Raashema A.",
+              "content": "Such a quick and easy delivery process. The delivery girl was awesome! I'll def be using them again..thanks for saving my night!!",
+              "provider": "yelp"
+            }
+          },
+          "a217f143-b61d-4057-b435-9e4c234e12d9": {
+            "type": "text",
+            "settings": {
+              "reviewer": "M. D.",
+              "content": "This liquor store is unlike any other! Step inside, and you'll find gorgeous displays of unique alcohol. The owner was really knowledgeable in helping me find the right wines and you can tell he curated only the best but at great prices!",
+              "provider": "yelp"
+            }
+          },
+          "250fed6a-a357-464c-aa64-9136984cc637": {
+            "type": "text",
+            "settings": {
+              "reviewer": "Chazsity D.",
+              "content": "This place is lovely! A new wine and liquor with such a unique selection. It's hard to pass up its vibrancy; this just popped up out of nowhere literally; from the looks of it, it's here to stay, and I'm excited to see more progress. The managers are lovely, and the vibes are just right!",
+              "provider": "yelp"
+            }
+          },
+          "0b0491c0-a827-4c56-a12c-df44d82adfe5": {
+            "type": "text",
+            "settings": {
+              "reviewer": "Melissa Anne",
+              "content": "I would never order wine for delivery from any other business besides Juicefly. There have never been any issues at all, just perfect service. I was very lucky to find them. Everyone is always super nice, and professional, making the delivery process easy and quick.",
+              "provider": "google"
+            }
+          },
+          "2464ade3-43ce-44b5-931f-625e88714714": {
+            "type": "text",
+            "settings": {
+              "reviewer": "Laura Ann Klinedinst",
+              "content": "By far the best delivery experience I have ever had. The ordering process was super easy, I was kept up-to-date on my order status, and my delivery driver was so friendly. Delivery time was also much faster than others who deliver the same types of products — major plus. Will definitely be my go-to moving forward.",
+              "provider": "google"
+            }
+          },
+          "bffa9c3f-bc8c-44f8-8b01-38994504a3c3": {
+            "type": "text",
+            "settings": {
+              "reviewer": "Charmaine Ivory",
+              "content": "I've been to the establishment one time and ordered from them a few times. Each experience has always been a memorable one. The staff is polite, and the delivery personnel is extremely courteous. I will continue to get my products from Juicefly.",
+              "provider": "google"
+            }
+          },
+          "32b616a3-729a-42da-a492-774e664155bf": {
+            "type": "text",
+            "settings": {
+              "reviewer": "Donna Vanneman",
+              "content": "I have ordered from many vape companies and have always gone back to Juicefly. The people there are very helpful and always respond to any inquiry I make. I am a loyal customer and highly recommend Juicefly to any other vape delivery service out there.",
+              "provider": "trustpilot"
+            }
+          },
+          "ebcc4786-e526-4279-b88a-810f51ebca59": {
+            "type": "text",
+            "settings": {
+              "reviewer": "Charmaine Ivory",
+              "content": "Always accommodating. Whenever I call or place an order, the rep or delivery person is always so kind. Would highly recommend to others.",
+              "provider": "trustpilot"
+            }
+          },
+          "59732da4-c1e5-45e1-b141-f8103a6c0e80": {
+            "type": "text",
+            "settings": {
+              "reviewer": "Karen Wall",
+              "content": "Good product, fast shipping, and great customer service.",
+              "provider": "trustpilot"
+            }
+          }
+        },
+        "block_order": [
+          "05beec60-8122-4c4b-809c-39eb668be312",
+          "a217f143-b61d-4057-b435-9e4c234e12d9",
+          "250fed6a-a357-464c-aa64-9136984cc637",
+          "0b0491c0-a827-4c56-a12c-df44d82adfe5",
+          "2464ade3-43ce-44b5-931f-625e88714714",
+          "bffa9c3f-bc8c-44f8-8b01-38994504a3c3",
+          "32b616a3-729a-42da-a492-774e664155bf",
+          "ebcc4786-e526-4279-b88a-810f51ebca59",
+          "59732da4-c1e5-45e1-b141-f8103a6c0e80"
+        ],
+        "settings": {
+          "header": "Our Customers Say"
+        }
+      },
+      "131a89b4-9ae0-47a6-8e23-db497e155b52": {
+        "type": "home-faq",
+        "blocks": {
+          "d39c38b0-48e8-47e4-a077-ec49386eaabb": {
+            "type": "faq_item",
+            "settings": {
+              "question": "How can I order alcohol online?",
+              "answer": "AnswerIf you are over the age of 21 and in Los Angeles, then you can order alcohol online from Juciefly! After shopping on our website, choose a delivery time and date, pay, and in no time you’ll see one of our friendly drivers at your door."
+            }
+          },
+          "79383598-cd4c-4db3-bbe0-0d509ef9e3b8": {
+            "type": "faq_item",
+            "settings": {
+              "question": "Does Juicefly offer beer delivery?",
+              "answer": "Juicefly offers beer delivery, wine delivery, and liquor delivery! That’s why we’re your best option when you’re searching for alcohol delivery near me."
+            }
+          },
+          "5f52d319-74c5-4cad-af21-722f6e672dd9": {
+            "type": "faq_item",
+            "settings": {
+              "question": "How to get alcohol delivered to me?",
+              "answer": "Getting alcohol delivered to you is easy. Don’t hesitate to browse our site and find the alcohol you’ve been looking for, add it to your cart, and checkout! One of our drivers will be at your door in under an hour."
+            }
+          },
+          "484f4e06-d9c0-4a3d-99f2-85657459769e": {
+            "type": "faq_item",
+            "settings": {
+              "question": "Where can I order alcohol delivery in Los Angeles?",
+              "answer": "Juicefly is the best place to order alcohol delivery in Los Angeles. Thanks to our vast selection of alcohol and fast delivery, we are LA’s number one choice for alcohol delivery."
+            }
+          },
+          "2f9426a3-e48d-44b7-ad4a-cfa9cc425dc9": {
+            "type": "faq_item",
+            "settings": {
+              "question": "Does Juciefly offer same-day wine delivery in Los Angeles?",
+              "answer": "Juicefly offers same-day wine, beer, and liquor delivery in Los Angeles. After adding items to your cart, you’ll be able to enter your zip code to see your delivery options."
+            }
+          },
+          "a0f1706c-d29f-4803-b672-1fc17cf09c96": {
+            "type": "faq_item",
+            "settings": {
+              "question": "Can I get alcohol delivered now?",
+              "answer": "If you’re in LA and want to order alcohol delivery, you’re in luck! Juicefly is open 7 days a week from 8am-11pm.  Who delivers alcohol online fast? Juicefly does!"
+            }
+          },
+          "6e4bcc8b-9e6a-4d7d-b057-4e2c74383db9": {
+            "type": "faq_item",
+            "settings": {
+              "question": "Can I Order Vape Delivery Online?",
+              "answer": "Yes, you can order nicotine <a href=\"https://juicefly.com/collections/vapes-1\">vape</a> delivery in Los Angeles from Juicefly if you’re 21 or older. Juicefly has a vast selection of the best quality nicotine vapes, juul products, e-vape pens, and accessories with an unrivaled delivery service. Your favorite brands and flavors are ready to be delivered to your doorstep every day of the week from 9am to 10pm in Los Angeles and Culver City."
+            }
+          },
+          "2856e7b3-ff7f-431e-988c-df866e5b7dcd": {
+            "type": "faq_item",
+            "settings": {
+              "question": "Can I order alcohol/tobacco from an app?",
+              "answer": "Yes! You can and Juicefly App is meant for that. You won't be able to live without the Juicefly App once you've discovered it. We are LA's premier alcoholic beverage, vape, and tobacco products store and delivery service."
+            }
+          },
+          "28ac99a9-e3eb-49d8-8cee-aa3517c4ae60": {
+            "type": "faq_item",
+            "settings": {
+              "question": "Where does Juicefly offer vape shipping services?",
+              "answer": "Juicefly ships vape products to almost anywhere in the US. However, we do not ship to Arkansas, Maine, Oregon, Utah, and Vermont."
+            }
+          },
+          "714f2a56-a8ef-4a27-ac69-677b1dd04a10": {
+            "type": "faq_item",
+            "settings": {
+              "question": "How long does Juicefly take to process shipping orders?",
+              "answer": "Orders placed before 4 pm on business days may be processed the same day. Order preparation may take up to 72 hours during high demand. Shipping carriers do not process orders on weekends and U.S. Federal Holidays. Orders placed on weekends or Fridays after 4 p.m. are sent out on Mondays."
+            }
+          },
+          "552c0fce-d525-428c-b44e-5412f4377915": {
+            "type": "faq_item",
+            "settings": {
+              "question": "How can I track my order from Juicefly?",
+              "answer": "A tracking email will be automatically generated as soon as your order completes processing at Juicefly."
+            }
+          },
+          "811a8495-6935-415e-a072-4ab58672d357": {
+            "type": "faq_item",
+            "settings": {
+              "question": "What are the estimated transit times for different regions of the US?",
+              "answer": "The Western Half of the US typically takes 1-3 business days in transit, while the Eastern Half of the US takes 6-10 business days in transit."
+            }
+          },
+          "f101c032-2d35-45d6-b55b-ddc42a5a68a8": {
+            "type": "faq_item",
+            "settings": {
+              "question": "How are shipping costs calculated for orders?",
+              "answer": "Shipping costs are calculated based on your address or location."
+            }
+          }
+        },
+        "block_order": [
+          "d39c38b0-48e8-47e4-a077-ec49386eaabb",
+          "79383598-cd4c-4db3-bbe0-0d509ef9e3b8",
+          "5f52d319-74c5-4cad-af21-722f6e672dd9",
+          "484f4e06-d9c0-4a3d-99f2-85657459769e",
+          "2f9426a3-e48d-44b7-ad4a-cfa9cc425dc9",
+          "a0f1706c-d29f-4803-b672-1fc17cf09c96",
+          "6e4bcc8b-9e6a-4d7d-b057-4e2c74383db9",
+          "2856e7b3-ff7f-431e-988c-df866e5b7dcd",
+          "28ac99a9-e3eb-49d8-8cee-aa3517c4ae60",
+          "714f2a56-a8ef-4a27-ac69-677b1dd04a10",
+          "552c0fce-d525-428c-b44e-5412f4377915",
+          "811a8495-6935-415e-a072-4ab58672d357",
+          "f101c032-2d35-45d6-b55b-ddc42a5a68a8"
+        ],
+        "settings": {}
+      },
+      "48fd6354-7382-4493-9b1b-ba0d76c8c162": {
+        "type": "home-blogs",
+        "settings": {}
+      },
+      "db2ecab8-1808-4a98-bc6b-17c1f83c8060": {
+        "type": "delivery-calculator",
+        "settings": {}
+      },
+      "a361a1d2-7f37-47bf-8d34-a73c0c1513fc": {
+        "type": "juice-map",
+        "settings": {}
+      },
+      "6a880983-46b4-40f6-83d1-fc390db79d5a": {
+        "type": "home-newsletter",
+        "settings": {}
+      },
+      "mobile-drawer__shipping": {
+        "type": "mobile-drawer__shipping",
+        "settings": {
+          "contact_title": "Contact",
+          "show_contact_number": true,
+          "show_contact_email": true,
+          "show_locale_selector": true,
+          "show_currency_selector": true,
+          "show_social": true,
+          "cta_image_link": "",
+          "cta_title": "",
+          "cta_text": "",
+          "cta_link_title": "Learn more",
+          "cta_link": ""
+        }
+      },
+      "header__shipping": {
+        "type": "header__shipping",
+        "settings": {
+          "show_border": true,
+          "header_bg": "#ffffff",
+          "header_style": "light",
+          "logo_size": 5,
+          "logo_size_mobile": 5,
+          "logo_spacing": 3,
+          "layout": "left",
+          "style": "static",
+          "parent_links": true,
+          "mega_nav": false,
+          "mega_image_link": "",
+          "mega_title": "",
+          "mega_text": "",
+          "mega_link_title": "Learn more",
+          "mega_link": "",
+          "show_locale_selector": true,
+          "show_currency_selector": true
+        }
+      },
+      "home-collection-list-mobile__shipping": {
+        "type": "home-collection-list-mobile__shipping",
+        "blocks": {
+          "452c8a10-69fd-4596-8d9d-bcc28a0af219": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-MOBILE-01-FLUM.svg",
+              "text_color": "",
+              "title": "FLUM",
+              "link": "shopify://collections/flum-vapes"
+            }
+          },
+          "94b0d5f2-19a1-4b2d-ad9a-ad15b1297398": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-MOBILE-02-VOZOL.svg",
+              "text_color": "",
+              "title": "VOZOL",
+              "link": "shopify://collections/vozol"
+            }
+          },
+          "6d10519b-2229-4ed5-8205-1580719807fa": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-MOBILE-05-POD-JUICE.svg",
+              "text_color": "",
+              "title": "POD JUICE",
+              "link": "shopify://collections/pod-juice"
+            }
+          },
+          "cb9b194d-8ebe-4bf7-97f2-27dd4d390238": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-MOBILE-06-WAVE.svg",
+              "text_color": "",
+              "title": "WAVE",
+              "link": "shopify://products/wave-8000-puffs"
+            }
+          },
+          "9be70e52-3a14-436c-9075-1bb019bede16": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-MOBILE-08-GEEKBAR.svg",
+              "text_color": "",
+              "title": "Geek Bar",
+              "link": "https://juicefly.com/products/geek-bar-pulse-15000-puff-5-nicotine"
+            }
+          },
+          "a150a172-2543-459e-a27d-94bcb1d9713e": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-MOBILE-03-HYPPE.svg",
+              "text_color": "",
+              "title": "HYPPE",
+              "link": "shopify://collections/hyppe-max-disposable-vapes"
+            }
+          },
+          "108e11f9-c722-4aa6-92d2-f28caeacc540": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-MOBILE-04-CALIFORNIA-HONEY_1.svg",
+              "text_color": "",
+              "title": "CALIFORNIA HONEY",
+              "link": "shopify://products/california-honey-7000-puffs-5-nicotine"
+            }
+          }
+        },
+        "block_order": [
+          "452c8a10-69fd-4596-8d9d-bcc28a0af219",
+          "94b0d5f2-19a1-4b2d-ad9a-ad15b1297398",
+          "6d10519b-2229-4ed5-8205-1580719807fa",
+          "cb9b194d-8ebe-4bf7-97f2-27dd4d390238",
+          "9be70e52-3a14-436c-9075-1bb019bede16",
+          "a150a172-2543-459e-a27d-94bcb1d9713e",
+          "108e11f9-c722-4aa6-92d2-f28caeacc540"
+        ],
+        "settings": {}
+      },
+      "home-slideshow__shipping": {
+        "type": "home-slideshow__shipping",
+        "blocks": {
+          "c2dbdc86-43fb-42f7-92db-137916d5e176": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/webp-NEW-JUICEFLY-1920x400-VAPES.webp",
+              "image_mobile": "shopify://shop_images/webp-NEW-JUICEFLY-900X900-VAPES.webp",
+              "image_alignment": "center",
+              "alignment": "left",
+              "text_color": "default",
+              "title": "",
+              "title_2": "",
+              "title_3": "",
+              "title_4": "",
+              "subtitle": "",
+              "subtitle_2": "",
+              "subtitle_color": "#464494",
+              "text": "<p>Use these slides to tell the world about your brand. Use images or background video along with text and links.</p>",
+              "link_title": "More info",
+              "link": ""
+            }
+          },
+          "2d496cdd-bb00-4c4b-8427-8f93130ab453": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/JUICEFLY-HOMEPAGE-VAPE-BANNER-1050X220.jpg",
+              "image_mobile": "shopify://shop_images/JUICEFLY-HOMEPAGE-VAPE-BANNER-900x900.jpg",
+              "image_alignment": "center",
+              "alignment": "left",
+              "text_color": "default",
+              "title": "",
+              "title_2": "",
+              "title_3": "",
+              "title_4": "",
+              "subtitle": "",
+              "subtitle_2": "",
+              "subtitle_color": "#464494",
+              "text": "",
+              "link_title": "",
+              "link": "shopify://collections/vapes-1"
+            }
+          }
+        },
+        "block_order": [
+          "c2dbdc86-43fb-42f7-92db-137916d5e176",
+          "2d496cdd-bb00-4c4b-8427-8f93130ab453"
+        ],
+        "settings": {
+          "slideshow_style": "default",
+          "title_size": 3,
+          "autoplay": true,
+          "autoplay_speed": 8,
+          "slideshow_height": "medium",
+          "slideshow_width": "contained",
+          "overlay_strength": 10
+        }
+      },
+      "home-collection-list-desktop__shipping": {
+        "type": "home-collection-list-desktop__shipping",
+        "blocks": {
+          "d4df4388-c86e-4445-a899-46ea65bfb8df": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-WEB-01-FLUM.svg",
+              "link": "shopify://collections/flum-vapes"
+            }
+          },
+          "b232b1ba-818c-4acf-80fe-737883cca1cb": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-WEB-02-VOZOL.svg",
+              "link": "https://juicefly.com/collections/vozol"
+            }
+          },
+          "7f5ee10b-d099-44e0-9c84-8040da008d18": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-WEB-05-POD-JUICE.svg",
+              "link": "shopify://collections/pod-juice"
+            }
+          },
+          "ebcfcea0-70ee-48cf-b126-165d431e34dc": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-WEB-06-WAVE.svg",
+              "link": "shopify://products/wave-8000-puffs"
+            }
+          },
+          "b629d895-54dc-4528-9a02-ba90d456aad1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-WEB-08-GEEKBAR.svg",
+              "link": "shopify://products/geek-bar-pulse-15000-puffs-5-nicotine"
+            }
+          },
+          "33d53375-823d-4c12-b274-86635a0ca17c": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-WEB-03-HYPPE.svg",
+              "link": "shopify://collections/hyppe-max-disposable-vapes"
+            }
+          },
+          "56a2953a-20cb-44dd-887e-2a6952327f1d": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-WEB-04-CALIFORNIA-HONEY.svg",
+              "link": "shopify://products/california-honey-7000-puffs-5-nicotine"
+            }
+          }
+        },
+        "block_order": [
+          "d4df4388-c86e-4445-a899-46ea65bfb8df",
+          "b232b1ba-818c-4acf-80fe-737883cca1cb",
+          "7f5ee10b-d099-44e0-9c84-8040da008d18",
+          "ebcfcea0-70ee-48cf-b126-165d431e34dc",
+          "b629d895-54dc-4528-9a02-ba90d456aad1",
+          "33d53375-823d-4c12-b274-86635a0ca17c",
+          "56a2953a-20cb-44dd-887e-2a6952327f1d"
+        ],
+        "settings": {}
+      },
+      "home-product-list__shipping": {
+        "type": "home-product-list__shipping",
+        "settings": {
+          "collection": "vapes-1"
+        }
+      },
+      "home-single-banner__shipping": {
+        "type": "home-single-banner__shipping",
+        "settings": {
+          "image": "shopify://shop_images/VAPE-BUY-MORE-SAVE-MORE-1050x255.webp",
+          "image_mobile": "shopify://shop_images/VAPE-BUY-MORE-SAVE-MORE-600X600.webp",
+          "link": "https://juicefly.com/collections/vapes-1"
+        }
+      },
+      "home-reviews__shipping": {
+        "type": "home-reviews__shipping",
+        "blocks": {
+          "e82e60f0-38f4-4ca3-a234-a1d5887c8cf4": {
+            "type": "text",
+            "settings": {
+              "reviewer": "George",
+              "content": "Excellent Service! \nI received my order on time and well packaged. I had a little problem with my order but the manager fixed it real quick and to my satisfaction. To be able to find great flavored vapes just a shipment away is great. I'm a permanent juicefly satisfied customer",
+              "provider": "trustpilot"
+            }
+          },
+          "f9fc0486-b367-4590-8941-2a68eb750087": {
+            "type": "text",
+            "settings": {
+              "reviewer": "Jenny B.",
+              "content": "Fly as Hell! Juicefly has been amazing. I tried 4 different online suppliers of Flum. I wanted to make sure they were legit so I made small purchases and waited to see if the customer service was good, my shipment arrived, etc. okay, so Juicefly, had literally the best selection. And the Mi Flum which are the mini ones the size of a Juul, I prefer these because the flavor seems more consistent and doesn't make me feel sick.",
+              "provider": "yelp"
+            }
+          },
+          "6626d439-7162-4b66-9999-1ccc5025a994": {
+            "type": "text",
+            "settings": {
+              "reviewer": "Donna Vanneman",
+              "content": "I have ordered from many vape companies and have always gone back to Juicefly. The people there are very helpful and always respond to any inquiry I make. I am a loyal customer and would HIGHLY recommend Juicefly to any other vape delivery service out there.",
+              "provider": "trustpilot"
+            }
+          }
+        },
+        "block_order": [
+          "e82e60f0-38f4-4ca3-a234-a1d5887c8cf4",
+          "f9fc0486-b367-4590-8941-2a68eb750087",
+          "6626d439-7162-4b66-9999-1ccc5025a994"
+        ],
+        "settings": {
+          "header": "Our Customers Say"
+        }
+      },
+      "shipping-calculator": {
+        "type": "shipping-calculator",
+        "settings": {}
+      },
+      "juice-map__shipping": {
+        "type": "juice-map__shipping",
+        "settings": {}
+      },
+      "home-faq__shipping": {
+        "type": "home-faq__shipping",
+        "blocks": {
+          "347602da-36e6-4389-8661-029a21f9c0e1": {
+            "type": "faq_item",
+            "settings": {
+              "question": "How long does Juicefly take to process orders?",
+              "answer": "Orders placed before 4 pm on business days may be processed the same day. Order preparation may take up to 72 hours during high demand. Shipping carriers do not process orders on weekends and U.S. Federal Holidays. Orders placed on weekends or Fridays after 4 p.m. are sent out on Mondays."
+            }
+          },
+          "57b1a0d6-0a53-4e9c-b198-a955bbb15638": {
+            "type": "faq_item",
+            "settings": {
+              "question": "Where Does Juicefly Ship to?",
+              "answer": "Juicefly ships vape products to almost anywhere in the US. We do not ship to Arkansas, Maine, Oregon, Utah, and Vermont."
+            }
+          },
+          "9e0a6865-1de0-488b-9e3e-529aefd53d1a": {
+            "type": "faq_item",
+            "settings": {
+              "question": "Can I cancel my order?",
+              "answer": "Yes, you can cancel your order online. The conditions for a full refund or restocking fee depend on when you cancel your order."
+            }
+          },
+          "77494312-011d-4a1b-ae59-4269a2003b05": {
+            "type": "faq_item",
+            "settings": {
+              "question": "How can I track my order from Juicefly?",
+              "answer": "A tracking email will be automatically generated as soon as your order completes processing at Juicefly."
+            }
+          },
+          "6da17e3a-544b-46f7-a62e-23e6bd934512": {
+            "type": "faq_item",
+            "settings": {
+              "question": "What are the estimated transit times for different regions of the US?",
+              "answer": "The Western Half of the US typically takes 1-3 business days in transit, while the Eastern Half of the US takes 6-10 business days in transit."
+            }
+          },
+          "16a9a683-56db-434d-92bc-c7b19a6e4c77": {
+            "type": "faq_item",
+            "settings": {
+              "question": "How are shipping costs calculated?",
+              "answer": "Shipping costs are calculated based on your address or location."
+            }
+          },
+          "8129fb31-7747-4de0-a0fe-b46aed3174bb": {
+            "type": "faq_item",
+            "settings": {
+              "question": "Is an adult signature required for vape product delivery?",
+              "answer": "An Adult Signature Confirmation (21+) is required upon delivery, and the recipient must provide a valid government photo ID for age verification."
+            }
+          }
+        },
+        "block_order": [
+          "347602da-36e6-4389-8661-029a21f9c0e1",
+          "57b1a0d6-0a53-4e9c-b198-a955bbb15638",
+          "9e0a6865-1de0-488b-9e3e-529aefd53d1a",
+          "77494312-011d-4a1b-ae59-4269a2003b05",
+          "6da17e3a-544b-46f7-a62e-23e6bd934512",
+          "16a9a683-56db-434d-92bc-c7b19a6e4c77",
+          "8129fb31-7747-4de0-a0fe-b46aed3174bb"
+        ],
+        "settings": {}
+      },
+      "home-newsletter__shipping": {
+        "type": "home-newsletter__shipping",
+        "settings": {}
+      },
+      "home-blogs__shipping": {
+        "type": "home-blogs__shipping",
+        "settings": {}
+      },
+      "footer__shipping": {
+        "type": "footer__shipping",
+        "settings": {
+          "footer_newsletter_enable": false,
+          "footer_newsletter_home": false,
+          "newsletter_bg": "#f0f0f0",
+          "newsletter_style": "default",
+          "footer_newsletter_title": "Newsletter",
+          "footer_newsletter_desc": "<p>Let your customers know what to expect if they sign up to your mailing list.</p>",
+          "footer_bg": "#222222",
+          "footer_style": "light",
+          "show_payment_icons": false,
+          "show_locale_selector": true,
+          "show_currency_selector": true
+        }
+      },
+      "home-product-list__shipping-2": {
+        "type": "home-product-list__shipping-2",
+        "settings": {
+          "collection": "flum-vapes"
+        }
+      },
+      "7a335fe5-7ec3-4b80-ab14-10380e08a66e": {
+        "type": "home-single-banner",
+        "settings": {
+          "image": "shopify://shop_images/POD-JUICE-OXBAR-1050x255.webp",
+          "image_mobile": "shopify://shop_images/POD-JUICE-OXBAR-600X600.webp",
+          "link": "https://juicefly.com/products/pod-juice-x-oxbar-10000-puffs-5-nicotine"
+        }
+      },
+      "text-section": {
+        "type": "text-section",
+        "settings": {
+          "add_text": "<h2><strong>Online Vape Shop</strong></h2><p>Juicefly Online Vape Shop brings you the best vape products across the US. Thanks to our reliable shipping network, we ensure you get your package quickly and discreetly. </p><p>From <strong>Flum</strong> to <strong>Vozol</strong>, Pod Juice to <strong>Hyppe Max</strong>, our broad vape menu allows you to indulge in the finest. </p><p>These top-quality vapes come with various puff amounts, nicotine levels, and e-liquid capacities, suitable for different vaping needs.</p><p>Available in striking colors, designs, and features, our vape products include disposable vapes, e-juices, e-cigarettes, pod systems, and more.</p><p>Buy vapes online today!</p><h2><strong>Best Sellers </strong></h2><p>In our vast vape catalog, you just can easily discover the ultimate in flavor and performance.</p><p>Our meticulously curated Best Sellers collection allows you to reach sought-after and highest-quality vapes.</p><p>To meet the diverse vaping needs and tastes, Juicefly Online Vape Shop’s Best Sellers section is full of cutting-edge vape devices to premium e-liquids.</p><p>Each of these top-notch products has gained its spot through exceptional quality, innovative design, and outstanding customer reviews.</p><p>Explore the top picks that have captured the hearts of vapers throughout the US, and elevate your vaping experience with the industry's best.</p><h2><strong>Vape Shipping US & Delivery in LA</strong></h2><p>Juicefly offers vape delivery service to <strong>all parts of Los Angeles</strong> and <strong>shipping throughout the US</strong>.</p><p>We promptly ship your vape products with fast order processing. Most orders ship within 24 hours, and those placed <strong>before 4 pm</strong> on business days may be processed the same day.</p><p>During checkout, you'll get details on the Shipping Method and Estimated Delivery Times based on your location. </p><p><strong>Shipping costs</strong> will be calculated based on your address or your location. You can also get <strong>free</strong> shipping for orders over $150.</p><p>A tracking email is generated once your order is processed.</p><p>Juicefly <strong>does not ship</strong> vape products to Arkansas, Maine, Oregon, Utah, and Vermont.</p><p>Also, please note that estimated transit times are 1-3 business days for the Western Half of the US, and 6-10 business days for the Eastern Half of the US.</p><p>You can track your order on this page: <a href=\"https://juicefly.com/pages/itrack\" title=\"https://juicefly.com/pages/itrack\"><strong>Order Tracking</strong></a></p><h2><strong>Free Shipping Vape</strong></h2><p>And the best part of shopping from Juicefly Online Vape Shop is the shipping cost advantages.</p><p>For all orders <strong>over $150</strong>, you get <strong>free shipping</strong> to enjoy the best vapes in the United States. No matter where you are, you can browse our menu to get shipping service straight to your doorstep.</p><h2><strong>Featured Brands</strong></h2><p>Juicefly Vape Shop offers an unparalleled selection of the best vape brands in the US.</p><p>As one of the leading vape brands, <strong>Flum</strong> crafts top-notch vapes suitable for diverse vape tastes.</p><p><strong>Vozol</strong> also produces solid vapes with exciting flavors, becoming a premier choice for vape enthusiasts.</p><p><strong>Pod Juice</strong> has amazing disposable vape devices and vape juices, allowing you to find your best fit. Available in different e-liquid capacities and puff amounts, Pod Juice Vapes is the one to go.</p><p><strong>Hyppe Max</strong> Disposable Vapes bring a taste of calm in every cloud. Blessed with catchy flavors and sleek designs, these vapes deliver a superior and enjoyable experience.</p><p>You can also buy the best vape brands, such as California Honey, Phun, Pyne Pod, Lush Alien, Jubi, One Up, and many more. </p>",
+          "wordLimits": "82",
+          "buttonCollasp": "Read More",
+          "showCollaspButton": true
+        }
+      },
+      "tag-based-products": {
+        "type": "tag-based-products",
+        "settings": {
+          "title": "Vape Devices",
+          "collection": "vape-devices",
+          "collButton": true
+        }
+      },
+      "tag-based-product2": {
+        "type": "tag-based-product2",
+        "settings": {
+          "title": "Vape Juice",
+          "collection": "vape-juice",
+          "collButton": true
+        }
+      },
+      "tag-based-product3": {
+        "type": "tag-based-product3",
+        "settings": {
+          "title": "Best Seller Vapes",
+          "collection": "best-seller-vapes",
+          "collButton": true
+        }
+      },
+      "tag-based-product4": {
+        "type": "tag-based-product4",
+        "settings": {
+          "title": "Juicefly Staff selected vapes",
+          "collection": "juiceselectvapes-1",
+          "collButton": true
+        }
+      },
+      "mobile-drawer-shipping-page": {
+        "type": "mobile-drawer-shipping-page",
+        "settings": {
+          "main_linklist": "shipping-menu",
+          "contact_title": "Contact",
+          "show_contact_number": true,
+          "show_contact_email": true,
+          "show_locale_selector": true,
+          "show_currency_selector": true,
+          "show_social": true,
+          "cta_image_link": "",
+          "cta_title": "",
+          "cta_text": "",
+          "cta_link_title": "Learn more",
+          "cta_link": ""
+        }
+      },
+      "header-shipping-page": {
+        "type": "header-shipping-page",
+        "settings": {
+          "announcement_bar_text": "FREE Shipping ON ORDERS OVER $150.",
+          "show_border": true,
+          "header_bg": "#ffffff",
+          "header_style": "light",
+          "logo_size": 5,
+          "logo_size_mobile": 5,
+          "logo_spacing": 3,
+          "main_linklist": "shipping-menu",
+          "layout": "left",
+          "style": "static",
+          "parent_links": true,
+          "mega_nav": false,
+          "mega_image_link": "",
+          "mega_title": "",
+          "mega_text": "",
+          "mega_link_title": "Learn more",
+          "mega_link": "",
+          "show_locale_selector": true,
+          "show_currency_selector": true
+        }
+      },
+      "home_product_list_DPgiMm": {
+        "type": "home-product-list",
+        "settings": {
+          "collection": "vapes-1"
+        }
+      },
+      "home_product_list_cbKxXX": {
+        "type": "home-product-list",
+        "settings": {
+          "collection": "deals"
+        }
+      },
+      "home_product_list_G6T8y4": {
+        "type": "home-product-list",
+        "settings": {
+          "collection": "clearance-sale"
+        }
+      },
+      "home_single_banner_A8b4HD": {
+        "type": "home-single-banner",
+        "settings": {
+          "image": "shopify://shop_images/CLEARANCE_SALE-1050x255-25.webp",
+          "image_mobile": "shopify://shop_images/CLEARANCE_SALE-600X600-25.webp",
+          "link": "shopify://collections/clearance-sale"
+        }
+      }
+    },
+    "content_for_index": [
+      "166114771388a288be",
+      "1566456250311",
+      "1661153712cca8c3d5",
+      "home_product_list_DPgiMm",
+      "home_product_list_G6T8y4",
+      "home_single_banner_A8b4HD",
+      "home_product_list_cbKxXX",
+      "04dfa905-8ce4-40bc-8077-252bf251ee36",
+      "16611548064b99e79e",
+      "7a335fe5-7ec3-4b80-ab14-10380e08a66e",
+      "1661154826358fab40",
+      "1661154851b73e6c74",
+      "1661154874fe48f89b",
+      "1661154891d64afe99",
+      "166115493462a9d655",
+      "166115534547c571d7",
+      "home-reviews",
+      "db2ecab8-1808-4a98-bc6b-17c1f83c8060",
+      "a361a1d2-7f37-47bf-8d34-a73c0c1513fc",
+      "131a89b4-9ae0-47a6-8e23-db497e155b52",
+      "6a880983-46b4-40f6-83d1-fc390db79d5a",
+      "48fd6354-7382-4493-9b1b-ba0d76c8c162"
+    ],
+    "blocks": {
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-product-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "15399298802885521802": {
+        "type": "shopify://apps/ruffruff-table-of-contents/blocks/app-embed/d06f5754-affb-4dc7-a2a9-18d74d225f70",
+        "disabled": false,
+        "settings": {}
+      },
+      "uppromote-affiliate-referral-customer-referral-34647-64c32457-930d-4cb9-9641-e24c0d9cf1f4": {
+        "type": "shopify://apps/uppromote-affiliate-referral/blocks/customer-referral/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
+        "disabled": true,
+        "settings": {}
+      },
+      "uppromote-affiliate-referral-message-bar-34647-64c32457-930d-4cb9-9641-e24c0d9cf1f4": {
+        "type": "shopify://apps/uppromote-affiliate-referral/blocks/message-bar/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
+        "disabled": true,
+        "settings": {}
+      },
+      "5419279292971490355": {
+        "type": "shopify://apps/flair-product-badges-labels/blocks/init/51d5ae10-f90f-4540-9ec6-f09f14107bf4",
+        "disabled": false,
+        "settings": {}
+      },
+      "10641372206048101839": {
+        "type": "shopify://apps/rebuy-personalization-engine/blocks/rebuy-global-embed/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+        "disabled": true,
+        "settings": {}
+      },
+      "10510380857938253608": {
+        "type": "shopify://apps/author-profiles/blocks/app-embed/9f6ec6de-dd1a-4a83-aa08-519e82caa0f0",
+        "disabled": false,
+        "settings": {
+          "title": "",
+          "className": "",
+          "position": "below"
+        }
+      },
+      "6480035358908009760": {
+        "type": "shopify://apps/superspeed-web-vitals/blocks/ss-sonar/ea1b2c2c-4644-44b9-b10b-fdb914884a8c",
+        "disabled": false,
+        "settings": {
+          "add_helpers": false
+        }
+      },
+      "6897698614501909729": {
+        "type": "shopify://apps/superspeed-web-vitals/blocks/app-embed/ea1b2c2c-4644-44b9-b10b-fdb914884a8c",
+        "disabled": false,
+        "settings": {
+          "boost_level": 3,
+          "enable_app_control": false,
+          "defer_bg_images": true,
+          "prefetch_pages": false,
+          "add_helpers": true,
+          "slow_network_quality": 30,
+          "font_1": "sans-serif",
+          "preload_font_1": false,
+          "font_1_display": "block",
+          "font_2": "sans-serif",
+          "preload_font_2": false,
+          "font_2_display": "block",
+          "font_3": "sans-serif",
+          "preload_font_3": false,
+          "font_3_display": "block",
+          "optimization_level": "none"
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "12476284290585462717": {
+        "type": "shopify://apps/doofinder-search-discovery/blocks/doofinder-script/1abc6bc6-ff36-4a37-9034-effae4a47cf6",
+        "disabled": false,
+        "settings": {}
+      },
+      "2783554875815837874": {
+        "type": "shopify://apps/sea-accessibility/blocks/app-embed/0ab9368b-426b-42b4-93ea-63d9c8e88707",
+        "disabled": false,
+        "settings": {}
+      },
+      "3138269044488530766": {
+        "type": "shopify://apps/uppromote-affiliate/blocks/core-script/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
+        "disabled": false,
+        "settings": {}
+      },
+      "11068332061543699368": {
+        "type": "shopify://apps/booster-page-speed-optimizer/blocks/app-embed/d920faf3-7c60-423a-9636-22618b5561b5",
+        "disabled": false,
+        "settings": {}
+      },
+      "15683396631634586217": {
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": false,
+        "settings": {
+          "button_color": "#8e0d0d",
+          "secondary_color": "#ffffff",
+          "ternary_color": "#6a6a6a",
+          "button_icon": "chat_bubble",
+          "button_text": "no_text",
+          "button_horizontal_position": "bottom_right",
+          "button_vertical_position": "lowest",
+          "greeting_message": "👋 Welcome to Juicefly! Let us know if you have any questions or concerns regarding any products, about a shipping order, or if you'd like to know the ETA for your delivery order. A friendly representative will be right with you!"
+        }
+      },
+      "yoast-seo-metatags": {
+        "type": "shopify://apps/yoast-seo-seo-for-everyone/blocks/metatags/7c777011-bc88-4743-a24e-64336e1e5b46",
+        "disabled": false,
+        "settings": {}
+      },
+      "3391742408989418501": {
+        "type": "shopify://apps/lootly-loyalty-rewards/blocks/lootly_widget/143b3d7a-9812-4f71-892a-2c6f69b5fbb4",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  },
+  "presets": {
+    "Morning": {
+      "color_headings": "#212121",
+      "color_text": "#212121",
+      "color_alt_text": "#666666",
+      "color_brand": "#212121",
+      "color_accent": "#fad018",
+      "color_button": "#ffffff",
+      "product_grid_sale_color": "#c00000",
+      "product_grid_bg": "#f0f0f0",
+      "color_drawer_bg": "#ffffff",
+      "color_drawer_style": "dark",
+      "type_base_font": "montserrat_n4",
+      "type_base_size": "15",
+      "type_header_font": "montserrat_n4",
+      "type_header_size": "0.85",
+      "type_header_letterspace": 2,
+      "type_header_capitalize": true,
+      "type_header_underline": true,
+      "type_header_underline_size": 3,
+      "type_nav_font": "montserrat_n4",
+      "type_nav_size": "11",
+      "type_nav_letterspace": 2,
+      "type_nav_capitalize": true,
+      "type_button_font": "montserrat_n4",
+      "type_button_size": "11",
+      "type_button_letterspace": 2,
+      "type_button_capitalize": true,
+      "product_grid_vendor": false,
+      "product_grid_second_hover": true,
+      "product_grid_quick_buy": "hover",
+      "product_grid_align": "center",
+      "product_grid_image_size": "natural",
+      "product_grid_masonry": false,
+      "product_grid_label": true,
+      "product_grid_label_sale_style": "text",
+      "product_grid_label_new": true,
+      "product_grid_label_new_days": 14,
+      "product_grid_label_title": "Hot",
+      "product_grid_label_collection": "",
+      "product_grid_detail_style": "default",
+      "product_grid_price": true,
+      "product_grid_swatch": false,
+      "product_grid_swatch_image": false,
+      "product_grid_reviews": false,
+      "product_reviews": false,
+      "anim_load": true,
+      "anim_load_style": "interval",
+      "anim_interval_style": "fade_down",
+      "anim_fade": false,
+      "anim_zoom": true,
+      "cart_notes_enable": false,
+      "cart_vendor_enable": false,
+      "cart_continue": true,
+      "cart_type": "modal",
+      "search_enable": true,
+      "search_limit": "product,article,page",
+      "search_linklist": "main-menu",
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "share_fancy": true,
+      "share_mail": true,
+      "social_facebook_link": "",
+      "social_twitter_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "social_fancy_link": "",
+      "social_untappd_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_accent_color": "#197bbd",
+      "checkout_button_color": "#197bbd",
+      "checkout_error_color": "#e32c2b",
+      "sections": {
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1494343961341": {
+              "type": "linklist",
+              "settings": {
+                "title": "Menu",
+                "linklist": "footer"
+              }
+            },
+            "1494463355206": {
+              "type": "linklist",
+              "settings": {
+                "title": "Menu",
+                "linklist": "footer"
+              }
+            },
+            "1494343958665": {
+              "type": "contact",
+              "settings": {
+                "title": "Contact",
+                "show_email": true,
+                "show_number": true,
+                "show_address": true,
+                "show_social": true
+              }
+            },
+            "1494463348419": {
+              "type": "text",
+              "settings": {
+                "title": "Text area",
+                "text": "<p>Add some text such as a mini biography or your mission statement.</p>"
+              }
+            }
+          },
+          "block_order": [
+            "1494343961341",
+            "1494463355206",
+            "1494343958665",
+            "1494463348419"
+          ],
+          "settings": {
+            "footer_newsletter_enable": true,
+            "footer_newsletter_home": false,
+            "newsletter_bg": "#f0f0f0",
+            "newsletter_style": "default",
+            "footer_newsletter_title": "Newsletter",
+            "footer_newsletter_desc": "<p>Let your customers know what to expect if they sign up to your mailing list.</p>",
+            "footer_bg": "#222222",
+            "footer_style": "light",
+            "show_payment_icons": true
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "show_border": true,
+            "header_bg": "#ffffff",
+            "header_style": "dark",
+            "logo": "",
+            "logo_size": 5,
+            "logo_spacing": 3,
+            "main_linklist": "main-menu",
+            "layout": "left",
+            "style": "sticky",
+            "mega_nav": true,
+            "mega_image": "",
+            "mega_image_link": "",
+            "mega_title": "",
+            "mega_text": "",
+            "mega_link_title": "Learn more",
+            "mega_link": ""
+          }
+        },
+        "mobile-drawer": {
+          "type": "mobile-drawer",
+          "settings": {
+            "main_linklist": "main-menu",
+            "contact_title": "Contact",
+            "show_contact_number": true,
+            "show_contact_email": true,
+            "show_social": true,
+            "cta_image": "",
+            "cta_image_link": "",
+            "cta_title": "",
+            "cta_text": "",
+            "cta_link_title": "Learn more",
+            "cta_link": ""
+          }
+        },
+        "promo-pop": {
+          "type": "promo-pop",
+          "settings": {
+            "enable": false,
+            "mobile": false,
+            "title": "Popup",
+            "text": "<p>Use this popup to embed a mailing list sign up form. Alternatively use it as a simple call to action with a link to a product or a page.</p>",
+            "link_title": "More info",
+            "link": "",
+            "delay": 10,
+            "expiry": 30,
+            "enable_newsletter": true
+          }
+        },
+        "age-checker": {
+          "type": "age-checker",
+          "settings": {
+            "enable": false,
+            "image": "",
+            "title": "Age verification",
+            "text": "<p>By clicking enter you are verifying that you are old enough to consume alcohol.</p>",
+            "enter_btn_label": "Enter",
+            "leave_btn_label": "Leave",
+            "leave_link": ""
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {}
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "layout": "classic",
+            "show_breadcrumbs": true,
+            "show_vendor": false,
+            "product_variant_style": "buttons",
+            "use_swatch_images": false,
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "image": "",
+            "show_share_buttons": true,
+            "enable_zoom": true,
+            "image_size": "large",
+            "bg_color": "rgba(0,0,0,0)",
+            "text_color": "default",
+            "bg_height": "full"
+          }
+        },
+        "password-header": {
+          "type": "password-header",
+          "settings": {
+            "logo": "",
+            "logo_size": 5,
+            "logo_spacing": 3,
+            "show_border": true
+          }
+        },
+        "password-content": {
+          "type": "password-content",
+          "settings": {
+            "bg_image": "",
+            "show_newsletter": true,
+            "newsletter_text": "",
+            "newsletter_button_text": "Sign up",
+            "show_social": true
+          }
+        },
+        "page-faq": {
+          "type": "page-faq",
+          "blocks": {
+            "1563305378357": {
+              "type": "category",
+              "settings": {
+                "title": "Category"
+              }
+            },
+            "1563305326608": {
+              "type": "article",
+              "settings": {
+                "title": "Article heading",
+                "text": "<p>Use these articles to answer questions that customers have about your products and services. You can use text, links and images and also group articles into categories.</p>",
+                "image": ""
+              }
+            },
+            "1563305341300": {
+              "type": "article",
+              "settings": {
+                "title": "Article heading",
+                "text": "<p>Use these articles to answer questions that customers have about your products and services. You can use text, links and images and also group articles into categories.</p>",
+                "image": ""
+              }
+            },
+            "1563305384180": {
+              "type": "category",
+              "settings": {
+                "title": "Category"
+              }
+            },
+            "1563305386011": {
+              "type": "article",
+              "settings": {
+                "title": "Article heading",
+                "text": "<p>Use these articles to answer questions that customers have about your products and services. You can use text, links and images and also group articles into categories.</p>",
+                "image": ""
+              }
+            }
+          },
+          "block_order": [
+            "1563305378357",
+            "1563305326608",
+            "1563305341300",
+            "1563305384180",
+            "1563305386011"
+          ],
+          "settings": {
+            "enable_search": true,
+            "enable_sidebar": true,
+            "cta_link_title": "Contact us",
+            "cta_link": ""
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "show_tags": true,
+            "show_rss": false,
+            "grid": 2,
+            "crop": true,
+            "show_blog_date": true,
+            "show_blog_author": false,
+            "show_blog_comments": false,
+            "show_blog_tags": false,
+            "coll": "",
+            "coll_title": "Featured collection",
+            "coll_mobile_layout": "carousel",
+            "coll_grid": 3,
+            "coll_grid_mobile": "2",
+            "coll_rows": 1,
+            "coll_link_title": "View all",
+            "coll_link": ""
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_related_products": true,
+            "related_title": "You may also like",
+            "related_mobile_layout": "carousel",
+            "related_grid_num": 3,
+            "grid_mobile": "1",
+            "related_grid_row": 1
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "show_img": true,
+            "show_date": true,
+            "show_author": true,
+            "show_tags": true,
+            "show_sharing": true,
+            "coll": "",
+            "coll_title": "Featured collection",
+            "coll_mobile_layout": "carousel",
+            "coll_grid": 3,
+            "coll_grid_mobile": "1",
+            "coll_rows": 1,
+            "coll_link_title": "View all",
+            "coll_link": ""
+          }
+        },
+        "product-testimonials": {
+          "type": "product-testimonials",
+          "settings": {
+            "title": "Testimonials",
+            "style_desktop": "carousel",
+            "style_mobile": "carousel",
+            "link_title": "Shop now",
+            "link": ""
+          }
+        },
+        "product-sections": {
+          "type": "product-sections",
+          "settings": {
+            "container": "medium"
+          }
+        },
+        "1566456250311": {
+          "type": "home-slideshow",
+          "blocks": {
+            "1566456250311-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_mobile": "",
+                "image_alignment": "center",
+                "alignment": "left",
+                "text_color": "default",
+                "title": "Image slide",
+                "text": "<p>Use these slides to tell the world about your brand. Use images or background video along with text and links.</p>",
+                "link_title": "More info",
+                "link": ""
+              }
+            },
+            "1566456250311-1": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_mobile": "",
+                "image_alignment": "center",
+                "alignment": "left",
+                "text_color": "default",
+                "title": "Image slide",
+                "text": "<p>Use these slides to tell the world about your brand. Use images or background video along with text and links.</p>",
+                "link_title": "More info",
+                "link": ""
+              }
+            }
+          },
+          "block_order": [
+            "1566456250311-0",
+            "1566456250311-1"
+          ],
+          "settings": {
+            "slideshow_style": "semi",
+            "title_size": 3,
+            "autoplay": true,
+            "autoplay_speed": 8,
+            "slideshow_height": "medium",
+            "slideshow_width": "full",
+            "overlay_strength": 10
+          }
+        },
+        "1566456269728": {
+          "type": "home-collection",
+          "settings": {
+            "title": "Featured collection",
+            "collection": "",
+            "mobile_layout": "carousel",
+            "grid": 3,
+            "grid_mobile": "1",
+            "rows": 1,
+            "link_title": "View all",
+            "link": ""
+          }
+        },
+        "1566456294786": {
+          "type": "home-image-grid",
+          "blocks": {
+            "1566456294786-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_alignment": "center",
+                "text_alignment": "bottom",
+                "title": "Image block",
+                "text": "Use these image blocks to tell your story, promote your products or create a beautiful gallery.",
+                "link": ""
+              }
+            },
+            "1566456294786-1": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_alignment": "center",
+                "text_alignment": "bottom",
+                "title": "Image block",
+                "text": "Use these image blocks to tell your story, promote your products or create a beautiful gallery.",
+                "link": ""
+              }
+            }
+          },
+          "block_order": [
+            "1566456294786-0",
+            "1566456294786-1"
+          ],
+          "settings": {
+            "featured": true,
+            "height": "medium",
+            "overlay_strength": 30
+          }
+        },
+        "1566456304723": {
+          "type": "home-content",
+          "blocks": {
+            "1566456304723-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "bg_color": "#f0f0f0",
+                "title": "Image with text",
+                "desc": "<p>Use these blocks to share your brand's story. You can focus on a particular collection, a product detail, or even embed a video.</p>",
+                "video": "",
+                "link_title": "More info",
+                "link": ""
+              }
+            },
+            "1566456304723-1": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "bg_color": "rgba(0,0,0,0)",
+                "title": "Image with text",
+                "desc": "<p>Use these blocks to share your brand's story. You can focus on a particular collection, a product detail, or even embed a video.</p>",
+                "video": "",
+                "link_title": "More info",
+                "link": ""
+              }
+            }
+          },
+          "block_order": [
+            "1566456304723-0",
+            "1566456304723-1"
+          ],
+          "settings": {}
+        },
+        "1566456319558": {
+          "type": "home-video",
+          "blocks": {
+            "1566456319558-0": {
+              "type": "video",
+              "settings": {
+                "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+                "image": ""
+              }
+            },
+            "1566456319558-1": {
+              "type": "video",
+              "settings": {
+                "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+                "image": ""
+              }
+            }
+          },
+          "block_order": [
+            "1566456319558-0",
+            "1566456319558-1"
+          ],
+          "settings": {
+            "title": "Video gallery",
+            "desc": "",
+            "link_title": "More videos",
+            "link": "",
+            "overlay_strength": 50
+          }
+        },
+        "1566456329415": {
+          "type": "home-product",
+          "settings": {
+            "featured_product": "",
+            "show_vendor": false,
+            "product_variant_style": "buttons",
+            "use_swatch_images": false,
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "content_align": "default"
+          }
+        },
+        "list-collections-template": {
+          "type": "list-collections-template",
+          "settings": {
+            "display_type": "all",
+            "sort": "alphabetical",
+            "grid": 2,
+            "overlay_strength": 30
+          }
+        },
+        "page-contact": {
+          "type": "page-contact",
+          "settings": {
+            "show_form": true,
+            "form_title": "Send us an email",
+            "show_map": false,
+            "show_directions_btn": false,
+            "google_api_key": "",
+            "map_style": "light"
+          }
+        }
+      },
+      "content_for_index": [
+        "1566456250311",
+        "1566456269728",
+        "1566456294786",
+        "1566456304723",
+        "1566456319558",
+        "1566456329415"
+      ]
+    },
+    "Evening": {
+      "color_headings": "#212121",
+      "color_text": "#212121",
+      "color_alt_text": "#666666",
+      "color_brand": "#fad018",
+      "color_accent": "#f0f0f0",
+      "color_button": "#111111",
+      "product_grid_sale_color": "#c00000",
+      "product_grid_bg": "#f0f0f0",
+      "color_drawer_bg": "#fef7d7",
+      "color_drawer_style": "dark",
+      "type_base_font": "muli_n4",
+      "type_base_size": "15",
+      "type_header_font": "oswald_n4",
+      "type_header_size": "0.85",
+      "type_header_letterspace": 1,
+      "type_header_capitalize": true,
+      "type_header_underline": true,
+      "type_header_underline_size": 3,
+      "type_nav_font": "oswald_n4",
+      "type_nav_size": "13",
+      "type_nav_letterspace": 1,
+      "type_nav_capitalize": true,
+      "type_button_font": "oswald_n4",
+      "type_button_size": "13",
+      "type_button_letterspace": 1,
+      "type_button_capitalize": true,
+      "product_grid_vendor": false,
+      "product_grid_second_hover": true,
+      "product_grid_quick_buy": "hover",
+      "product_grid_align": "center",
+      "product_grid_image_size": "natural",
+      "product_grid_masonry": false,
+      "product_grid_label": true,
+      "product_grid_label_sale_style": "text",
+      "product_grid_label_new": true,
+      "product_grid_label_new_days": 14,
+      "product_grid_label_title": "Hot",
+      "product_grid_label_collection": "",
+      "product_grid_detail_style": "default",
+      "product_grid_price": true,
+      "product_grid_swatch": false,
+      "product_grid_swatch_image": false,
+      "product_grid_reviews": false,
+      "product_reviews": false,
+      "anim_load": true,
+      "anim_load_style": "interval",
+      "anim_interval_style": "fade_down",
+      "anim_fade": false,
+      "anim_zoom": true,
+      "cart_notes_enable": false,
+      "cart_vendor_enable": false,
+      "cart_continue": true,
+      "cart_type": "modal",
+      "search_enable": true,
+      "search_limit": "product,article,page",
+      "search_linklist": "main-menu",
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "share_fancy": true,
+      "share_mail": true,
+      "social_facebook_link": "",
+      "social_twitter_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "social_fancy_link": "",
+      "social_untappd_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_accent_color": "#197bbd",
+      "checkout_button_color": "#197bbd",
+      "checkout_error_color": "#e32c2b",
+      "sections": {
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1494343961341": {
+              "type": "linklist",
+              "settings": {
+                "title": "Menu",
+                "linklist": "footer"
+              }
+            },
+            "1494463355206": {
+              "type": "linklist",
+              "settings": {
+                "title": "Menu",
+                "linklist": "footer"
+              }
+            },
+            "1494343958665": {
+              "type": "contact",
+              "settings": {
+                "title": "Contact",
+                "show_email": true,
+                "show_number": true,
+                "show_address": true,
+                "show_social": true
+              }
+            },
+            "1494463348419": {
+              "type": "text",
+              "settings": {
+                "title": "Text area",
+                "text": "<p>Add some text such as a mini biography or your mission statement.</p>"
+              }
+            }
+          },
+          "block_order": [
+            "1494343961341",
+            "1494463355206",
+            "1494343958665",
+            "1494463348419"
+          ],
+          "settings": {
+            "footer_newsletter_enable": true,
+            "footer_newsletter_home": false,
+            "newsletter_bg": "#f0f0f0",
+            "newsletter_style": "default",
+            "footer_newsletter_title": "Newsletter",
+            "footer_newsletter_desc": "<p>Let your customers know what to expect if they sign up to your mailing list.</p>",
+            "footer_bg": "#222222",
+            "footer_style": "light",
+            "show_payment_icons": true
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "show_border": true,
+            "header_bg": "#ffffff",
+            "header_style": "dark",
+            "logo": "",
+            "logo_size": 5,
+            "logo_spacing": 3,
+            "main_linklist": "main-menu",
+            "layout": "center",
+            "style": "static",
+            "mega_nav": true,
+            "mega_image": "",
+            "mega_image_link": "",
+            "mega_title": "",
+            "mega_text": "",
+            "mega_link_title": "Learn more",
+            "mega_link": ""
+          }
+        },
+        "mobile-drawer": {
+          "type": "mobile-drawer",
+          "settings": {
+            "main_linklist": "main-menu",
+            "contact_title": "Contact",
+            "show_contact_number": true,
+            "show_contact_email": true,
+            "show_social": true,
+            "cta_image": "",
+            "cta_image_link": "",
+            "cta_title": "",
+            "cta_text": "",
+            "cta_link_title": "Learn more",
+            "cta_link": ""
+          }
+        },
+        "promo-pop": {
+          "type": "promo-pop",
+          "settings": {
+            "enable": false,
+            "mobile": false,
+            "title": "Popup",
+            "text": "<p>Use this popup to embed a mailing list sign up form. Alternatively use it as a simple call to action with a link to a product or a page.</p>",
+            "link_title": "More info",
+            "link": "",
+            "delay": 10,
+            "expiry": 30,
+            "enable_newsletter": true
+          }
+        },
+        "age-checker": {
+          "type": "age-checker",
+          "settings": {
+            "enable": false,
+            "image": "",
+            "title": "Age verification",
+            "text": "<p>By clicking enter you are verifying that you are old enough to consume alcohol.</p>",
+            "enter_btn_label": "Enter",
+            "leave_btn_label": "Leave",
+            "leave_link": ""
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {}
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "layout": "full",
+            "show_breadcrumbs": true,
+            "show_vendor": false,
+            "product_variant_style": "buttons",
+            "use_swatch_images": false,
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "image": "",
+            "show_share_buttons": true,
+            "enable_zoom": true,
+            "image_size": "large",
+            "bg_color": "rgba(0,0,0,0)",
+            "text_color": "default",
+            "bg_height": "default"
+          }
+        },
+        "password-header": {
+          "type": "password-header",
+          "settings": {
+            "logo": "",
+            "logo_size": 5,
+            "logo_spacing": 3,
+            "show_border": true
+          }
+        },
+        "password-content": {
+          "type": "password-content",
+          "settings": {
+            "bg_image": "",
+            "show_newsletter": true,
+            "newsletter_text": "",
+            "newsletter_button_text": "Sign up",
+            "show_social": true
+          }
+        },
+        "page-faq": {
+          "type": "page-faq",
+          "blocks": {
+            "1563305378357": {
+              "type": "category",
+              "settings": {
+                "title": "Category"
+              }
+            },
+            "1563305326608": {
+              "type": "article",
+              "settings": {
+                "title": "Article heading",
+                "text": "<p>Use these articles to answer questions that customers have about your products and services. You can use text, links and images and also group articles into categories.</p>",
+                "image": ""
+              }
+            },
+            "1563305341300": {
+              "type": "article",
+              "settings": {
+                "title": "Article heading",
+                "text": "<p>Use these articles to answer questions that customers have about your products and services. You can use text, links and images and also group articles into categories.</p>",
+                "image": ""
+              }
+            },
+            "1563305384180": {
+              "type": "category",
+              "settings": {
+                "title": "Category"
+              }
+            },
+            "1563305386011": {
+              "type": "article",
+              "settings": {
+                "title": "Article heading",
+                "text": "<p>Use these articles to answer questions that customers have about your products and services. You can use text, links and images and also group articles into categories.</p>",
+                "image": ""
+              }
+            }
+          },
+          "block_order": [
+            "1563305378357",
+            "1563305326608",
+            "1563305341300",
+            "1563305384180",
+            "1563305386011"
+          ],
+          "settings": {
+            "enable_search": true,
+            "enable_sidebar": true,
+            "cta_link_title": "Contact us",
+            "cta_link": ""
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "show_tags": true,
+            "show_rss": false,
+            "grid": 2,
+            "crop": true,
+            "show_blog_date": true,
+            "show_blog_author": false,
+            "show_blog_comments": false,
+            "show_blog_tags": false,
+            "coll": "",
+            "coll_title": "Featured collection",
+            "coll_mobile_layout": "carousel",
+            "coll_grid": 3,
+            "coll_grid_mobile": "2",
+            "coll_rows": 1,
+            "coll_link_title": "View all",
+            "coll_link": ""
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_related_products": true,
+            "related_title": "You may also like",
+            "related_mobile_layout": "carousel",
+            "related_grid_num": 3,
+            "grid_mobile": "1",
+            "related_grid_row": 1
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "show_img": true,
+            "show_date": true,
+            "show_author": true,
+            "show_tags": true,
+            "show_sharing": true,
+            "coll": "",
+            "coll_title": "Featured collection",
+            "coll_mobile_layout": "carousel",
+            "coll_grid": 3,
+            "coll_grid_mobile": "1",
+            "coll_rows": 1,
+            "coll_link_title": "View all",
+            "coll_link": ""
+          }
+        },
+        "product-testimonials": {
+          "type": "product-testimonials",
+          "settings": {
+            "title": "Testimonials",
+            "style_desktop": "carousel",
+            "style_mobile": "carousel",
+            "link_title": "Shop now",
+            "link": ""
+          }
+        },
+        "product-sections": {
+          "type": "product-sections",
+          "settings": {
+            "container": "medium"
+          }
+        },
+        "1566456250311": {
+          "type": "home-slideshow",
+          "blocks": {
+            "1566456250311-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_mobile": "",
+                "image_alignment": "center",
+                "alignment": "left",
+                "text_color": "default-light",
+                "title": "Image slide",
+                "text": "<p>Use these slides to tell the world about your brand. Use images or background video along with text and links.</p>",
+                "link_title": "More info",
+                "link": ""
+              }
+            },
+            "1566456250311-1": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_mobile": "",
+                "image_alignment": "center",
+                "alignment": "left",
+                "text_color": "default-light",
+                "title": "Image slide",
+                "text": "<p>Use these slides to tell the world about your brand. Use images or background video along with text and links.</p>",
+                "link_title": "More info",
+                "link": ""
+              }
+            }
+          },
+          "block_order": [
+            "1566456250311-0",
+            "1566456250311-1"
+          ],
+          "settings": {
+            "slideshow_style": "minimal",
+            "title_size": 3,
+            "autoplay": true,
+            "autoplay_speed": 8,
+            "slideshow_height": "medium",
+            "slideshow_width": "contained",
+            "overlay_strength": 30
+          }
+        },
+        "1566456269728": {
+          "type": "home-collection",
+          "settings": {
+            "title": "Featured collection",
+            "collection": "",
+            "mobile_layout": "carousel",
+            "grid": 3,
+            "grid_mobile": "1",
+            "rows": 1,
+            "link_title": "View all",
+            "link": ""
+          }
+        },
+        "1566456304723": {
+          "type": "home-content",
+          "blocks": {
+            "1566456304723-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "bg_color": "#f0f0f0",
+                "title": "Image with text",
+                "desc": "<p>Use these blocks to share your brand's story. You can focus on a particular collection, a product detail, or even embed a video.</p>",
+                "video": "",
+                "link_title": "More info",
+                "link": ""
+              }
+            },
+            "1566456304723-1": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "bg_color": "#ffffff",
+                "title": "Image with text",
+                "desc": "<p>Use these blocks to share your brand's story. You can focus on a particular collection, a product detail, or even embed a video.</p>",
+                "video": "",
+                "link_title": "More info",
+                "link": ""
+              }
+            }
+          },
+          "block_order": [
+            "1566456304723-0",
+            "1566456304723-1"
+          ],
+          "settings": {}
+        },
+        "1566456319558": {
+          "type": "home-video",
+          "blocks": {
+            "1566456319558-0": {
+              "type": "video",
+              "settings": {
+                "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+                "image": ""
+              }
+            },
+            "1566456319558-1": {
+              "type": "video",
+              "settings": {
+                "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+                "image": ""
+              }
+            }
+          },
+          "block_order": [
+            "1566456319558-0",
+            "1566456319558-1"
+          ],
+          "settings": {
+            "title": "Video gallery",
+            "desc": "",
+            "link_title": "More videos",
+            "link": "",
+            "overlay_strength": 50
+          }
+        },
+        "list-collections-template": {
+          "type": "list-collections-template",
+          "settings": {
+            "display_type": "all",
+            "sort": "alphabetical",
+            "grid": 2,
+            "overlay_strength": 30
+          }
+        },
+        "page-contact": {
+          "type": "page-contact",
+          "settings": {
+            "show_form": true,
+            "form_title": "Send us an email",
+            "show_map": false,
+            "show_directions_btn": false,
+            "google_api_key": "",
+            "map_style": "light"
+          }
+        },
+        "1566460870233": {
+          "type": "home-image-text",
+          "settings": {
+            "bg_image": "",
+            "image_alignment": "center",
+            "text": "<p>Offer some insight into your brand and history. Use images, text and video to describe your value proposition.</p>",
+            "inline_image": "",
+            "inline_image_width": 200,
+            "video": "",
+            "link_title": "Learn more",
+            "link": "",
+            "section_height": "small",
+            "overlay_color": "#ffffff",
+            "overlay_strength": 30,
+            "content_style": "dark"
+          }
+        },
+        "1566460897951": {
+          "type": "home-events",
+          "settings": {
+            "title": "Events",
+            "desc": "",
+            "link_title": "View all",
+            "link": "",
+            "mobile_layout": "carousel",
+            "overlay_strength": 50,
+            "api_key": "",
+            "events_limit": 2,
+            "show_link": true
+          }
+        },
+        "1566460912234": {
+          "type": "home-text-columns",
+          "blocks": {
+            "1566460912234-0": {
+              "type": "text",
+              "settings": {
+                "image": "",
+                "title": "Column heading",
+                "sub_title": "Subheading",
+                "desc": "<p>Describe the main features of your brand or products using a few lines of text along with images or icons.</p>"
+              }
+            },
+            "1566460912234-1": {
+              "type": "text",
+              "settings": {
+                "image": "",
+                "title": "Column heading",
+                "sub_title": "Subheading",
+                "desc": "<p>Describe the main features of your brand or products using a few lines of text along with images or icons.</p>"
+              }
+            },
+            "1566460912234-2": {
+              "type": "text",
+              "settings": {
+                "image": "",
+                "title": "Column heading",
+                "sub_title": "Subheading",
+                "desc": "<p>Describe the main features of your brand or products using a few lines of text along with images or icons.</p>"
+              }
+            }
+          },
+          "block_order": [
+            "1566460912234-0",
+            "1566460912234-1",
+            "1566460912234-2"
+          ],
+          "settings": {
+            "title": "Text columns with images",
+            "desc": "",
+            "content_align": "center",
+            "link_title": "Learn more",
+            "link": ""
+          }
+        },
+        "1566460938967": {
+          "type": "home-delivery",
+          "settings": {
+            "bg_image": "",
+            "image_alignment": "center",
+            "delivery_service": "deliveroo",
+            "logo_override": "",
+            "title": "",
+            "desc": "<p>Use a logo and text to link to a delivery partner such as UberEATS or Favor. This section is not intended for products ordered through your Shopify store.</p>",
+            "link_title": "Learn more",
+            "link": "",
+            "section_height": "medium",
+            "overlay_strength": 30
+          }
+        }
+      },
+      "content_for_index": [
+        "1566456250311",
+        "1566456269728",
+        "1566456304723",
+        "1566460870233",
+        "1566456319558",
+        "1566460912234",
+        "1566460897951",
+        "1566460938967"
+      ]
+    },
+    "Weekend": {
+      "color_headings": "#212121",
+      "color_text": "#535353",
+      "color_alt_text": "#666666",
+      "color_brand": "#98b859",
+      "color_accent": "#f0f0f0",
+      "color_button": "#ffffff",
+      "product_grid_sale_color": "#c00000",
+      "product_grid_bg": "#f0f0f0",
+      "color_drawer_bg": "#f0f0f0",
+      "color_drawer_style": "dark",
+      "type_base_font": "nunito_sans_n3",
+      "type_base_size": "15",
+      "type_header_font": "old_standard_tt_n4",
+      "type_header_size": "0.85",
+      "type_header_letterspace": 0,
+      "type_header_capitalize": false,
+      "type_header_underline": true,
+      "type_header_underline_size": 4,
+      "type_nav_font": "nunito_sans_n3",
+      "type_nav_size": "13",
+      "type_nav_letterspace": 1,
+      "type_nav_capitalize": true,
+      "type_button_font": "nunito_sans_n3",
+      "type_button_size": "13",
+      "type_button_letterspace": 1,
+      "type_button_capitalize": true,
+      "product_grid_vendor": false,
+      "product_grid_second_hover": true,
+      "product_grid_quick_buy": "hover",
+      "product_grid_align": "center",
+      "product_grid_image_size": "natural",
+      "product_grid_masonry": false,
+      "product_grid_label": true,
+      "product_grid_label_sale_style": "text",
+      "product_grid_label_new": true,
+      "product_grid_label_new_days": 14,
+      "product_grid_label_title": "Hot",
+      "product_grid_label_collection": "",
+      "product_grid_detail_style": "default",
+      "product_grid_price": true,
+      "product_grid_swatch": false,
+      "product_grid_swatch_image": false,
+      "product_grid_reviews": false,
+      "product_reviews": false,
+      "anim_load": true,
+      "anim_load_style": "interval",
+      "anim_interval_style": "fade_down",
+      "anim_fade": false,
+      "anim_zoom": true,
+      "cart_notes_enable": false,
+      "cart_vendor_enable": false,
+      "cart_continue": true,
+      "cart_type": "modal",
+      "search_enable": true,
+      "search_limit": "product,article,page",
+      "search_linklist": "main-menu",
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "share_fancy": true,
+      "share_mail": true,
+      "social_facebook_link": "",
+      "social_twitter_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "social_fancy_link": "",
+      "social_untappd_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_accent_color": "#197bbd",
+      "checkout_button_color": "#197bbd",
+      "checkout_error_color": "#e32c2b",
+      "sections": {
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1494343961341": {
+              "type": "linklist",
+              "settings": {
+                "title": "Menu",
+                "linklist": "footer"
+              }
+            },
+            "1494463355206": {
+              "type": "linklist",
+              "settings": {
+                "title": "Menu",
+                "linklist": "footer"
+              }
+            },
+            "1494343958665": {
+              "type": "contact",
+              "settings": {
+                "title": "Contact",
+                "show_email": true,
+                "show_number": true,
+                "show_address": true,
+                "show_social": true
+              }
+            },
+            "1494463348419": {
+              "type": "text",
+              "settings": {
+                "title": "Text area",
+                "text": "<p>Add some text such as a mini biography or your mission statement.</p>"
+              }
+            }
+          },
+          "block_order": [
+            "1494343961341",
+            "1494463355206",
+            "1494343958665",
+            "1494463348419"
+          ],
+          "settings": {
+            "footer_newsletter_enable": true,
+            "footer_newsletter_home": false,
+            "newsletter_bg": "#f0f0f0",
+            "newsletter_style": "default",
+            "footer_newsletter_title": "Newsletter",
+            "footer_newsletter_desc": "<p>Let your customers know what to expect if they sign up to your mailing list.</p>",
+            "footer_bg": "#232f3d",
+            "footer_style": "light",
+            "show_payment_icons": true
+          }
+        },
+        "header": {
+          "type": "header",
+          "settings": {
+            "show_border": false,
+            "header_bg": "#ffffff",
+            "header_style": "dark",
+            "logo": "",
+            "logo_size": 5,
+            "logo_spacing": 3,
+            "main_linklist": "main-menu",
+            "layout": "left",
+            "style": "sticky",
+            "mega_nav": true,
+            "mega_image": "",
+            "mega_image_link": "",
+            "mega_title": "",
+            "mega_text": "",
+            "mega_link_title": "Learn more",
+            "mega_link": ""
+          }
+        },
+        "mobile-drawer": {
+          "type": "mobile-drawer",
+          "settings": {
+            "main_linklist": "main-menu",
+            "contact_title": "Contact",
+            "show_contact_number": true,
+            "show_contact_email": true,
+            "show_social": true,
+            "cta_image": "",
+            "cta_image_link": "",
+            "cta_title": "",
+            "cta_text": "",
+            "cta_link_title": "Learn more",
+            "cta_link": ""
+          }
+        },
+        "promo-pop": {
+          "type": "promo-pop",
+          "settings": {
+            "enable": false,
+            "mobile": false,
+            "title": "Popup",
+            "text": "<p>Use this popup to embed a mailing list sign up form. Alternatively use it as a simple call to action with a link to a product or a page.</p>",
+            "link_title": "More info",
+            "link": "",
+            "delay": 10,
+            "expiry": 30,
+            "enable_newsletter": true
+          }
+        },
+        "age-checker": {
+          "type": "age-checker",
+          "settings": {
+            "enable": false,
+            "image": "",
+            "title": "Age verification",
+            "text": "<p>By clicking enter you are verifying that you are old enough to consume alcohol.</p>",
+            "enter_btn_label": "Enter",
+            "leave_btn_label": "Leave",
+            "leave_link": ""
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {}
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "layout": "full",
+            "show_breadcrumbs": true,
+            "show_vendor": false,
+            "product_variant_style": "buttons",
+            "use_swatch_images": false,
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "image": "",
+            "show_share_buttons": true,
+            "enable_zoom": true,
+            "image_size": "large",
+            "bg_color": "rgba(0,0,0,0)",
+            "text_color": "default",
+            "bg_height": "full"
+          }
+        },
+        "password-header": {
+          "type": "password-header",
+          "settings": {
+            "logo": "",
+            "logo_size": 5,
+            "logo_spacing": 3,
+            "show_border": true
+          }
+        },
+        "password-content": {
+          "type": "password-content",
+          "settings": {
+            "bg_image": "",
+            "show_newsletter": true,
+            "newsletter_text": "",
+            "newsletter_button_text": "Sign up",
+            "show_social": true
+          }
+        },
+        "page-faq": {
+          "type": "page-faq",
+          "blocks": {
+            "1563305378357": {
+              "type": "category",
+              "settings": {
+                "title": "Category"
+              }
+            },
+            "1563305326608": {
+              "type": "article",
+              "settings": {
+                "title": "Article heading",
+                "text": "<p>Use these articles to answer questions that customers have about your products and services. You can use text, links and images and also group articles into categories.</p>",
+                "image": ""
+              }
+            },
+            "1563305341300": {
+              "type": "article",
+              "settings": {
+                "title": "Article heading",
+                "text": "<p>Use these articles to answer questions that customers have about your products and services. You can use text, links and images and also group articles into categories.</p>",
+                "image": ""
+              }
+            },
+            "1563305384180": {
+              "type": "category",
+              "settings": {
+                "title": "Category"
+              }
+            },
+            "1563305386011": {
+              "type": "article",
+              "settings": {
+                "title": "Article heading",
+                "text": "<p>Use these articles to answer questions that customers have about your products and services. You can use text, links and images and also group articles into categories.</p>",
+                "image": ""
+              }
+            }
+          },
+          "block_order": [
+            "1563305378357",
+            "1563305326608",
+            "1563305341300",
+            "1563305384180",
+            "1563305386011"
+          ],
+          "settings": {
+            "enable_search": true,
+            "enable_sidebar": true,
+            "cta_link_title": "Contact us",
+            "cta_link": ""
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "show_tags": true,
+            "show_rss": false,
+            "grid": 2,
+            "crop": true,
+            "show_blog_date": true,
+            "show_blog_author": false,
+            "show_blog_comments": false,
+            "show_blog_tags": false,
+            "coll": "",
+            "coll_title": "Featured collection",
+            "coll_mobile_layout": "carousel",
+            "coll_grid": 3,
+            "coll_grid_mobile": "2",
+            "coll_rows": 1,
+            "coll_link_title": "View all",
+            "coll_link": ""
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_related_products": true,
+            "related_title": "You may also like",
+            "related_mobile_layout": "carousel",
+            "related_grid_num": 3,
+            "grid_mobile": "1",
+            "related_grid_row": 1
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "show_img": true,
+            "show_date": true,
+            "show_author": true,
+            "show_tags": true,
+            "show_sharing": true,
+            "coll": "",
+            "coll_title": "Featured collection",
+            "coll_mobile_layout": "carousel",
+            "coll_grid": 3,
+            "coll_grid_mobile": "1",
+            "coll_rows": 1,
+            "coll_link_title": "View all",
+            "coll_link": ""
+          }
+        },
+        "product-testimonials": {
+          "type": "product-testimonials",
+          "settings": {
+            "title": "Testimonials",
+            "style_desktop": "carousel",
+            "style_mobile": "carousel",
+            "link_title": "Shop now",
+            "link": ""
+          }
+        },
+        "product-sections": {
+          "type": "product-sections",
+          "settings": {
+            "container": "medium"
+          }
+        },
+        "1566456250311": {
+          "type": "home-slideshow",
+          "blocks": {
+            "1566456250311-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_mobile": "",
+                "image_alignment": "center",
+                "alignment": "left",
+                "text_color": "default-light",
+                "title": "Image slide",
+                "text": "<p>Use these slides to tell the world about your brand. Use images or background video along with text and links.</p>",
+                "link_title": "More info",
+                "link": ""
+              }
+            },
+            "1566456250311-1": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_mobile": "",
+                "image_alignment": "center",
+                "alignment": "left",
+                "text_color": "default-light",
+                "title": "Image slide",
+                "text": "<p>Use these slides to tell the world about your brand. Use images or background video along with text and links.</p>",
+                "link_title": "More info",
+                "link": ""
+              }
+            }
+          },
+          "block_order": [
+            "1566456250311-0",
+            "1566456250311-1"
+          ],
+          "settings": {
+            "slideshow_style": "minimal",
+            "title_size": 3,
+            "autoplay": true,
+            "autoplay_speed": 8,
+            "slideshow_height": "medium",
+            "slideshow_width": "full",
+            "overlay_strength": 30
+          }
+        },
+        "1566456269728": {
+          "type": "home-collection",
+          "settings": {
+            "title": "Featured collection",
+            "collection": "",
+            "mobile_layout": "carousel",
+            "grid": 3,
+            "grid_mobile": "1",
+            "rows": 1,
+            "link_title": "View all",
+            "link": ""
+          }
+        },
+        "1566456294786": {
+          "type": "home-image-grid",
+          "blocks": {
+            "1566456294786-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_alignment": "center",
+                "text_alignment": "bottom",
+                "title": "Image block",
+                "text": "Use these image blocks to tell your story, promote your products or create a beautiful gallery.",
+                "link": ""
+              }
+            },
+            "1566456294786-1": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "image_alignment": "center",
+                "text_alignment": "bottom",
+                "title": "Image block",
+                "text": "Use these image blocks to tell your story, promote your products or create a beautiful gallery.",
+                "link": ""
+              }
+            }
+          },
+          "block_order": [
+            "1566456294786-0",
+            "1566456294786-1"
+          ],
+          "settings": {
+            "featured": true,
+            "height": "medium",
+            "overlay_strength": 30
+          }
+        },
+        "1566456319558": {
+          "type": "home-video",
+          "blocks": {
+            "1566456319558-0": {
+              "type": "video",
+              "settings": {
+                "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+                "image": ""
+              }
+            },
+            "1566456319558-1": {
+              "type": "video",
+              "settings": {
+                "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+                "image": ""
+              }
+            }
+          },
+          "block_order": [
+            "1566456319558-0",
+            "1566456319558-1"
+          ],
+          "settings": {
+            "title": "Video gallery",
+            "desc": "",
+            "link_title": "More videos",
+            "link": "",
+            "overlay_strength": 50
+          }
+        },
+        "list-collections-template": {
+          "type": "list-collections-template",
+          "settings": {
+            "display_type": "all",
+            "sort": "alphabetical",
+            "grid": 2,
+            "overlay_strength": 30
+          }
+        },
+        "page-contact": {
+          "type": "page-contact",
+          "settings": {
+            "show_form": true,
+            "form_title": "Send us an email",
+            "show_map": false,
+            "show_directions_btn": false,
+            "google_api_key": "",
+            "map_style": "light"
+          }
+        },
+        "1566462063540": {
+          "type": "home-product",
+          "settings": {
+            "featured_product": "",
+            "show_vendor": false,
+            "product_variant_style": "buttons",
+            "use_swatch_images": false,
+            "show_quantity_selector": true,
+            "enable_payment_button": true,
+            "content_align": "default"
+          }
+        }
+      },
+      "content_for_index": [
+        "1566456250311",
+        "1566462063540",
+        "1566456269728",
+        "1566456294786",
+        "1566456319558"
+      ]
+    }
+  }
+}

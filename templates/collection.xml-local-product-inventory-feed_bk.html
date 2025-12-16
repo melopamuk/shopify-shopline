@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
+{{#paginate collection.products 1000}}
+<channel>
+{{#for collection.products as |product|}}
+  {{#for product.variants as |variant|}}
+    {{ assign 'Price' variant.price }}
+<item>
+<g:store_code>P-QSUWMKHCUnGu</g:store_code>
+<g:id>shopify_US_{{ product.id }}_{{ variant.id }}</g:id>
+<g:quantity>{{ variant.inventory_quantity }}</g:quantity>
+<g:price>{{ money_without_currency Price }}</g:price>
+<g:availability>{{#if variant.available}}in stock{{else}}out of stock{{/if}}</g:availability>
+</item>
+{{/for}}
+{{/for}}
+</channel>
+</rss>
+{{/paginate}}

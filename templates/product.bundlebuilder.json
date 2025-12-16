@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "product_bundlebuilder_template",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

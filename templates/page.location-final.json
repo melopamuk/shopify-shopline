@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "location_final_template",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

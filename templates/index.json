@@ -1,0 +1,445 @@
+{
+  "sections": {
+    "shipping_top_template_t4xEJb": {
+      "type": "shipping_top_template",
+      "settings": {}
+    },
+    "banner_large_with_text_RhzNmC": {
+      "type": "banner-large-with-text",
+      "name": "Banner Large With Text",
+      "settings": {
+        "image": "shopify://shop_images/NEW-JUICEFLY-1920x400-VAPES.webp",
+        "image_mobile": "shopify://shop_images/webp-NEW-JUICEFLY-900X900-VAPES.webp",
+        "title": "Flying",
+        "title_2": "vapes",
+        "title_3": "to your",
+        "title_4": "doorstep!",
+        "subtitle": "",
+        "subtitle_2": "",
+        "subtitle_color": "#464494"
+      }
+    },
+    "home_html_DPdAx8": {
+      "type": "home-html",
+      "name": "Custom HTML",
+      "settings": {
+        "code": "<div class=\"trustpilot-widget\" data-locale=\"en-US\" data-template-id=\"5406e65db0d04a09e042d5fc\" data-businessunit-id=\"615734e4cf0e95001cd58708\" data-style-height=\"28px\" data-style-width=\"100%\" data-token=\"3e763e6f-0023-46ad-8ac3-5b337a4a67ff\">\n  <a href=\"https://www.trustpilot.com/review/juicefly.com\" target=\"_blank\" rel=\"noopener\">Trustpilot</a>\n</div>"
+      }
+    },
+    "home_collection_list_mobile_shipping_46xipw": {
+      "type": "home-collection-list-mobile__shipping",
+      "blocks": {
+        "image_D8wfDh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-MOBILE-01-FLUM.svg",
+            "text_color": "",
+            "title": "FLUM",
+            "link": "shopify://collections/flum-vapes"
+          }
+        },
+        "image_GyP4Vp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-MOBILE-17-TYSON.svg",
+            "text_color": "",
+            "title": "TYSON",
+            "link": "shopify://collections/tyson-vape"
+          }
+        },
+        "image_DJqbtK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-MOBILE-08-GEEKBAR.svg",
+            "text_color": "",
+            "title": "GEEK BAR",
+            "link": "shopify://collections/geek-bar"
+          }
+        },
+        "image_UXgwQM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-MOBILE-16-ECIG.svg",
+            "text_color": "",
+            "title": "E-Cig Disposables",
+            "link": "shopify://collections/vapes"
+          }
+        },
+        "image_wwfqP7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-MOBILE-12-VAPE-JUICE.svg",
+            "text_color": "",
+            "title": "VAPE JUICE",
+            "link": "https://juicefly.com/collections/vape-juice"
+          }
+        },
+        "image_VLBAiD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-MOBILE-13-DEVICES.svg",
+            "text_color": "",
+            "title": "Vape Kits",
+            "link": "shopify://collections/vape-devices"
+          }
+        },
+        "image_jc8fAN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-MOBILE-15-NICOTINE-POUCHES.svg",
+            "text_color": "",
+            "title": "Nicotine Pouch",
+            "link": "shopify://collections/nicotine-pouches"
+          }
+        }
+      },
+      "block_order": [
+        "image_D8wfDh",
+        "image_GyP4Vp",
+        "image_DJqbtK",
+        "image_UXgwQM",
+        "image_wwfqP7",
+        "image_VLBAiD",
+        "image_jc8fAN"
+      ],
+      "settings": {}
+    },
+    "home_collection_list_desktop_shipping_YzVxFC": {
+      "type": "home-collection-list-desktop__shipping",
+      "blocks": {
+        "image_G3CkN6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-WEB-01-FLUM.svg",
+            "link": "https://juicefly.com/collections/flum-vapes"
+          }
+        },
+        "image_EGf8rX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-WEB-17-TYSON.svg",
+            "link": "shopify://collections/tyson-vape"
+          }
+        },
+        "image_crK4ay": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-WEB-09-GEEKBAR.svg",
+            "link": "shopify://collections/geek-bar"
+          }
+        },
+        "image_7xtM9D": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-WEB-16-ECIG_1.svg",
+            "link": "shopify://collections/vapes"
+          }
+        },
+        "image_n6CrDY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-WEB-12-VAPE-JUICE.svg",
+            "link": "https://juicefly.com/collections/vape-juice"
+          }
+        },
+        "image_BmDMTa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-WEB-14-VAPE-KITS.svg",
+            "link": "shopify://collections/vape-devices"
+          }
+        },
+        "image_ca7CW9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/VAPE-CATEGORY-ICONS-WEB-15-NICOTINE-POUCHES.svg",
+            "link": "shopify://collections/nicotine-pouches"
+          }
+        }
+      },
+      "block_order": [
+        "image_G3CkN6",
+        "image_EGf8rX",
+        "image_crK4ay",
+        "image_7xtM9D",
+        "image_n6CrDY",
+        "image_BmDMTa",
+        "image_ca7CW9"
+      ],
+      "settings": {}
+    },
+    "home_product_list_shipping_Atf9cj": {
+      "type": "home-product-list__shipping",
+      "settings": {
+        "collection": "vapes"
+      }
+    },
+    "home_single_banner_RkWjT7": {
+      "type": "home-single-banner",
+      "name": "Home Single Banner",
+      "settings": {
+        "image": "shopify://shop_images/JUICEFLY-LIMITED-TIME-SALE-VAPE-DECEMBER-1050x255.webp",
+        "image_mobile": "shopify://shop_images/JUICEFLY-LIMITED-TIME-SALE-VAPE-DECEMBER-600X600.webp",
+        "link": "shopify://collections/deals"
+      }
+    },
+    "home_product_list_shipping_2_XqV9xH": {
+      "type": "home-product-list__shipping-2",
+      "settings": {
+        "collection": "deals"
+      }
+    },
+    "home_single_banner_qQU73n": {
+      "type": "home-single-banner",
+      "name": "Home Single Banner",
+      "settings": {
+        "image": "shopify://shop_images/WhatsApp_Image_2025-12-02_at_13.23.31_1.jpg",
+        "image_mobile": "shopify://shop_images/WhatsApp_Image_2025-12-02_at_13.23.31.jpg",
+        "link": "https://juicefly.com/products/oxbar-astro-50k-puffs"
+      }
+    },
+    "tag_based_products_a4TBbK": {
+      "type": "tag-based-products",
+      "settings": {
+        "title": "Vape Devices",
+        "collection": "vape-devices",
+        "collButton": true
+      }
+    },
+    "home_single_banner_ETzDqA": {
+      "type": "home-single-banner",
+      "name": "Home Single Banner",
+      "settings": {
+        "image": "shopify://shop_images/OXBAR-SYNTRIX-1050x255.webp",
+        "image_mobile": "shopify://shop_images/OXBAR-SYNTRIX-600X600.webp",
+        "link": "https://juicefly.com/products/syntrix-ghost-it-disposable-vape-40k-puffs"
+      }
+    },
+    "tag_based_product2_3iBdzg": {
+      "type": "tag-based-product2",
+      "settings": {
+        "title": "Vape Juice",
+        "collection": "vape-juice",
+        "collButton": true
+      }
+    },
+    "home_single_banner_XUhzeB": {
+      "type": "home-single-banner",
+      "name": "Home Single Banner",
+      "settings": {
+        "image": "shopify://shop_images/JUICEFLY-TYSON-LEGEND-1050x255.webp",
+        "image_mobile": "shopify://shop_images/JUICEFLY-TYSON-LEGEND-600x600.webp",
+        "link": "shopify://collections/tyson-vape"
+      }
+    },
+    "tag_based_product3_kmQbxW": {
+      "type": "tag-based-product3",
+      "settings": {
+        "title": "Best Seller Vapes",
+        "collection": "best-seller-vapes",
+        "collButton": true
+      }
+    },
+    "home_single_banner_j7YqeM": {
+      "type": "home-single-banner",
+      "name": "Home Single Banner",
+      "settings": {
+        "image": "shopify://shop_images/JUICEFLY-BEST-SELLERS-25-1050x255.webp",
+        "image_mobile": "shopify://shop_images/JUICEFLY-BEST-SELLERS-25-600x600.webp",
+        "link": "shopify://collections/best-seller-vapes"
+      }
+    },
+    "tag_based_product4_aRhiDy": {
+      "type": "tag-based-product4",
+      "settings": {
+        "title": "Juicefly Staff selected vapes",
+        "collection": "juiceselectvapes",
+        "collButton": true
+      }
+    },
+    "home_single_banner_CNk4im": {
+      "type": "home-single-banner",
+      "name": "Home Single Banner",
+      "settings": {
+        "image": "shopify://shop_images/JUICEFLY-INYLA-1050x255.webp",
+        "image_mobile": "shopify://shop_images/JUICEFLY-INYLA-600x600.webp",
+        "link": "shopify://collections/i-nyla"
+      }
+    },
+    "home_reviews_shipping_BjeaUd": {
+      "type": "home-reviews__shipping",
+      "blocks": {
+        "text_jDN9bL": {
+          "type": "text",
+          "settings": {
+            "reviewer": "George",
+            "content": "Excellent Service! \nI received my order on time and well packaged. I had a little problem with my order but the manager fixed it real quick and to my satisfaction. To be able to find great flavored vapes just a shipment away is great. I'm a permanent juicefly satisfied customer",
+            "provider": "trustpilot"
+          }
+        },
+        "text_NTWpAB": {
+          "type": "text",
+          "settings": {
+            "reviewer": "Jenny B.",
+            "content": "Fly as Hell! Juicefly has been amazing. I tried 4 different online suppliers of Flum. I wanted to make sure they were legit so I made small purchases and waited to see if the customer service was good, my shipment arrived, etc. okay, so Juicefly, had literally the best selection. And the Mi Flum which are the mini ones the size of a Juul, I prefer these because the flavor seems more consistent and doesn't make me feel sick.",
+            "provider": "yelp"
+          }
+        },
+        "text_Ne8Vih": {
+          "type": "text",
+          "settings": {
+            "reviewer": "Donna Vanneman",
+            "content": "I have ordered from many vape companies and have always gone back to Juicefly. The people there are very helpful and always respond to any inquiry I make. I am a loyal customer and would HIGHLY recommend Juicefly to any other vape delivery service out there.",
+            "provider": "trustpilot"
+          }
+        }
+      },
+      "block_order": [
+        "text_jDN9bL",
+        "text_NTWpAB",
+        "text_Ne8Vih"
+      ],
+      "settings": {
+        "header": "Our Customers Say"
+      }
+    },
+    "shipping_calculator_UkmNB8": {
+      "type": "shipping-calculator",
+      "disabled": true,
+      "settings": {}
+    },
+    "juice_map_shipping_QtgREX": {
+      "type": "juice-map__shipping",
+      "disabled": true,
+      "settings": {}
+    },
+    "home_faq_shipping_QtYWGC": {
+      "type": "home-faq__shipping",
+      "blocks": {
+        "faq_item_LGXLEb": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How long does Juicefly take to process orders?",
+            "answer": "Orders placed before 4 pm on business days usually packed and dispatched same day. Order preparation may take up to 72 hours during high demand. Shipping carriers do not process orders on weekends and U.S. Federal Holidays. Orders placed on weekends or Saturday after 12PM(PST) are sent out on Mondays."
+          }
+        },
+        "faq_item_ULqPCU": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Where Does Juicefly Ship Vapes to?",
+            "answer": "Our local and national service area constantly change. Please add products to your cart and go to checkout to see most updated delivery options. Remember to login to your account before proceeding to checkout."
+          }
+        },
+        "faq_item_BNUHjK": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I receive a same vape day delivery in my area?",
+            "answer": "Juicefly local delivery area constantly change. Please proceed to checkout and enter your delivery address to see most updated information."
+          }
+        },
+        "faq_item_JTd4aX": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How soon i can receive my order with local delivery?",
+            "answer": "If you are in our local delivery area, you can receive your order as early as 45 minutes with 'Priority Local Delivery\". With \"Standard Local Delivery\", most orders are delivered under 2 hours."
+          }
+        },
+        "faq_item_xJNkj3": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I cancel my order?",
+            "answer": "Yes, you can cancel your order online. The conditions for a full refund or restocking fee depend on when you cancel your order."
+          }
+        },
+        "faq_item_CLLEh8": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How can I track my order from Juicefly?",
+            "answer": "A tracking email will be automatically generated as soon as your order fulfilled at Juicefly. If you're local delivery customer, you'll receive a tracking link through text messages to your provided phone number."
+          }
+        },
+        "faq_item_eFVAgH": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What are the estimated transit times for different regions of the US?",
+            "answer": "The Western Half of the US typically takes 1-3 business days in transit, while the Eastern Half of the US takes 3-5 business days in transit."
+          }
+        },
+        "faq_item_tDacUM": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How are shipping costs calculated?",
+            "answer": "Shipping costs are calculated based on your address or location. Please go to checkout to see most updated rates."
+          }
+        },
+        "faq_item_yDABaz": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is an adult signature required for vape product delivery?",
+            "answer": "An Adult Signature Confirmation (21+) is required upon delivery, and the recipient must provide a valid government photo ID for age verification for their first order."
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_LGXLEb",
+        "faq_item_ULqPCU",
+        "faq_item_BNUHjK",
+        "faq_item_JTd4aX",
+        "faq_item_xJNkj3",
+        "faq_item_CLLEh8",
+        "faq_item_eFVAgH",
+        "faq_item_tDacUM",
+        "faq_item_yDABaz"
+      ],
+      "settings": {}
+    },
+    "home_newsletter_shipping_Ay8xAU": {
+      "type": "home-newsletter__shipping",
+      "settings": {}
+    },
+    "text_section_NB7TN8": {
+      "type": "text-section",
+      "settings": {
+        "add_text": "<h2><strong>Online Vape Shop</strong></h2><p>Juicefly Online <a href=\"https://juicefly.com/collections/vapes\" title=\"https://juicefly.com/collections/vapes\"><strong>Vape Shop</strong></a> brings you the best vape products across the US. Thanks to our reliable 3rd party carrier network, we ensure you get your package quickly and discreetly. </p><p>Explore our extensive range of brands, including <a href=\"https://juicefly.com/collections/flum-vapes\" title=\"https://juicefly.com/collections/flum-vapes\"><strong>Flum</strong></a>, <a href=\"https://juicefly.com/collections/vozol\" title=\"https://juicefly.com/collections/vozol\"><strong>Vozol</strong></a>, <a href=\"https://juicefly.com/collections/geek-bar\" title=\"https://juicefly.com/collections/geek-bar\"><strong>Geek Bar</strong></a>, <a href=\"https://juicefly.com/collections/raz-vape\" title=\"https://juicefly.com/collections/raz-vape\"><strong>Raz</strong></a>, <a href=\"https://juicefly.com/collections/hyppe-max-disposable-vapes\" title=\"https://juicefly.com/collections/hyppe-max-disposable-vapes\"><strong>Hyppe Max</strong></a> and <a href=\"https://juicefly.com/collections/lost-mary-vape\" title=\"Lost Mary Vape\"><strong>Lost Mary</strong></a>, to discover the finest vape options for your lifestyle.</p><p>These top-quality <a href=\"/collections/vapes\" title=\"Vapes\"><strong>Vapes</strong></a> come with various puff amounts, nicotine levels, and e-liquid capacities, suitable for different vaping needs.</p><p>Available in striking colors, designs, and features, our vape products include disposable vapes, e-juices, e-cigarettes, pod systems, and more.</p><p>Buy vapes online today!</p><h2><strong>Best Sellers </strong></h2><p>In our vast vape catalog, you just can easily discover the ultimate in flavor and performance.</p><p>Our meticulously curated <a href=\"https://juicefly.com/collections/best-seller-vapes\" title=\"https://juicefly.com/collections/best-seller-vapes\"><strong>Best Sellers</strong></a> collection allows you to reach sought-after and highest-quality vapes.</p><p>To meet the diverse vaping needs and tastes, Juicefly Online Vape Shop’s Best Sellers section is full of cutting-edge vape devices to premium e-liquids.</p><p>Each of these top-notch products has gained its spot through exceptional quality, innovative design, and outstanding customer reviews.</p><p>Explore the top picks that have captured the hearts of vapers throughout the US, and elevate your vaping experience with the industry's best.</p><h2><strong>Vape Shipping throughout the US! </strong></h2><p>Juicefly offers vape shipping service across the U.S. to all states where vape delivery is not restricted. Please note, flavored tobacco products are not allowed for sale in California.</p><p>We promptly ship your vape products with fast order processing. Most orders ship within 24 hours, and those placed <strong>before 4 pm</strong> on business days may be processed the same day.</p><p>During checkout, you'll get details on the Shipping Method and Estimated Delivery Times based on your location. </p><p><strong>Shipping costs</strong> will be calculated based on your address or your location. You can also get <strong>free</strong> shipping for orders over $150.</p><p>A tracking email is generated once your order is processed.</p><p>Juicefly <strong>does not ship</strong> vape products to Arkansas, Arizona, Hawaii, Connecticut, Indiana, Maine, Oregon, Ohio, Nebraska, Pennysylvania, Utah, Wisconsin and Vermont. Flavored tobacco products and vapes are not allowed for sale in California.</p><p>Also, please note that estimated transit times are 1-3 business days for the Western Half of the US, and 6-10 business days for the Eastern Half of the US.</p><p>You can track your order on this page: <a href=\"https://juicefly.com/pages/itrack\" title=\"https://juicefly.com/pages/itrack\"><strong>Order Tracking</strong></a></p><h2><strong>Free Vape Shipping</strong></h2><p>And the best part of shopping from Juicefly <a href=\"https://juicefly.com/collections/vapes\" title=\"https://juicefly.com/collections/vapes\"><strong>Online Vape Shop</strong></a> is the shipping cost advantages.</p><p>For all orders <strong>over $150</strong>, you get <strong>free shipping</strong> to enjoy the best vapes in the United States. No matter where you are, you can browse our menu to get shipping service straight to your doorstep.</p>",
+        "wordLimits": "100",
+        "buttonCollasp": "Read more",
+        "showCollaspButton": true
+      }
+    },
+    "home_blogs_shipping_bBk6Wb": {
+      "type": "home-blogs__shipping",
+      "settings": {}
+    },
+    "shipping_bottom_template_ARyAGL": {
+      "type": "shipping_bottom_template",
+      "settings": {}
+    }
+  },
+  "order": [
+    "shipping_top_template_t4xEJb",
+    "banner_large_with_text_RhzNmC",
+    "home_html_DPdAx8",
+    "home_collection_list_mobile_shipping_46xipw",
+    "home_collection_list_desktop_shipping_YzVxFC",
+    "home_product_list_shipping_Atf9cj",
+    "home_single_banner_RkWjT7",
+    "home_product_list_shipping_2_XqV9xH",
+    "home_single_banner_qQU73n",
+    "tag_based_products_a4TBbK",
+    "home_single_banner_ETzDqA",
+    "tag_based_product2_3iBdzg",
+    "home_single_banner_XUhzeB",
+    "tag_based_product3_kmQbxW",
+    "home_single_banner_j7YqeM",
+    "tag_based_product4_aRhiDy",
+    "home_single_banner_CNk4im",
+    "home_reviews_shipping_BjeaUd",
+    "shipping_calculator_UkmNB8",
+    "juice_map_shipping_QtgREX",
+    "home_faq_shipping_QtYWGC",
+    "home_newsletter_shipping_Ay8xAU",
+    "text_section_NB7TN8",
+    "home_blogs_shipping_bBk6Wb",
+    "shipping_bottom_template_ARyAGL"
+  ]
+}

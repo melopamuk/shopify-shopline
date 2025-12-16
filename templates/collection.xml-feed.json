@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "collection_xml_feed_template",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

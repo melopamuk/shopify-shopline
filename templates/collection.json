@@ -1,0 +1,32 @@
+{
+  "sections": {
+    "main": {
+      "type": "collection",
+      "settings": {}
+    },
+    "listing": {
+      "type": "collection-template",
+      "settings": {}
+    },
+    "17613319107468e4d6": {
+      "type": "apps",
+      "blocks": {
+        "juicefly_products_collection_faq_Ua8BPX": {
+          "type": "shopify://apps/juicefly-products/blocks/collection_faq/019a156e-4875-7351-af3b-35d29c469db8",
+          "settings": {
+            "collection": "{{ collection }}"
+          }
+        }
+      },
+      "block_order": [
+        "juicefly_products_collection_faq_Ua8BPX"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "listing",
+    "17613319107468e4d6"
+  ]
+}

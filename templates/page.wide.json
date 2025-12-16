@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "main": {
+      "type": "wide_template",
+      "settings": {}
+    },
+    "home_product_list_ddDzdy": {
+      "type": "home-product-list",
+      "settings": {
+        "collection": "vapes"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "home_product_list_ddDzdy"
+  ]
+}

@@ -1,0 +1,212 @@
+<link rel="stylesheet" href="{{ asset_url 'home.css' }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+<script src="{{ asset_url 'home.js' }}" defer></script>
+
+{{ section 'home-collection-list-mobile__shipping' }}
+{{ section 'home-slideshow__shipping' }}
+{{ section 'home-collection-list-desktop__shipping' }}
+{{ section 'home-product-list__shipping' }}
+{{ section 'home-single-banner__shipping' }}
+{{ section 'home-product-list__shipping-2' }}
+{{ section 'tag-based-products' }}
+{{ section 'tag-based-product2' }}
+{{ section 'tag-based-product3' }}
+{{ section 'tag-based-product4' }}
+{{ section 'home-reviews__shipping' }}
+{{ section 'shipping-calculator' }}
+{{ section 'juice-map__shipping' }}
+{{ section 'home-faq__shipping' }}
+{{ section 'home-newsletter__shipping' }}
+{{ section 'text-section' }}
+{{ section 'home-blogs__shipping' }}
+
+<script>
+  function handleAddToCart(e) {
+    const singleProduct = e.target.classList.contains('juice-home-collection__list__item__cta--single');
+    if (!singleProduct) {
+      return;
+    }
+    
+    const parent = e.target.closest('.juice-home-collection__list__item');
+    if (!parent) {
+      return;
+    }
+    
+
+    const {
+      id,
+      index,
+      productHandle,
+      productTitle,
+      productVendor,
+      productType,
+      productListId,
+      productListName,
+      productVariant,
+      productPrice,
+      inStock
+    } = parent.dataset;
+
+    if (inStock === 'false') {
+      if (typeof Toastify !== undefined) {
+          Toastify({
+            text: `${productTitle} is out of stock`,
+            duration: 3000,
+            close: true,
+            gravity: 'bottom',
+            position: 'right',
+            stopOnFocus: true,
+            style: {
+              background: 'red',
+              color: '#fff'
+            },
+            offset: {
+              y: 5
+            }
+          }).showToast();
+        }
+      
+      return;
+    }
+
+    fetch('/cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(
+        {
+          items: [
+            {
+              id,
+              quantity: 1,
+              properties: {
+                _productType: productType
+              }
+            }
+          ]
+        }
+      )
+    }).then(response => response.json()).then(data => {
+      if (data.status === 422) {
+        if (typeof Toastify !== undefined) {
+          Toastify({
+            text: data.description,
+            duration: 3000,
+            close: true,
+            gravity: 'bottom',
+            position: 'right',
+            stopOnFocus: true,
+            style: {
+              background: 'red',
+              color: '#fff'
+            },
+            offset: {
+              y: 5
+            }
+          }).showToast();
+        }
+        
+        return;
+      }
+      
+      if (window.dataLayer !== undefined) {
+        const parsedPrice = Number((Number(productPrice) / 100).toFixed(2));
+        dataLayer.push({ ecommerce: null });
+        dataLayer.push({
+          event: "add_to_cart",
+          ecommerce: {
+            currency: "USD",
+            value: parsedPrice,
+            items: [
+              {
+                item_id: productHandle,
+                item_name: (productTitle || '').split('"').join('\\"'),
+                index: Number(index),
+                item_brand: (productVendor || '').split('"').join('\\"'),
+                item_category: productType,
+                item_list_id: productListId,
+                item_list_name: (productListName || '').split('"').join('\\"'),
+                item_variant: (productVariant || '').split('"').join('\\"'),
+                price: parsedPrice,
+                quantity: 1
+              }
+            ]
+          }
+        });
+      }
+      
+      const addToCartSuccessEvent = new CustomEvent('juice_add_to_cart_success', {
+        detail: {
+          title: data.items[0].product_title
+        }
+      });
+
+      document.dispatchEvent(addToCartSuccessEvent);
+    }).catch((error) => {
+      console.error('Error:', error);
+    })
+  }
+
+  function handleSendSelectItem(e) {
+    const linkItem = e.target.dataset.link === 'true';
+    if (!linkItem) {
+      return;
+    }
+
+    const parent = e.target.closest('.juice-home-collection__list__item');
+    if (!parent) {
+      return;
+    }
+
+    const {
+      id,
+      index,
+      productHandle,
+      productTitle,
+      productVendor,
+      productType,
+      productListId,
+      productListName,
+      productVariant,
+      productPrice,
+      inStock
+    } = parent.dataset;
+
+    if (inStock == 'false') return;
+
+    if (window.dataLayer !== undefined) {
+      const parsedPrice = Number((Number(productPrice) / 100).toFixed(2));
+      dataLayer.push({ ecommerce: null });
+      dataLayer.push({
+        event: "select_item",
+        ecommerce: {
+          item_list_id: productListId,
+          item_list_name: productListName,
+          items: [
+            {
+              item_id: productHandle,
+              item_name: (productTitle || '').split('"').join('\\"'),
+              index: Number(index),
+              item_brand: (productVendor || '').split('"').join('\\"'),
+              item_category: productType,
+              item_list_id: productListId,
+              item_list_name: (productListName || '').split('"').join('\\"'),
+              item_variant: (productVariant || '').split('"').join('\\"'),
+              price: parsedPrice,
+              quantity: 1
+            }
+          ]
+        }
+      });
+    }
+  }
+
+  const mainDivList = document.querySelector('div.main');
+  if (mainDivList) 
+    mainDivList.addEventListener('click', function(e) {
+      handleAddToCart(e);
+      handleSendSelectItem(e);
+    });
+  
+</script>

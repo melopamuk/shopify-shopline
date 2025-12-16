@@ -1,0 +1,107 @@
+{{#capture "contentForQueryString"}}{{{ content_for_header }}}{{/capture}}
+{{ assign 'pageUrl' replace (replace (replace (last (split (first (split (last (split contentForQueryString '"pageurl"="')) '"')) '.myshopify.com')) '\/' '/') '%20' ' ') '\u0026' '&' }}
+
+{{ assign 'pageQueryString' last (split pageUrl '?') }}
+
+{{#if pageQueryString == 'juicefly.com/account/login'}}
+    {{ assign 'returnUrl' '/' }}
+{{else}}
+    {{ assign 'returnUrl' last (split pageQueryString '=') }}
+{{/if}}
+
+<section class="section section--account account account--login">
+    <div class="container container--tiny">
+
+        <div id="RecoverPasswordForm" style="display: none;">
+            <div class="section__title section__title--center">
+                <h1 class="section__title-text h2">{{ t 'customer.recover_password.title' }}</h1>
+            </div>
+
+            {{#form 'recover_customer_password'}}
+
+                {{ default_errors form.errors }}
+
+                {{#if form.posted_successfully?}}
+                    {{ assign 'reset_success' true }}
+                {{/if}}
+
+                <label for="RecoverEmail" class="label--hidden">{{ t 'customer.recover_password.email' }}</label>
+                <input type="email" value="" name="email" id="RecoverEmail" autocorrect="off" autocapitalize="off">
+
+                <p>{{ t 'customer.recover_password.subtext' }}</p>
+
+                <div class="account__form-buttons">                    
+                    <input type="submit" class="c-btn c-btn--primary account__form-submit" value="{{ t 'customer.recover_password.submit' }}">
+                    <a href="#" onclick="hideRecoverPasswordForm();return false;" class="link account__form-secondary-btn">{{ t 'customer.recover_password.cancel' }}</a>
+                </div>
+
+            {{/form}}
+        </div>
+
+
+        <div id="CustomerLoginForm">
+            <div class="section__title section__title--center">
+                <h1 class="section__title-text h2">{{ t 'customer.login.title' }}</h1>
+            </div>
+
+            <div class="account__note success" id="ResetSuccess" style="display:none;">
+                {{ t 'customer.recover_password.success' }}
+            </div>
+
+            {{#form 'customer_login'}}
+
+                {{ default_errors form.errors }}
+
+                <label for="CustomerEmail" class="label--hidden">{{ t 'customer.login.email' }}</label>
+                <input type="email" name="customer[email]" id="CustomerEmail"{{#if form.errors contains "email"}} class="error"{{/if}} autocorrect="off" autocapitalize="off" autofocus>
+                <input type="hidden" name="checkout_url" value="{{ returnUrl }}"> 
+
+                {{#if form.password_needed}}
+                    <label for="CustomerPassword" class="label--hidden">{{ t 'customer.login.password' }}</label>
+                    <input type="password" value="" name="customer[password]" id="CustomerPassword"{{#if form.errors contains "password"}} class="error"{{/if}}>
+                    <p class="account__reset-link">
+                        <a href="#" onclick="showRecoverPasswordForm();return false;">{{ t 'customer.login.forgot_password' }}</a>
+                    </p>
+                {{/if}}
+                    <div class="account__form-buttons">
+                        <input type="submit" class="c-btn c-btn--primary account__form-submit" value="{{ t 'customer.login.sign_in' }}">
+                        <a href="{{ routes.account_register_url }}" class="link account__form-secondary-btn">{{ t 'layout.customer.create_account' }}</a>
+                    </div>
+            {{/form}}
+        </div>
+
+        
+        {{#if shop.checkout.guest_login}}
+            <div class="account__guest">
+                <div class="section__title section__title--center">
+                    <h2 class="section__title-text h3">{{ t 'customer.login.guest_title' }}</h2>
+                </div>
+
+                {{#form 'guest_login'}}
+                    <div class="u-text-center">
+                        <input type="submit" class="c-btn c-btn--primary" value="{{ t 'customer.login.guest_continue' }}">
+                    </div>
+                {{/form}}
+            </div>
+        {{/if}}
+
+    </div>
+</section>
+
+<script>
+    //Show/hide the recover password form when requested
+    function showRecoverPasswordForm() {
+        document.getElementById('RecoverPasswordForm').style.display = 'block';
+        document.getElementById('CustomerLoginForm').style.display='none';
+    }
+    function hideRecoverPasswordForm() {
+        document.getElementById('RecoverPasswordForm').style.display = 'none';
+        document.getElementById('CustomerLoginForm').style.display = 'block';
+    }
+
+    if (window.location.hash == '#recover') { showRecoverPasswordForm() }
+
+    {{#if reset_success}}
+        document.getElementById('ResetSuccess').style.display = 'block';
+    {{/if}}
+</script>

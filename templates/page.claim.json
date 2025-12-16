@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "claim_template_eJWnMH": {
+      "type": "claim_template",
+      "settings": {}
+    }
+  },
+  "order": [
+    "claim_template_eJWnMH"
+  ]
+}

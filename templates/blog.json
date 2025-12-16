@@ -1,0 +1,28 @@
+{
+  "sections": {
+    "main": {
+      "type": "blog-template",
+      "settings": {
+        "show_tags": true,
+        "show_rss": false,
+        "grid": 2,
+        "crop": true,
+        "show_blog_date": true,
+        "show_blog_author": false,
+        "show_blog_comments": false,
+        "show_blog_tags": false,
+        "coll": "",
+        "coll_title": "Featured collection",
+        "coll_mobile_layout": "carousel",
+        "coll_grid": 3,
+        "coll_grid_mobile": "2",
+        "coll_rows": 1,
+        "coll_link_title": "View all",
+        "coll_link": ""
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

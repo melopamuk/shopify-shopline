@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "page_faq_g747Hn": {
+      "type": "page-faq",
+      "settings": {
+        "enable_search": true,
+        "enable_sidebar": false,
+        "cta_link_title": "Contact us",
+        "cta_link": ""
+      }
+    }
+  },
+  "order": [
+    "page_faq_g747Hn"
+  ]
+}

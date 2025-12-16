@@ -1,0 +1,513 @@
+
+
+{{ assign 'disabled_by_yoast_seo' false }}
+{{ assign 'global_discount_enabled' true }}
+{{ assign 'global_discount_rate' 0.25 }}
+<!DOCTYPE html>
+<html class="no-js" lang="{{ shop.locale }}">
+  <head>{{ snippet 'yoast-seo' }}
+    <meta charset="utf-8"/>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta name="theme-color" content="{{ settings.color_brand }}"/>
+
+
+    <style>
+    /* .template-product .js-cart-replace .product-single__bottom {min-height: 440px;} */
+    @media screen and (max-width: 980px) {  
+      .template-product [data-set="cart-replace"] { min-height: 440px; } 
+      .template-product .rebuy-widget.widget-type-product { 
+        min-height: 588px; 
+      }
+      body#geek-bar-pulse-15000-vape-buy-online-in-the-us-best-price {
+        & .rebuy-cart__flyout {
+            transition: 0s !important;
+        }
+      }
+    }
+    </style>
+    
+    {{ snippet 'network' }}
+    {{#if canonical_url}}
+      
+      {{#if disabled_by_yoast_seo}}
+        <link rel="canonical" href="{{ canonical_url }}"/>
+        
+      {{/if}}
+    {{/if}}
+    {{#if settings.favicon}}
+      <link rel="shortcut icon" href="{{ img_url settings.favicon '32x32' }}" type="image/png"/>
+    {{/if}}
+
+    {{#capture "seo_title"}}
+      {{#if request.page_type == 'search' and search.performed}}
+        {{ t 'general.search.heading' count=search.results_count }}:
+        {{ t 'general.search.results_with_count' terms=search.terms count=search.results_count }}
+      {{else}}
+        {{ page_title }}
+      {{/if}}
+      {{#if current_tags}}
+        {{ assign 'meta_tags' join current_tags ', ' }}
+        &ndash;
+        {{ t 'general.meta.tags' tags=meta_tags }}
+      {{/if}}
+      {{#if current_page != 1}}
+        &ndash;
+        {{ t 'general.meta.page' page=current_page }}
+      {{/if}}
+      {{ assign 'escaped_page_title' escape page_title }}
+      {{#unless escaped_page_title contains shop.name}}
+        &ndash;
+        {{ shop.name }}
+      {{/unless}}
+    {{/capture}}
+    
+    {{#if disabled_by_yoast_seo}}
+      <title>{{ strip seo_title }}</title>
+      
+    {{/if}}
+
+    
+    {{#capture "contentForQuerystring"}}{{{ content_for_header }}}{{/capture}}
+    {{ assign 'pageUrl' replace (replace (replace (last (split (first (split (last (split contentForQuerystring '"pageurl"="')) '"')) '.myshopify.com')) '\/' '/') '%20' ' ') '\u0026' '&' }}
+    {{#if template contains 'collection'}}
+      <meta name="custom" value="{{ pageUrl }}"/>
+      {{#if current_tags}}
+        
+        {{#if disabled_by_yoast_seo}}
+          <meta content="noindex, nofollow" name="robots"/>
+          
+        {{/if}}
+      {{/if}}
+    {{/if}}
+    {{#if page_description}}
+      {{#if disabled_by_yoast_seo}}
+        <meta name="description" content="{{ escape page_description }}"/>
+      {{/if}}
+    {{/if}}
+    {{ snippet 'social-meta-tags' }}
+
+    <!-- JS before CSSOM =================================================== -->
+    <script type="text/javascript">
+      theme = {};
+      theme.t = {};
+      theme.map = {};
+      theme.map_settings_url = "{{ asset_url 'map_settings.min.js' }}";
+      theme.cart_type = "{{ settings.cart_type }}";
+      theme.cart_ajax = {{#if settings.cart_type == 'modal' or settings.cart_type == 'notification'}}
+        true
+      {{else}}
+        false
+      {{/if}};
+      theme.routes = {
+        rootUrl: "{{ routes.root_url }}",
+        cartUrl: "{{ routes.cart_url }}",
+        cartAddUrl: "{{ routes.cart_add_url }}",
+        cartChangeUrl: "{{ routes.cart_change_url }}"
+      };
+    </script>
+    
+    <style id="fontsupporttest">
+      @font-face {
+        font-family: "font";
+        src: url("https://");
+      }
+    </style>
+    <script type="text/javascript">
+      function supportsFontFace() {
+        function blacklist() {
+          var match = /(WebKit|windows phone.+trident)\/(\d+)/i.exec(navigator.userAgent);
+          return(match && parseInt(match[2], 10) < (
+            match[1] == "WebKit"
+              ? 533
+              : 6
+          ));
+        }
+        function hasFontFaceSrc() {
+          var style = document.getElementById("fontsupporttest");
+          var sheet = style.sheet || style.styleSheet;
+          var cssText = sheet
+            ? sheet.cssRules && sheet.cssRules[0]
+              ? sheet.cssRules[0].cssText
+              : sheet.cssText || ""
+            : "";
+          return /src/i.test(cssText);
+        }
+        return ! blacklist() && hasFontFaceSrc();
+      }
+      document
+        .documentElement
+        .classList
+        .replace("no-js", "js");
+      if (window.matchMedia("(pointer: coarse)").matches) {
+        document
+          .documentElement
+          .classList
+          .add("touchevents");
+      } else {
+        document
+          .documentElement
+          .classList
+          .add("no-touchevents");
+      }
+      if (supportsFontFace()) {
+        document
+          .documentElement
+          .classList
+          .add("fontface");
+      }
+    </script>
+    
+    <script defer src="{{ asset_url 'jquery.min.js' }}"></script>
+    <script defer src="{{ asset_url 'vendor.min.js' }}"></script>
+    <script defer src="{{ asset_url 'ajax-cart.min.js' }}"></script>
+
+    <!-- CSS ================================================== -->
+    {{ snippet 'css-variables' }}
+    {{ snippet 'css-include' }}
+
+    <link rel="stylesheet" href="{{ asset_url 'layout.css' }}">
+    <script defer src="{{ asset_url 'layout.js' }}"></script>
+
+    <!-- JS after CSSOM=================================================== -->
+    <script defer src="{{ asset_url 'theme.js' }}"></script>
+    <script defer src="{{ asset_url 'custom.js' }}"></script>
+
+    {{#if request.design_mode}}
+      <script id="editor-scripts" src="{{ asset_url 'editor.min.js' }}" defer="defer"></script>
+    {{/if}}
+    {{#if settings.anim_load}}
+      <script src="{{ asset_url 'scrollreveal.min.js' }}"></script>
+    {{/if}}
+    {{#if template contains 'customers'}}
+      <script src="{{ shopify_asset_url 'shopify_common.js' }}"></script>
+    {{/if}}
+    
+    
+    {{ assign 'yoast_seo_settings' default shop.metafields.yoast_seo.settings.value shop.metafields.yoast_seo.settings }}
+    {{#if disabled_by_yoast_seo or yoast_seo_settings.integrations.webmasterVerification.google == blank or yoast_seo_settings.integrations.webmasterVerification.google == null}}
+      <meta content="KEc0-6nRjTFofIl8iwB_HFJ8A0msyioiBEiOCSj7RKc" name="google-site-verification"/>
+      
+    {{/if}}
+    <meta content="bn52ufh2ibj8y1l9kc14hydg0ab9qv" name="facebook-domain-verification"/>
+    
+    <!-- Global site tag (gtag.js) - Google Ads: 428982081 -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=AW-428982081"></script>
+    <!-- Google Tag Manager -->
+    <script defer src="{{ asset_url 'gtm-init.js' }}"></script>
+    <!-- End Google Tag Manager -->
+            
+    <!-- Facebook Pixel Code -->
+    <script defer src="{{ asset_url 'fb-init.js' }}"></script>
+    <noscript><img height="1" src="https://www.facebook.com/tr?id=3299265007023636&ev=PageView&noscript=1" style="display:none" width="1"/></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    
+
+    <!-- Header hook for plugins ================================================== -->
+    
+    <script type="application/ld+json">
+      [{
+        "@context": "https://schema.org",
+          "@type": "Store",
+          "image": [
+            "https://cdn.shopify.com/s/files/1/0523/7358/6089/files/juicefly-store-out-1.png?v=1614501705",
+            "https://cdn.shopify.com/s/files/1/0523/7358/6089/files/juicefly-store-out-2.png?v=1614501707",
+            "https://cdn.shopify.com/s/files/1/0523/7358/6089/files/juicefly-store-in-1.png?v=1614501553",
+            "https://cdn.shopify.com/s/files/1/0523/7358/6089/files/juicefly-store-in-2.png?v=1614501708",
+            "https://cdn.shopify.com/s/files/1/0523/7358/6089/files/juicefly-store-in-3.png?v=1614501710"
+          ],
+          "@id": "https://{{ request.host }}",
+          "name": "Juicefly Online Vape Shop - Disposables, E-Cig & Vape Juice",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "522 N Central Ave , #831",
+            "addressLocality": "Phoenix",
+            "addressRegion": "AZ",
+            "postalCode": "85004",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 33.9865775,
+            "longitude": -118.4037108
+          },
+          "telephone": "+1310-802-9687",
+          "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                  ],
+                  "opens": "10:00",
+                  "closes": "22:00"
+              }
+          ]
+      }]
+    </script>
+
+    <script>
+      var scaaffCheck = false;
+    </script>
+    
+    <!-- toastify -->
+    <script>
+      (function () {
+        const TOASTIFY_CSS_HREF = "https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css";
+        const TOASTIFY_JS_SRC  = "https://cdn.jsdelivr.net/npm/toastify-js";
+
+        let loaded = false;
+
+        function loadCSS(href) {
+          return new Promise((resolve, reject) => {
+            const l = document.createElement("link");
+            l.rel = "stylesheet";
+            l.href = href;
+            l.onload = resolve;
+            l.onerror = reject;
+            document.head.appendChild(l);
+          });
+        }
+
+        function loadJS(src) {
+          return new Promise((resolve, reject) => {
+            const s = document.createElement("script");
+            s.src = src;
+            s.async = true;
+            s.onload = resolve;
+            s.onerror = reject;
+            document.head.appendChild(s);
+          });
+        }
+
+        async function loadToastify() {
+          if (loaded) return;
+          loaded = true;
+          try {
+            await Promise.all([loadCSS(TOASTIFY_CSS_HREF), loadJS(TOASTIFY_JS_SRC)]);
+            document.dispatchEvent(new CustomEvent("toastify:ready"));
+            console.log("Toastify loaded");
+          } catch (e) {
+            console.warn("Toastify failed to load", e);
+          }
+          removeListeners();
+        }
+
+        const events = ["pointerdown", "wheel", "touchstart", "keydown", "mousemove"];
+        const onFirst = () => loadToastify();
+        const addListeners = () => events.forEach(ev => window.addEventListener(ev, onFirst, { once: true, passive: true }));
+        const removeListeners = () => events.forEach(ev => window.removeEventListener(ev, onFirst));
+
+        addListeners();
+        // Safety fallback (bots/no interaction): load after 8s
+        setTimeout(loadToastify, 8000);
+      })();
+    </script>
+    <!-- toastify -->
+
+    {{ snippet 'judgeme_core' }}
+
+  
+    
+
+  </head>
+
+  <body id="{{ handle page_title }}" class="{{#if customer}}customer-logged-in {{/if}}template-{{ handle (truncatewords (replace template '.' ' ') 1 '') }}" data-anim-fade="{{ settings.anim_fade }}" data-anim-load="{{ settings.anim_load }}" data-anim-interval-style="{{ settings.anim_interval_style }}" data-anim-zoom="{{ settings.anim_zoom }}" data-anim-interval="{{#if settings.anim_load_style == 'interval'}}true{{else}}false{{/if}}" data-heading-border="{{ settings.type_header_underline }}">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-MC83JTF" style="display:none;visibility:hidden" width="0"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Facebook Pixel Code (noscript) -->
+    <noscript><img height="1" src="https://www.facebook.com/tr?id=264382841978765&ev=PageView&noscript=1" style="display:none" width="1"/></noscript>
+    <!-- End Facebook Pixel Code (noscript) -->
+
+    <script type="text/javascript">
+      // loading class for animations
+      document.body.className += " " + "js-theme-loading";
+      setTimeout(function () {
+        document.body.className = document
+          .body
+          .className
+          .replace("js-theme-loading", "js-theme-loaded");
+      }, 300);
+    </script>
+
+    <div class="page-transition"></div>
+
+    
+
+    {{ assign 'isShippingPage' false }}
+    {{#if template == 'index'}}
+      {{ assign 'isShippingPage' true }}
+    {{/if}}
+
+    {{#if template.name == 'blog'}}
+      {{ assign 'isShippingPage' true }}
+    {{/if}}
+
+    {{#if template.name == 'article'}}
+      {{ assign 'isShippingPage' true }}
+    {{/if}}
+
+    {{#if collection}}
+      {{ assign 'collection_title' downcase collection.title }}
+      {{ assign 'collection_handle' downcase collection.handle }}
+
+      {{#if collection_title contains 'vape' or collection_handle contains 'vape'}}
+        {{ assign 'isShippingPage' true }}
+      {{else if collection.handle == 'juice-head'}}
+        {{ assign 'isShippingPage' true }}
+      {{else if collection.handle == 'devices'}}
+        {{ assign 'isShippingPage' true }}
+      {{else if collection.handle == 'uwell-caliburn'}}
+        {{ assign 'isShippingPage' true }}
+      {{else if collection.handle == 'geek-bar'}}
+        {{ assign 'isShippingPage' true }}
+      {{else if collection.handle == 'vaporesso'}}
+        {{ assign 'isShippingPage' true }}
+      {{else if collection.handle == 'pod-juice'}}
+        {{ assign 'isShippingPage' true }}
+      {{else if collection.handle == 'dinner-lady'}}
+        {{ assign 'isShippingPage' true }}
+      {{else if collection.handle == 'smok'}}
+        {{ assign 'isShippingPage' true }}
+      {{else if collection.handle == 'vozol'}}
+        {{ assign 'isShippingPage' true }}
+      {{else if collection.handle == 'pachamama'}}
+        {{ assign 'isShippingPage' true }}
+      {{else if collection.handle == 'elf-bar'}}
+        {{ assign 'isShippingPage' true }}
+      {{else if collection.handle == 'mi-pod'}}
+        {{ assign 'isShippingPage' true }}
+      {{else if collection.handle == 'bang'}}
+        {{ assign 'isShippingPage' true }}
+      {{/if}}
+    {{/if}}
+
+    {{#if product}}
+      {{ assign 'product_type' downcase product.type }}
+
+      {{#if product_type contains 'vape'}}
+        {{ assign 'isShippingPage' true }}
+      {{/if}}
+    {{/if}}
+
+    <div class="page-container">
+      
+      {{ section 'mobile-drawer-shipping-page' }}
+      {{ section 'header-shipping-page' }}
+      
+      <div class="main">{{{ content_for_layout }}}</div>
+      {{ section 'footer__shipping' }}
+      
+      {{ section 'age-checker' }}
+
+      
+      
+      <script>
+        window.addEventListener("load", function() {
+          setTimeout(function() {
+            window.AgeCheckerAgeGateConfig = {
+              "logoUrl": "https://cdn.shopify.com/s/files/1/0523/7358/6089/files/juicefly_logo.svg?v=1669872395",
+              "logoHeight": "50px",
+              "bodyTextAlign": "center"
+            };
+            
+            var s = document.createElement("script");
+            s.src = "https://cdn.agechecker.net/static/age-gate/v1/age-gate.js";
+            document.body.appendChild(s);
+          }, 5000);
+        });
+      </script>
+    </div>
+
+    {{#if settings.search_enable}}
+      <div class="search-draw js-search-draw mfp-hide">
+        <div class="search-draw__wrapper">
+          <div class="search__head">
+            <div class="search__label">
+              <h3 class="search__label-title">
+                {{ t 'general.search.label' }}
+              </h3>
+            </div>
+          </div>
+          <div class="search__inner">
+            <form action="{{ routes.search_url }}" method="get" class="search__form" role="search">
+              <input type="hidden" name="type" value="{{ settings.search_limit }}"/>
+              <input type="search" name="q" class="search__form-input js-search-input" value="{{ escape search.terms }}" placeholder="{{ t 'general.search.placeholder' }}" aria-label="{{ t 'general.search.placeholder' }}"/>
+              <button class="search__form-submit" type="submit">
+                <i aria-hidden="true" class="icon icon--search"></i>
+                <span class="icon-fallback__text">{{ t 'general.search.submit' }}</span>
+              </button>
+            </form>
+            {{ assign 'search_nav' settings.search_linklist }}
+            {{#if linklists[search_nav].links.size > 0}}
+              <div class="search__nav">
+                <h4 class="search__nav-title h5">
+                  {{ linklists[search_nav].title }}
+                </h4>
+                <ul class="search__nav-items o-list-bare">
+                  {{#for linklists[search_nav].links as |link|}}
+                    <li class="search__nav-item">
+                      <a href="{{ link.url }}" class="search__nav-link">{{ link.title }}</a>
+                    </li>
+                  {{/for}}
+                </ul>
+              </div>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    {{/if}}
+
+    
+
+    {{ snippet 'ajax-cart-template' }}
+
+    <script>
+      //cart functions
+      theme.ajaxCartInit = function() {
+      	ajaxCart.init({
+      		{{#if settings.cart_type == 'modal'}}
+      		sourceId: '#CartTemplate',
+      		triggerSelector: '.js-cart-trigger',
+      		formSelector: '.js-product-form',
+      		addToCartSelector: '.js-product-add',
+      		{{/if}}
+      		{{#if settings.cart_type == 'notification'}}
+      		sourceId: '#NotificationTemplate',
+      		triggerSelector: '.js-cart-trigger',
+      		formSelector: '.js-product-form',
+      		addToCartSelector: '.js-product-add',
+      		{{/if}}
+      		cartContainer: '#CartContainer',
+      		cartCountSelector: '#CartCount',
+      		cartCostSelector: '#CartCost',
+      		emptySelector: '#EmptyCart',
+      		moneyFormat: {{ json shop.money_format }}
+      	});
+      };
+    </script>
+    
+    {{{ content_for_header }}}
+    
+
+<!-- Rebuy START -->
+{{ snippet 'rebuy-extensions' }}
+{{ snippet 'rebuy-cart-template' }}
+<!-- Rebuy END -->
+
+    
+
+
+{{ snippet 'lootly-launcher' }}
+  
+</body>
+</html>

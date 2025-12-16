@@ -1,0 +1,113 @@
+{
+  "sections": {
+    "main": {
+      "type": "page_template",
+      "settings": {}
+    },
+    "location_beer_top_template_zWtdBV": {
+      "type": "location-beer_top_template",
+      "settings": {}
+    },
+    "home_reviews_JpetK9": {
+      "type": "home-reviews",
+      "blocks": {
+        "text_P4NFMB": {
+          "type": "text",
+          "settings": {
+            "reviewer": "Raashema A.",
+            "content": "Such a quick and easy delivery process. The delivery girl was awesome! I'll def be using them again..thanks for saving my night!!",
+            "provider": "yelp"
+          }
+        },
+        "text_kMDg8R": {
+          "type": "text",
+          "settings": {
+            "reviewer": "M. D.",
+            "content": "This liquor store is unlike any other! Step inside, and you'll find gorgeous displays of unique alcohol. The owner was really knowledgeable in helping me find the right wines and you can tell he curated only the best but at great prices!",
+            "provider": "yelp"
+          }
+        },
+        "text_dNfqNx": {
+          "type": "text",
+          "settings": {
+            "reviewer": "Chazsity D.",
+            "content": "This place is lovely! A new wine and liquor with such a unique selection. It's hard to pass up its vibrancy; this just popped up out of nowhere literally; from the looks of it, it's here to stay, and I'm excited to see more progress. The managers are lovely, and the vibes are just right!",
+            "provider": "yelp"
+          }
+        },
+        "text_U4UwHT": {
+          "type": "text",
+          "settings": {
+            "reviewer": "Melissa Anne",
+            "content": "I would never order wine for delivery from any other business besides Juicefly. There have never been any issues at all, just perfect service. I was very lucky to find them. Everyone is always super nice, and professional, making the delivery process easy and quick.",
+            "provider": "google"
+          }
+        },
+        "text_KKCpUG": {
+          "type": "text",
+          "settings": {
+            "reviewer": "Laura Ann Klinedinst",
+            "content": "By far the best delivery experience I have ever had. The ordering process was super easy, I was kept up-to-date on my order status, and my delivery driver was so friendly. Delivery time was also much faster than others who deliver the same types of products — major plus. Will definitely be my go-to moving forward.",
+            "provider": "google"
+          }
+        },
+        "text_paA4Mk": {
+          "type": "text",
+          "settings": {
+            "reviewer": "Charmaine Ivory",
+            "content": "I've been to the establishment one time and ordered from them a few times. Each experience has always been a memorable one. The staff is polite, and the delivery personnel is extremely courteous. I will continue to get my products from Juicefly.",
+            "provider": "google"
+          }
+        },
+        "text_PKQF3d": {
+          "type": "text",
+          "settings": {
+            "reviewer": "Donna Vanneman",
+            "content": "I have ordered from many vape companies and have always gone back to Juicefly. The people there are very helpful and always respond to any inquiry I make. I am a loyal customer and highly recommend Juicefly to any other vape delivery service out there.",
+            "provider": "trustpilot"
+          }
+        },
+        "text_hh9nDy": {
+          "type": "text",
+          "settings": {
+            "reviewer": "Charmaine Ivory",
+            "content": "Always accommodating. Whenever I call or place an order, the rep or delivery person is always so kind. Would highly recommend to others.",
+            "provider": "trustpilot"
+          }
+        },
+        "text_Tbj8wG": {
+          "type": "text",
+          "settings": {
+            "reviewer": "Karen Wall",
+            "content": "Good product, fast shipping, and great customer service.",
+            "provider": "trustpilot"
+          }
+        }
+      },
+      "block_order": [
+        "text_P4NFMB",
+        "text_kMDg8R",
+        "text_dNfqNx",
+        "text_U4UwHT",
+        "text_KKCpUG",
+        "text_paA4Mk",
+        "text_PKQF3d",
+        "text_hh9nDy",
+        "text_Tbj8wG"
+      ],
+      "settings": {
+        "header": "Our Customers Say"
+      }
+    },
+    "location_beer_bottom_template_AnriRQ": {
+      "type": "location-beer_bottom_template",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "location_beer_top_template_zWtdBV",
+    "home_reviews_JpetK9",
+    "location_beer_bottom_template_AnriRQ"
+  ]
+}

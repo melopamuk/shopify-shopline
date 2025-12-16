@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "collection-xml-local-product-inventory-feed",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

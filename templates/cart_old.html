@@ -1,0 +1,184 @@
+<section class="section section--cart cart">
+    <div class="container container--small">
+        <div class="section__title section__title--center">
+            <h1 class="section__title-text h2">{{ t 'cart.general.title' }}</h1>
+        </div>
+
+        <div class="cart__content">
+            {{#if cart.item_count > 0}}
+                <form action="{{ routes.cart_url }}" method="post" class="cart-form" novalidate>
+                    <div class="cart__products">
+                        <div class="cart__header u-hidden@tab-down">
+                            <div class="o-layout o-layout--small">
+                                <div class="o-layout__item u-4/10">
+                                    <p class="cart__header__text">{{ t 'cart.label.product' }}</p>
+                                </div>
+                                <div class="o-layout__item u-2/10">
+                                    <p class="cart__header__text u-text-right">{{ t 'cart.label.price' }}</p>
+                                </div>
+                                <div class="o-layout__item u-2/10">
+                                    <p class="cart__header__text u-text-right">{{ t 'cart.label.quantity' }}</p>
+                                </div>
+                                <div class="o-layout__item u-2/10">
+                                    <p class="cart__header__text u-text-right">{{ t 'cart.label.total' }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {{#for cart.items as |item|}}
+                            <div class="cart__product">
+                                <div class="cart__row">
+
+                                    <div class="o-layout o-layout--small u-flex u-flex--middle">
+
+                                        <div class="o-layout__item u-1/1 u-4/10@tab">
+                                            <div class="o-layout o-layout--tiny u-flex u-flex--middle">
+                                                <div class="o-layout__item u-1/3 u-2/5@tab">
+                                                    <a href="{{ item.url }}" class="cart__product-image">
+                                                        <div class="o-ratio o-ratio--bg-grey">
+                                                            <img src="{{ img_url item '200x200' crop='center' }}" alt="{{ escape item.title }}" class="o-ratio__content">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="o-layout__item u-2/3 u-3/5@tab">
+                                                    <a href="{{ item.url }}"><h3 class="cart__product-name">{{ item.product.title }}</h3></a>
+                                                    
+                                                    {{#unless item.variant.title contains 'Default'}}
+                                                        <p class="cart__product-meta">{{ item.variant.title }}</p>
+                                                    {{/unless}}
+
+                                                    {{ assign 'property_size' size item.properties }}
+                                                    {{#if property_size > 0}}
+                                                        {{#for item.properties as |p|}}
+																{{#unless p.last == blank or p.first == "_ZapietId"}}
+                                                                <p class="cart__product-meta">{{ p.first }}</p>
+                                                                {{#if p.last contains '/uploads/'}}
+                                                                    <p class="cart__product-meta"><a href="{{ p.last }}">{{ last (split p.last '/') }}</a></p>
+                                                                {{else}}
+                                                                    <p class="cart__product-meta">{{ p.last }}</p>
+                                                                {{/if}}
+                                                            {{/unless}}
+                                                        {{/for}}
+                                                    {{/if}}
+
+                                                    {{#unless item.selling_plan_allocation == empty}}
+                                                        <p class="cart__product-meta">{{ item.selling_plan_allocation.selling_plan.name }}</p>
+                                                    {{/unless}}
+
+                                                    {{#if settings.cart_vendor_enable}}
+                                                        <p class="cart__product-meta">{{ item.vendor }}</p>
+                                                    {{/if}}
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="o-layout__item u-1/3 u-2/10@tab u-hidden@tab-down">
+                                            {{#if item.original_price != item.final_price}}
+                                                <div class="cart-item__price cart-item__price--original"><s><span class="money">{{ money item.original_price }}</span></s></div>
+                                                <div class="cart-item__price cart-item__price--sale"><span class="money">{{ money item.final_price }}</span></div>
+                                            {{else}}
+                                                <div class="cart-item__price">
+                                                    <span class="money">{{ money item.final_price }}</span>
+                                                    {{#if item.unit_price_measurement}}
+                                                        <span class="cart-item__unit-price">
+                                                            <span class="u-hidden-visually">{{ t 'products.general.unit_price_label' }}</span>
+                                                            {{#capture "unit_price_separator"}}
+                                                                <span aria-hidden="true">/</span><span class="u-hidden-visually">{{ t 'products.general.unit_price_separator' }}&nbsp;</span>
+                                                            {{/capture}}
+                                                            {{#capture "unit_price_base_unit"}}
+                                                                {{#if item.unit_price_measurement.reference_value != 1}}
+                                                                    {{ item.unit_price_measurement.reference_value }}
+                                                                {{/if}}
+                                                                {{ item.unit_price_measurement.reference_unit }}
+                                                            {{/capture}}
+                                                            <span class="money">{{ money item.unit_price }}</span>{{ unit_price_separator }}{{ unit_price_base_unit }}
+                                                        </span>
+                                                    {{/if}}
+                                                </div>
+                                            {{/if}}
+                                        </div>
+
+                                        <div class="o-layout__item u-4/10 u-2/10@tab">
+                                            <div class="cart-item__qty">
+                                                <input type="number" name="updates[]" id="updates_{{ item.key }}" data-id="{{ item.key }}" value="{{ item.quantity }}" min="0">
+                                            </div>
+                                        </div>
+
+                                        <div class="o-layout__item u-6/10 u-2/10@tab">
+                                            {{#if item.original_line_price != item.final_line_price}}
+                                                <div class="cart-item__price cart-item__price--original"><s><span class="money">{{ money item.original_line_price }}</span></s></div>
+                                                {{#if item.line_level_discount_allocations.size > 0}}
+                                                    <div class="cart-item__discount">
+                                                        {{#for item.line_level_discount_allocations as |discount_allocation|}}
+                                                          <p class="cart-item__discount-text">{{ discount_allocation.discount_application.title }} (-<span class="money">{{ money discount_allocation.amount }}</span>)</p>
+                                                        {{/for}}
+                                                    </div>
+                                                {{/if}}
+                                                <div class="cart-item__price cart-item__price--sale"><span class="money">{{ money item.final_line_price }}</span></div>
+                                            {{else}}
+                                                <div class="cart-item__price"><span class="money">{{ money item.original_line_price }}</span></div>
+                                            {{/if}}
+                                        </div>
+
+                                    </div>
+
+                                    <a href="{{ routes.cart_change_url }}?line={{ forloop.index }}&amp;quantity=0" class="cart-item__remove icon-fallback">
+                                        <i class="icon icon--close" aria-hidden="true"></i>
+                                        <span class="icon-fallback__text">{{ t 'cart.general.remove' }}</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        {{/for}}
+                    </div>
+
+                    {{#if settings.cart_notes_enable}}
+                        <div class="cart__message">
+                            <label for="CartSpecialInstructions" class="cart__message-label">{{ t 'cart.general.note' }}</label>
+                            <textarea name="note" class="input-full" id="CartSpecialInstructions">{{ cart.note }}</textarea>
+                        </div>
+                    {{/if}}
+
+                    <div class="cart__footer">
+                        {{#if cart.cart_level_discount_applications}}
+                          {{#for cart.cart_level_discount_applications as |discount_application|}}
+                            <p class="cart__footer-discount">{{ discount_application.title }} (-<span class="money">{{ money discount_application.total_allocated_amount }}</span>)</p>
+                          {{/for}}
+                        {{/if}}
+
+                        <p class="cart__footer-total">{{ t 'cart.general.subtotal' }} <span class="money">{{ money cart.total_price }}</span></p>
+
+                        <p class="cart__footer-message">{{ t 'cart.general.shipping_at_checkout' }}</p>
+                        
+                        {{#if settings.cart_terms}}
+                            <div class="cart__footer-terms">
+                                <span class="cart__footer-terms__error js-cart-terms-error">{{ t 'cart.general.cart_error' }}</span>
+                                <input type="checkbox" class="cart__footer-terms__input js-cart-terms-input" id="cart-agree">
+                                <label for="cart-agree" class="cart__footer-terms__label rte">
+                                    {{ settings.cart_terms_text }}
+                                </label>
+                            </div>
+                        {{/if}}
+                    </div>
+
+                    <div class="cart__button">
+                        <button type="submit" name="update" class="c-btn c-btn--light cart__button-update update-cart">{{ t 'cart.general.update' }}</button>
+                        <button type="submit" class="c-btn c-btn--full c-btn--arrow c-btn--primary cart__checkout{{#if settings.cart_terms}} js-cart-checkout-validate{{/if}}" name="checkout">{{ t 'cart.general.checkout' }}</button>
+                        {{#if settings.cart_continue}}
+                            <a href="{{ routes.root_url }}" class="link link--arrow-left cart__continue">{{ t 'cart.general.continue_shopping' }}</a>
+                        {{/if}}
+                    </div>
+
+                </form>
+            {{else}}
+                <div class="cart-empty">
+                    <h5 class="cart-empty__title">{{ t 'cart.general.empty' }}</h5>
+                    <span class="emoji cart-empty__emoji">
+                        <i class="icon icon--sad"></i>
+                    </span>
+                    <a href="{{ routes.root_url }}" class="c-btn c-btn--primary c-btn--full">{{ t 'cart.general.empty_link' }}</a>
+                </div>
+            {{/if}}
+        </div>
+
+    </div>
+</section>

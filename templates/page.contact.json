@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "page_contact_zBxjtN": {
+      "type": "page-contact",
+      "settings": {
+        "show_form": true,
+        "form_title": "Send us an email",
+        "show_map": false,
+        "show_directions_btn": false,
+        "google_api_key": "",
+        "map_style": "light"
+      }
+    }
+  },
+  "order": [
+    "page_contact_zBxjtN"
+  ]
+}

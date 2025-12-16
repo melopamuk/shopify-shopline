@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "main": {
+      "type": "with-zip-locations-list",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

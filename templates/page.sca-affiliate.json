@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "sca_affiliate_template_TzEjiL": {
+      "type": "sca-affiliate_template",
+      "settings": {}
+    }
+  },
+  "order": [
+    "sca_affiliate_template_TzEjiL"
+  ]
+}

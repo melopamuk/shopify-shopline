@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "main": {
+      "type": "product-top",
+      "settings": {}
+    },
+    "product-template": {
+      "type": "product-template",
+      "settings": {
+        "layout": "classic",
+        "container": "small",
+        "show_breadcrumbs": true,
+        "show_vendor": false,
+        "product_variant_style": "dropdowns",
+        "use_swatch_images": false,
+        "show_quantity_selector": true,
+        "show_tax_notice": false,
+        "show_inventory": true,
+        "inventory_limit": 3,
+        "enable_payment_button": false,
+        "show_share_buttons": true,
+        "enable_zoom": false,
+        "enable_video_looping": false,
+        "image_size": "large",
+        "bg_color": "rgba(0,0,0,0)",
+        "text_color": "dark",
+        "bg_height": "full",
+        "display_faq": true
+      }
+    },
+    "product-testimonials": {
+      "type": "product-testimonials",
+      "settings": {
+        "title": "Testimonials",
+        "style_desktop": "carousel",
+        "style_mobile": "carousel",
+        "link_title": "Shop now",
+        "link": ""
+      }
+    },
+    "product-sections": {
+      "type": "product-sections",
+      "blocks": {
+        "break_RjUV7a": {
+          "type": "break",
+          "settings": {
+            "height": "0"
+          }
+        }
+      },
+      "block_order": [
+        "break_RjUV7a"
+      ],
+      "settings": {
+        "container": "medium"
+      }
+    },
+    "product-bottom": {
+      "type": "product-bottom",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "product-template",
+    "product-testimonials",
+    "product-sections",
+    "product-bottom"
+  ]
+}
